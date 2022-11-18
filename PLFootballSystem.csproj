@@ -1,0 +1,434 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F212A15C-8954-47B6-B629-12B02067CAAE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>PLFootballSystem</RootNamespace>
+    <AssemblyName>PLFootballSystem</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto, Version=1.9.0.0, Culture=neutral, PublicKeyToken=0e99375e54769942, processorArchitecture=MSIL">
+      <HintPath>..\packages\Portable.BouncyCastle.1.9.0\lib\net40\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Protobuf, Version=3.19.4.0, Culture=neutral, PublicKeyToken=a7d26565bac4d604, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Protobuf.3.19.4\lib\net45\Google.Protobuf.dll</HintPath>
+    </Reference>
+    <Reference Include="K4os.Compression.LZ4, Version=1.2.6.0, Culture=neutral, PublicKeyToken=2186fa9121ef231d, processorArchitecture=MSIL">
+      <HintPath>..\packages\K4os.Compression.LZ4.1.2.6\lib\net46\K4os.Compression.LZ4.dll</HintPath>
+    </Reference>
+    <Reference Include="K4os.Compression.LZ4.Streams, Version=1.2.6.0, Culture=neutral, PublicKeyToken=2186fa9121ef231d, processorArchitecture=MSIL">
+      <HintPath>..\packages\K4os.Compression.LZ4.Streams.1.2.6\lib\net46\K4os.Compression.LZ4.Streams.dll</HintPath>
+    </Reference>
+    <Reference Include="K4os.Hash.xxHash, Version=1.0.6.0, Culture=neutral, PublicKeyToken=32cd54395057cec3, processorArchitecture=MSIL">
+      <HintPath>..\packages\K4os.Hash.xxHash.1.0.6\lib\net46\K4os.Hash.xxHash.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=8.0.31.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.8.0.31\lib\net452\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.4\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.5.0.0\lib\net45\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="ZstdNet, Version=1.4.5.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.8.0.31\lib\net452\ZstdNet.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controller\ControllerAccount.cs" />
+    <Compile Include="Controller\ControllerCity.cs" />
+    <Compile Include="Controller\ControllerCountry.cs" />
+    <Compile Include="Controller\ControllerFCHasSeason.cs" />
+    <Compile Include="Controller\ControllerFirstTeam.cs" />
+    <Compile Include="Controller\ControllerFootballClub.cs" />
+    <Compile Include="Controller\ControllerMatch.cs" />
+    <Compile Include="Controller\ControllerPlayer.cs" />
+    <Compile Include="Controller\ControllerPlayerPosition.cs" />
+    <Compile Include="Controller\ControllerRole.cs" />
+    <Compile Include="Controller\ControllerSeason.cs" />
+    <Compile Include="Controller\ControllerTheme.cs" />
+    <Compile Include="Forms\AccountForm\AddNewAccountForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AccountForm\AddNewAccountForm.Designer.cs">
+      <DependentUpon>AddNewAccountForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AccountForm\AllAccountForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AccountForm\AllAccountForm.Designer.cs">
+      <DependentUpon>AllAccountForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AdminForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AdminForm.Designer.cs">
+      <DependentUpon>AdminForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CityForm\AddNewCityForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CityForm\AddNewCityForm.Designer.cs">
+      <DependentUpon>AddNewCityForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CountryForm\AddNewCountry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CountryForm\AddNewCountry.Designer.cs">
+      <DependentUpon>AddNewCountry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FCToSeason\AddFcToSeason.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FCToSeason\AddFcToSeason.Designer.cs">
+      <DependentUpon>AddFcToSeason.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FirstTeamForm\AddNewFirstTeamForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FirstTeamForm\AddNewFirstTeamForm.Designer.cs">
+      <DependentUpon>AddNewFirstTeamForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FirstTeamForm\ShowFirstTeamForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FirstTeamForm\ShowFirstTeamForm.Designer.cs">
+      <DependentUpon>ShowFirstTeamForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FootballClubForm\AddNewFootballClubForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FootballClubForm\AddNewFootballClubForm.Designer.cs">
+      <DependentUpon>AddNewFootballClubForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FootballClubForm\AllFootballClubForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FootballClubForm\AllFootballClubForm.Designer.cs">
+      <DependentUpon>AllFootballClubForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FootballClubForm\ChooseFootballClubForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FootballClubForm\ChooseFootballClubForm.Designer.cs">
+      <DependentUpon>ChooseFootballClubForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FootballClubForm\ShowFootballClubForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FootballClubForm\ShowFootballClubForm.Designer.cs">
+      <DependentUpon>ShowFootballClubForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FootballClubForm\ViewFootballClubForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FootballClubForm\ViewFootballClubForm.Designer.cs">
+      <DependentUpon>ViewFootballClubForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MatchForm\AddNewMatch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MatchForm\AddNewMatch.Designer.cs">
+      <DependentUpon>AddNewMatch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MatchForm\ShowAllMatchForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MatchForm\ShowAllMatchForm.Designer.cs">
+      <DependentUpon>ShowAllMatchForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PlayerForm\AddNewPlayer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PlayerForm\AddNewPlayer.Designer.cs">
+      <DependentUpon>AddNewPlayer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PlayerForm\AllPlayerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PlayerForm\AllPlayerForm.Designer.cs">
+      <DependentUpon>AllPlayerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PlayerForm\ShowAllPlayerUserForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PlayerForm\ShowAllPlayerUserForm.Designer.cs">
+      <DependentUpon>ShowAllPlayerUserForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PlayerForm\ShowPlayerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PlayerForm\ShowPlayerForm.Designer.cs">
+      <DependentUpon>ShowPlayerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PlayerForm\ViewPlayerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PlayerForm\ViewPlayerForm.Designer.cs">
+      <DependentUpon>ViewPlayerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PlayerPosition\AddNewPlayerPosition.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PlayerPosition\AddNewPlayerPosition.Designer.cs">
+      <DependentUpon>AddNewPlayerPosition.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Resource1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource1.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SeasonForm\AddNewSeasonForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SeasonForm\AddNewSeasonForm.Designer.cs">
+      <DependentUpon>AddNewSeasonForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SeasonForm\ChooseSeasonMatchForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SeasonForm\ChooseSeasonMatchForm.Designer.cs">
+      <DependentUpon>ChooseSeasonMatchForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SeasonForm\ChooseSeasonTableForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SeasonForm\ChooseSeasonTableForm.Designer.cs">
+      <DependentUpon>ChooseSeasonTableForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SettingsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SettingsForm.Designer.cs">
+      <DependentUpon>SettingsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\TableForm\ShowTableForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\TableForm\ShowTableForm.Designer.cs">
+      <DependentUpon>ShowTableForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\UserForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\UserForm.Designer.cs">
+      <DependentUpon>UserForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\AccountModel.cs" />
+    <Compile Include="Model\CityModel.cs" />
+    <Compile Include="Model\CountryModel.cs" />
+    <Compile Include="Model\FCSeasonsModel.cs" />
+    <Compile Include="Model\FirstTeamModel.cs" />
+    <Compile Include="Model\FootballClubModel.cs" />
+    <Compile Include="Model\MatchModel.cs" />
+    <Compile Include="Model\PlayerModel.cs" />
+    <Compile Include="Model\PositionModel.cs" />
+    <Compile Include="Model\RoleModel.cs" />
+    <Compile Include="Model\SeasonsModel.cs" />
+    <Compile Include="Model\ThemeModel.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Util\DBUtil.cs" />
+    <Compile Include="Util\Params.cs" />
+    <Compile Include="Wrapper\WrapperAccount.cs" />
+    <Compile Include="Wrapper\WrapperCity.cs" />
+    <Compile Include="Wrapper\WrapperCountry.cs" />
+    <Compile Include="Wrapper\WrapperFCHasSeason.cs" />
+    <Compile Include="Wrapper\WrapperFirstTeam.cs" />
+    <Compile Include="Wrapper\WrapperFootballClub.cs" />
+    <Compile Include="Wrapper\WrapperMatch.cs" />
+    <Compile Include="Wrapper\WrapperPlayer.cs" />
+    <Compile Include="Wrapper\WrapperPlayerPosition.cs" />
+    <Compile Include="Wrapper\WrapperRole.cs" />
+    <Compile Include="Wrapper\WrapperSeason.cs" />
+    <Compile Include="Wrapper\WrapperTheme.cs" />
+    <EmbeddedResource Include="Forms\AccountForm\AddNewAccountForm.resx">
+      <DependentUpon>AddNewAccountForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AccountForm\AllAccountForm.resx">
+      <DependentUpon>AllAccountForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AdminForm.resx">
+      <DependentUpon>AdminForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CityForm\AddNewCityForm.resx">
+      <DependentUpon>AddNewCityForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CountryForm\AddNewCountry.resx">
+      <DependentUpon>AddNewCountry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FCToSeason\AddFcToSeason.resx">
+      <DependentUpon>AddFcToSeason.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FirstTeamForm\AddNewFirstTeamForm.resx">
+      <DependentUpon>AddNewFirstTeamForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FirstTeamForm\ShowFirstTeamForm.resx">
+      <DependentUpon>ShowFirstTeamForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FootballClubForm\AddNewFootballClubForm.resx">
+      <DependentUpon>AddNewFootballClubForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FootballClubForm\AllFootballClubForm.resx">
+      <DependentUpon>AllFootballClubForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FootballClubForm\ChooseFootballClubForm.resx">
+      <DependentUpon>ChooseFootballClubForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FootballClubForm\ShowFootballClubForm.resx">
+      <DependentUpon>ShowFootballClubForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FootballClubForm\ViewFootballClubForm.resx">
+      <DependentUpon>ViewFootballClubForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MatchForm\AddNewMatch.resx">
+      <DependentUpon>AddNewMatch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MatchForm\ShowAllMatchForm.resx">
+      <DependentUpon>ShowAllMatchForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PlayerForm\AddNewPlayer.resx">
+      <DependentUpon>AddNewPlayer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PlayerForm\AllPlayerForm.resx">
+      <DependentUpon>AllPlayerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PlayerForm\ShowAllPlayerUserForm.resx">
+      <DependentUpon>ShowAllPlayerUserForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PlayerForm\ShowPlayerForm.resx">
+      <DependentUpon>ShowPlayerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PlayerForm\ViewPlayerForm.resx">
+      <DependentUpon>ViewPlayerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PlayerPosition\AddNewPlayerPosition.resx">
+      <DependentUpon>AddNewPlayerPosition.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Resource1.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SeasonForm\AddNewSeasonForm.resx">
+      <DependentUpon>AddNewSeasonForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SeasonForm\ChooseSeasonMatchForm.resx">
+      <DependentUpon>ChooseSeasonMatchForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SeasonForm\ChooseSeasonTableForm.resx">
+      <DependentUpon>ChooseSeasonTableForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SettingsForm.resx">
+      <DependentUpon>SettingsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\TableForm\ShowTableForm.resx">
+      <DependentUpon>ShowTableForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UserForm.resx">
+      <DependentUpon>UserForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hidden.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eye.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\teren.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
