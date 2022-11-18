@@ -1,0 +1,227 @@
+﻿
+namespace PLFootballSystem.Forms.FootballClubForm
+{
+    partial class AddNewFootballClubForm
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.lblFootballClubName = new System.Windows.Forms.Label();
+            this.tbFootballClubName = new System.Windows.Forms.TextBox();
+            this.lblFootballClubNickname = new System.Windows.Forms.Label();
+            this.tbFootballClubNickname = new System.Windows.Forms.TextBox();
+            this.lblFootballClubOwner = new System.Windows.Forms.Label();
+            this.tbFootballClubOwner = new System.Windows.Forms.TextBox();
+            this.lblFounded = new System.Windows.Forms.Label();
+            this.dtFounded = new System.Windows.Forms.DateTimePicker();
+            this.lblFootballClubImage = new System.Windows.Forms.Label();
+            this.btnAddImage = new System.Windows.Forms.Button();
+            this.lblFootballClubTshirt = new System.Windows.Forms.Label();
+            this.btnAddTshirtImage = new System.Windows.Forms.Button();
+            this.lblCity = new System.Windows.Forms.Label();
+            this.cbCity = new System.Windows.Forms.ComboBox();
+            this.btnAddFootballClub = new System.Windows.Forms.Button();
+            this.fdFCImage = new System.Windows.Forms.OpenFileDialog();
+            this.fdTshirtImage = new System.Windows.Forms.OpenFileDialog();
+            this.SuspendLayout();
+            // 
+            // lblFootballClubName
+            // 
+            this.lblFootballClubName.AutoSize = true;
+            this.lblFootballClubName.Location = new System.Drawing.Point(24, 13);
+            this.lblFootballClubName.Name = "lblFootballClubName";
+            this.lblFootballClubName.Size = new System.Drawing.Size(96, 13);
+            this.lblFootballClubName.TabIndex = 0;
+            this.lblFootballClubName.Text = "Football club name";
+            // 
+            // tbFootballClubName
+            // 
+            this.tbFootballClubName.Location = new System.Drawing.Point(27, 30);
+            this.tbFootballClubName.Name = "tbFootballClubName";
+            this.tbFootballClubName.Size = new System.Drawing.Size(100, 20);
+            this.tbFootballClubName.TabIndex = 1;
+            // 
+            // lblFootballClubNickname
+            // 
+            this.lblFootballClubNickname.AutoSize = true;
+            this.lblFootballClubNickname.Location = new System.Drawing.Point(24, 58);
+            this.lblFootballClubNickname.Name = "lblFootballClubNickname";
+            this.lblFootballClubNickname.Size = new System.Drawing.Size(119, 13);
+            this.lblFootballClubNickname.TabIndex = 3;
+            this.lblFootballClubNickname.Text = "Football club nick name";
+            // 
+            // tbFootballClubNickname
+            // 
+            this.tbFootballClubNickname.Location = new System.Drawing.Point(27, 74);
+            this.tbFootballClubNickname.Name = "tbFootballClubNickname";
+            this.tbFootballClubNickname.Size = new System.Drawing.Size(100, 20);
+            this.tbFootballClubNickname.TabIndex = 4;
+            // 
+            // lblFootballClubOwner
+            // 
+            this.lblFootballClubOwner.AutoSize = true;
+            this.lblFootballClubOwner.Location = new System.Drawing.Point(24, 97);
+            this.lblFootballClubOwner.Name = "lblFootballClubOwner";
+            this.lblFootballClubOwner.Size = new System.Drawing.Size(99, 13);
+            this.lblFootballClubOwner.TabIndex = 5;
+            this.lblFootballClubOwner.Text = "Football club owner";
+            // 
+            // tbFootballClubOwner
+            // 
+            this.tbFootballClubOwner.Location = new System.Drawing.Point(27, 113);
+            this.tbFootballClubOwner.Name = "tbFootballClubOwner";
+            this.tbFootballClubOwner.Size = new System.Drawing.Size(100, 20);
+            this.tbFootballClubOwner.TabIndex = 6;
+            // 
+            // lblFounded
+            // 
+            this.lblFounded.AutoSize = true;
+            this.lblFounded.Location = new System.Drawing.Point(28, 136);
+            this.lblFounded.Name = "lblFounded";
+            this.lblFounded.Size = new System.Drawing.Size(49, 13);
+            this.lblFounded.TabIndex = 7;
+            this.lblFounded.Text = "Founded";
+            // 
+            // dtFounded
+            // 
+            this.dtFounded.Location = new System.Drawing.Point(31, 153);
+            this.dtFounded.Name = "dtFounded";
+            this.dtFounded.Size = new System.Drawing.Size(200, 20);
+            this.dtFounded.TabIndex = 8;
+            // 
+            // lblFootballClubImage
+            // 
+            this.lblFootballClubImage.AutoSize = true;
+            this.lblFootballClubImage.Location = new System.Drawing.Point(28, 176);
+            this.lblFootballClubImage.Name = "lblFootballClubImage";
+            this.lblFootballClubImage.Size = new System.Drawing.Size(98, 13);
+            this.lblFootballClubImage.TabIndex = 9;
+            this.lblFootballClubImage.Text = "Football club image";
+            // 
+            // btnAddImage
+            // 
+            this.btnAddImage.Location = new System.Drawing.Point(31, 193);
+            this.btnAddImage.Name = "btnAddImage";
+            this.btnAddImage.Size = new System.Drawing.Size(96, 23);
+            this.btnAddImage.TabIndex = 10;
+            this.btnAddImage.Text = "Upload image";
+            this.btnAddImage.UseVisualStyleBackColor = true;
+            this.btnAddImage.Click += new System.EventHandler(this.btnAddImage_Click);
+            // 
+            // lblFootballClubTshirt
+            // 
+            this.lblFootballClubTshirt.AutoSize = true;
+            this.lblFootballClubTshirt.Location = new System.Drawing.Point(28, 219);
+            this.lblFootballClubTshirt.Name = "lblFootballClubTshirt";
+            this.lblFootballClubTshirt.Size = new System.Drawing.Size(123, 13);
+            this.lblFootballClubTshirt.TabIndex = 11;
+            this.lblFootballClubTshirt.Text = "Football club tshirt image";
+            // 
+            // btnAddTshirtImage
+            // 
+            this.btnAddTshirtImage.Location = new System.Drawing.Point(31, 235);
+            this.btnAddTshirtImage.Name = "btnAddTshirtImage";
+            this.btnAddTshirtImage.Size = new System.Drawing.Size(96, 23);
+            this.btnAddTshirtImage.TabIndex = 12;
+            this.btnAddTshirtImage.Text = "Upload image";
+            this.btnAddTshirtImage.UseVisualStyleBackColor = true;
+            this.btnAddTshirtImage.Click += new System.EventHandler(this.btnAddTshirtImage_Click);
+            // 
+            // lblCity
+            // 
+            this.lblCity.AutoSize = true;
+            this.lblCity.Location = new System.Drawing.Point(28, 261);
+            this.lblCity.Name = "lblCity";
+            this.lblCity.Size = new System.Drawing.Size(24, 13);
+            this.lblCity.TabIndex = 13;
+            this.lblCity.Text = "City";
+            // 
+            // cbCity
+            // 
+            this.cbCity.FormattingEnabled = true;
+            this.cbCity.Location = new System.Drawing.Point(31, 277);
+            this.cbCity.Name = "cbCity";
+            this.cbCity.Size = new System.Drawing.Size(121, 21);
+            this.cbCity.TabIndex = 14;
+            // 
+            // btnAddFootballClub
+            // 
+            this.btnAddFootballClub.Location = new System.Drawing.Point(202, 277);
+            this.btnAddFootballClub.Name = "btnAddFootballClub";
+            this.btnAddFootballClub.Size = new System.Drawing.Size(96, 23);
+            this.btnAddFootballClub.TabIndex = 15;
+            this.btnAddFootballClub.Text = "Add football club";
+            this.btnAddFootballClub.UseVisualStyleBackColor = true;
+            this.btnAddFootballClub.Click += new System.EventHandler(this.btnAddFootballClub_Click);
+            // 
+            // AddNewFootballClubForm
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(327, 335);
+            this.Controls.Add(this.btnAddFootballClub);
+            this.Controls.Add(this.cbCity);
+            this.Controls.Add(this.lblCity);
+            this.Controls.Add(this.btnAddTshirtImage);
+            this.Controls.Add(this.lblFootballClubTshirt);
+            this.Controls.Add(this.btnAddImage);
+            this.Controls.Add(this.lblFootballClubImage);
+            this.Controls.Add(this.dtFounded);
+            this.Controls.Add(this.lblFounded);
+            this.Controls.Add(this.tbFootballClubOwner);
+            this.Controls.Add(this.lblFootballClubOwner);
+            this.Controls.Add(this.tbFootballClubNickname);
+            this.Controls.Add(this.lblFootballClubNickname);
+            this.Controls.Add(this.tbFootballClubName);
+            this.Controls.Add(this.lblFootballClubName);
+            this.Name = "AddNewFootballClubForm";
+            this.Text = "AddNewFootballClubForm";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.Label lblFootballClubName;
+        private System.Windows.Forms.TextBox tbFootballClubName;
+        private System.Windows.Forms.Label lblFootballClubNickname;
+        private System.Windows.Forms.TextBox tbFootballClubNickname;
+        private System.Windows.Forms.Label lblFootballClubOwner;
+        private System.Windows.Forms.TextBox tbFootballClubOwner;
+        private System.Windows.Forms.Label lblFounded;
+        private System.Windows.Forms.DateTimePicker dtFounded;
+        private System.Windows.Forms.Label lblFootballClubImage;
+        private System.Windows.Forms.Button btnAddImage;
+        private System.Windows.Forms.Label lblFootballClubTshirt;
+        private System.Windows.Forms.Button btnAddTshirtImage;
+        private System.Windows.Forms.Label lblCity;
+        private System.Windows.Forms.ComboBox cbCity;
+        private System.Windows.Forms.Button btnAddFootballClub;
+        private System.Windows.Forms.OpenFileDialog fdFCImage;
+        private System.Windows.Forms.OpenFileDialog fdTshirtImage;
+    }
+}
