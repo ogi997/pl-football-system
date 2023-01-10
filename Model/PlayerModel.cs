@@ -18,6 +18,7 @@ namespace PLFootballSystem.Model
         public CountryModel Country { get; set; }
         public FootballClubModel FootballClub { get; set; }
         public string ImageName { get; set; }
+        public int pos { get; set; }
 
         public override bool Equals(object obj)
         {

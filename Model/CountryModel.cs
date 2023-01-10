@@ -8,7 +8,6 @@ namespace PLFootballSystem.Model
 {
     public class CountryModel
     {
-        private readonly string folder = "";
         public int ID { get; set; }
         public string Name { get; set; }
         public string ImageName { get; set; }

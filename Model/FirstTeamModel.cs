@@ -12,6 +12,7 @@ namespace PLFootballSystem.Model
         public MatchModel Match { get; set; }
         public FootballClubModel FC { get; set; }
         public PlayerModel Player { get; set; }
+       // public int position { get; set; }
 
         public override bool Equals(object obj)
         {
