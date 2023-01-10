@@ -1,5 +1,7 @@
 ﻿using PLFootballSystem.Controller;
 using PLFootballSystem.Model;
+using PLFootballSystem.Util;
+using PLFootballSystem.Util.Theme;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -20,6 +22,46 @@ namespace PLFootballSystem.Forms.AccountForm
         {
             InitializeComponent();
             GetAllData();
+            SetTheme();
+        }
+        private void SetTheme()
+        {
+            if ("light".Equals(ChangeTheme.GetTheme()))
+            {
+                ChangeThemee(Theme.GetLight()[ThemeColor.Primary], Theme.GetLight()[ThemeColor.Secondary], Theme.GetLight()[ThemeColor.Tertiary]);
+                ChangeTextColor(Theme.GetLight()[ThemeColor.Text]);
+            }
+            else if ("dark".Equals(ChangeTheme.GetTheme()))
+            {
+                ChangeThemee(Theme.GetDark()[ThemeColor.Primary], Theme.GetDark()[ThemeColor.Secondary], Theme.GetDark()[ThemeColor.Tertiary]);
+                ChangeTextColor(Theme.GetDark()[ThemeColor.Text]);
+            }
+            else if ("nature".Equals(ChangeTheme.GetTheme()))
+            {
+                ChangeThemee(Theme.GetNature()[ThemeColor.Primary], Theme.GetNature()[ThemeColor.Secondary], Theme.GetNature()[ThemeColor.Tertiary]);
+                ChangeTextColor(Theme.GetNature()[ThemeColor.Text]);
+            }
+        }
+
+        private void ChangeThemee(Color primaryColor, Color secondaryColor, Color tertiaryColor)
+        {
+            btnClose.BackColor = primaryColor;
+            btnAddAccount.BackColor = primaryColor;
+            btnDelete.BackColor = primaryColor;
+            btnUpdate.BackColor = primaryColor;
+            btnActive.BackColor = primaryColor;
+
+            this.BackColor = secondaryColor;
+        }
+
+        private void ChangeTextColor(Color textColor)
+        {
+            btnClose.ForeColor = textColor;
+            btnAddAccount.ForeColor = textColor;
+            btnDelete.ForeColor = textColor;
+            btnUpdate.ForeColor = textColor;
+            btnActive.ForeColor = textColor;
+            lblSearch.ForeColor = textColor;
         }
 
         private void GetAllData()
@@ -33,7 +75,7 @@ namespace PLFootballSystem.Forms.AccountForm
                 lvi.Tag = am.ID;
                 lvi.Text = am.Username;
                 lvi.SubItems.Add(am.Role.Name);
-                lvi.SubItems.Add(am.Status == 1 ? "Active" : "Suspended");
+                lvi.SubItems.Add(am.Status == 1 ? "en".Equals(ChangeLanguage.GetLanguage()) ? "Active" : "Активан" : "en".Equals(ChangeLanguage.GetLanguage()) ? "Suspended" : "Суспендован");
                 array.Add(lvi);
             }
 
@@ -52,7 +94,7 @@ namespace PLFootballSystem.Forms.AccountForm
                     lvi.Tag = listAM.ElementAt(i).ID;
                     lvi.Text = listAM.ElementAt(i).Username;
                     lvi.SubItems.Add(listAM.ElementAt(i).Role.Name);
-                    lvi.SubItems.Add(listAM.ElementAt(i).Status == 1 ? "Active" : "Suspended");
+                    lvi.SubItems.Add(listAM.ElementAt(i).Status == 1 ? "en".Equals(ChangeLanguage.GetLanguage()) ? "Active" : "Активан" : "en".Equals(ChangeLanguage.GetLanguage()) ? "Suspended" : "Суспендован");
                     a.Add(lvi);
                 }
             }
@@ -64,25 +106,26 @@ namespace PLFootballSystem.Forms.AccountForm
             this.Close();
 
             var mainForm = Application.OpenForms.OfType<AdminForm>().Single();
-            mainForm.SetLblPath("Home");
+            mainForm.SetLblPath("en".Equals(ChangeLanguage.GetLanguage()) ? "Home" : "Почетна");
         }
         private void DeleteOrActivate(bool delete)
         {
             if (lvAllAccounts.SelectedItems.Count <= 0 || lvAllAccounts.SelectedItems.Count > 1)
             {
-                MessageBox.Show("Please select one user.");
+                MessageBox.Show("en".Equals(ChangeLanguage.GetLanguage()) ? "Please select one user." : "Означите само једног корисника.");
                 return;
             }
             var ID = lvAllAccounts.SelectedItems[0].Tag;
             var result = ca.FindStatusById((int)ID);
             if (result == (delete ? 0 : 1))
             {
-                MessageBox.Show($"User already {(delete ? "deleted." : "active.")}");
+                MessageBox.Show("en".Equals(ChangeLanguage.GetLanguage()) ? $"User already {(delete ? "block." : "active.")}" : $"Корисник је већ {(delete ? "блокиран." : "активан.")}");
                 return;
             }
 
             ca.UpdateStatusById(delete ? 0 : 1, (int)lvAllAccounts.SelectedItems[0].Tag);
             RefreshListView();
+            MessageBox.Show("en".Equals(ChangeLanguage.GetLanguage()) ? "Successfully updated." : "Успјешно ажурирано.");
         }
         private void btnDelete_Click(object sender, EventArgs e)
         {
@@ -107,7 +150,7 @@ namespace PLFootballSystem.Forms.AccountForm
         {
             if (lvAllAccounts.SelectedItems.Count <= 0 || lvAllAccounts.SelectedItems.Count > 1)
             {
-                MessageBox.Show("Please select one user.");
+                MessageBox.Show("en".Equals(ChangeLanguage.GetLanguage()) ? "Please select one user." : "Селектујте једног корисника.");
                 return;
             }
             AccountModel ac = ca.FindAccountById((int)lvAllAccounts.SelectedItems[0].Tag);
@@ -124,6 +167,31 @@ namespace PLFootballSystem.Forms.AccountForm
 
                 RefreshListView();
             }
+        }
+
+        private void btnAddAccount_Click(object sender, EventArgs e)
+        {
+            new AddUpdateAccountForm().ShowDialog();
+
+            RefreshListView();
+        }
+
+        private void btnUpdate_Click_1(object sender, EventArgs e)
+        {
+            if (lvAllAccounts.SelectedItems.Count <= 0 || lvAllAccounts.SelectedItems.Count > 1)
+            {
+                MessageBox.Show("en".Equals(ChangeLanguage.GetLanguage()) ? "Please select one user." : "Селектујте једног корисника.");
+                return;
+            }
+            AccountModel ac = ca.FindAccountById((int)lvAllAccounts.SelectedItems[0].Tag);
+           
+            if (ac != null)
+            {
+                new AddUpdateAccountForm(ac).ShowDialog();
+
+                RefreshListView();
+            }
+
         }
     }
 }

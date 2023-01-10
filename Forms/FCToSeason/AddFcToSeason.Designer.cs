@@ -29,79 +29,81 @@ namespace PLFootballSystem.Forms.FCToSeason
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddFcToSeason));
             this.lblFootballClub = new System.Windows.Forms.Label();
             this.cbFootballClub = new System.Windows.Forms.ComboBox();
             this.lblSeason = new System.Windows.Forms.Label();
             this.cbSeason = new System.Windows.Forms.ComboBox();
             this.numberTablePosition = new System.Windows.Forms.NumericUpDown();
             this.btnAdd = new System.Windows.Forms.Button();
+            this.lblPoints = new System.Windows.Forms.Label();
+            this.btnClose = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.numberTablePosition)).BeginInit();
             this.SuspendLayout();
             // 
             // lblFootballClub
             // 
-            this.lblFootballClub.AutoSize = true;
-            this.lblFootballClub.Location = new System.Drawing.Point(13, 13);
+            resources.ApplyResources(this.lblFootballClub, "lblFootballClub");
             this.lblFootballClub.Name = "lblFootballClub";
-            this.lblFootballClub.Size = new System.Drawing.Size(67, 13);
-            this.lblFootballClub.TabIndex = 0;
-            this.lblFootballClub.Text = "Football club";
             // 
             // cbFootballClub
             // 
+            resources.ApplyResources(this.cbFootballClub, "cbFootballClub");
             this.cbFootballClub.FormattingEnabled = true;
-            this.cbFootballClub.Location = new System.Drawing.Point(16, 30);
             this.cbFootballClub.Name = "cbFootballClub";
-            this.cbFootballClub.Size = new System.Drawing.Size(121, 21);
-            this.cbFootballClub.TabIndex = 1;
             // 
             // lblSeason
             // 
-            this.lblSeason.AutoSize = true;
-            this.lblSeason.Location = new System.Drawing.Point(13, 54);
+            resources.ApplyResources(this.lblSeason, "lblSeason");
             this.lblSeason.Name = "lblSeason";
-            this.lblSeason.Size = new System.Drawing.Size(43, 13);
-            this.lblSeason.TabIndex = 2;
-            this.lblSeason.Text = "Season";
             // 
             // cbSeason
             // 
+            resources.ApplyResources(this.cbSeason, "cbSeason");
             this.cbSeason.FormattingEnabled = true;
-            this.cbSeason.Location = new System.Drawing.Point(16, 70);
             this.cbSeason.Name = "cbSeason";
-            this.cbSeason.Size = new System.Drawing.Size(121, 21);
-            this.cbSeason.TabIndex = 3;
             // 
             // numberTablePosition
             // 
-            this.numberTablePosition.Location = new System.Drawing.Point(16, 98);
+            resources.ApplyResources(this.numberTablePosition, "numberTablePosition");
             this.numberTablePosition.Name = "numberTablePosition";
-            this.numberTablePosition.Size = new System.Drawing.Size(120, 20);
-            this.numberTablePosition.TabIndex = 4;
             // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(193, 94);
+            resources.ApplyResources(this.btnAdd, "btnAdd");
+            this.btnAdd.FlatAppearance.BorderSize = 0;
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(75, 23);
-            this.btnAdd.TabIndex = 5;
-            this.btnAdd.Text = "Add";
             this.btnAdd.UseVisualStyleBackColor = true;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
+            // lblPoints
+            // 
+            resources.ApplyResources(this.lblPoints, "lblPoints");
+            this.lblPoints.Name = "lblPoints";
+            // 
+            // btnClose
+            // 
+            resources.ApplyResources(this.btnClose, "btnClose");
+            this.btnClose.FlatAppearance.BorderSize = 0;
+            this.btnClose.Name = "btnClose";
+            this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            // 
             // AddFcToSeason
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AcceptButton = this.btnAdd;
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(320, 150);
+            this.Controls.Add(this.btnClose);
+            this.Controls.Add(this.lblPoints);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.numberTablePosition);
             this.Controls.Add(this.cbSeason);
             this.Controls.Add(this.lblSeason);
             this.Controls.Add(this.cbFootballClub);
             this.Controls.Add(this.lblFootballClub);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "AddFcToSeason";
-            this.Text = "AddFcToSeason";
             ((System.ComponentModel.ISupportInitialize)(this.numberTablePosition)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -116,5 +118,7 @@ namespace PLFootballSystem.Forms.FCToSeason
         private System.Windows.Forms.ComboBox cbSeason;
         private System.Windows.Forms.NumericUpDown numberTablePosition;
         private System.Windows.Forms.Button btnAdd;
+        private System.Windows.Forms.Label lblPoints;
+        private System.Windows.Forms.Button btnClose;
     }
 }

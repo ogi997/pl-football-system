@@ -1,7 +1,7 @@
 ﻿
 namespace PLFootballSystem.Forms.FirstTeamForm
 {
-    partial class ShowFirstTeamForm
+    partial class SelectFirstTeam
     {
         /// <summary>
         /// Required designer variable.
@@ -29,9 +29,7 @@ namespace PLFootballSystem.Forms.FirstTeamForm
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ShowFirstTeamForm));
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.btnClose = new System.Windows.Forms.Button();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SelectFirstTeam));
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.lblGoalkeeper = new System.Windows.Forms.Label();
@@ -45,39 +43,28 @@ namespace PLFootballSystem.Forms.FirstTeamForm
             this.pMidfield2 = new System.Windows.Forms.Panel();
             this.pbGoalkeeper2 = new System.Windows.Forms.PictureBox();
             this.pDefense2 = new System.Windows.Forms.Panel();
-            this.panel1.SuspendLayout();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.btnAddFirstTeam = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbGoalkeeper)).BeginInit();
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbGoalkeeper2)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.btnClose);
-            resources.ApplyResources(this.panel1, "panel1");
-            this.panel1.Name = "panel1";
-            // 
-            // btnClose
-            // 
-            resources.ApplyResources(this.btnClose, "btnClose");
-            this.btnClose.Name = "btnClose";
-            this.btnClose.UseVisualStyleBackColor = true;
-            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // tabControl1
             // 
+            resources.ApplyResources(this.tabControl1, "tabControl1");
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
-            resources.ApplyResources(this.tabControl1, "tabControl1");
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             // 
             // tabPage1
             // 
-            this.tabPage1.BackgroundImage = global::PLFootballSystem.Properties.Resources.teren;
             resources.ApplyResources(this.tabPage1, "tabPage1");
+            this.tabPage1.BackgroundImage = global::PLFootballSystem.Properties.Resources.teren;
             this.tabPage1.Controls.Add(this.lblGoalkeeper);
             this.tabPage1.Controls.Add(this.pAttack);
             this.tabPage1.Controls.Add(this.pMidfield);
@@ -104,8 +91,9 @@ namespace PLFootballSystem.Forms.FirstTeamForm
             // pbGoalkeeper
             // 
             resources.ApplyResources(this.pbGoalkeeper, "pbGoalkeeper");
-            this.pbGoalkeeper.BackColor = System.Drawing.Color.Black;
+            this.pbGoalkeeper.BackColor = System.Drawing.Color.Transparent;
             this.pbGoalkeeper.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pbGoalkeeper.Image = global::PLFootballSystem.Properties.Resources.clickMe1;
             this.pbGoalkeeper.Name = "pbGoalkeeper";
             this.pbGoalkeeper.TabStop = false;
             this.pbGoalkeeper.Tag = "0";
@@ -117,8 +105,8 @@ namespace PLFootballSystem.Forms.FirstTeamForm
             // 
             // tabPage2
             // 
-            this.tabPage2.BackgroundImage = global::PLFootballSystem.Properties.Resources.teren;
             resources.ApplyResources(this.tabPage2, "tabPage2");
+            this.tabPage2.BackgroundImage = global::PLFootballSystem.Properties.Resources.teren;
             this.tabPage2.Controls.Add(this.lblGoalkeeper2);
             this.tabPage2.Controls.Add(this.pAttack2);
             this.tabPage2.Controls.Add(this.pMidfield2);
@@ -145,8 +133,9 @@ namespace PLFootballSystem.Forms.FirstTeamForm
             // pbGoalkeeper2
             // 
             resources.ApplyResources(this.pbGoalkeeper2, "pbGoalkeeper2");
-            this.pbGoalkeeper2.BackColor = System.Drawing.Color.Black;
+            this.pbGoalkeeper2.BackColor = System.Drawing.Color.Transparent;
             this.pbGoalkeeper2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pbGoalkeeper2.Image = global::PLFootballSystem.Properties.Resources.clickMe1;
             this.pbGoalkeeper2.Name = "pbGoalkeeper2";
             this.pbGoalkeeper2.TabStop = false;
             this.pbGoalkeeper2.Tag = "0";
@@ -156,14 +145,28 @@ namespace PLFootballSystem.Forms.FirstTeamForm
             resources.ApplyResources(this.pDefense2, "pDefense2");
             this.pDefense2.Name = "pDefense2";
             // 
-            // ShowFirstTeamForm
+            // panel1
             // 
+            resources.ApplyResources(this.panel1, "panel1");
+            this.panel1.Controls.Add(this.btnAddFirstTeam);
+            this.panel1.Name = "panel1";
+            // 
+            // btnAddFirstTeam
+            // 
+            resources.ApplyResources(this.btnAddFirstTeam, "btnAddFirstTeam");
+            this.btnAddFirstTeam.FlatAppearance.BorderSize = 0;
+            this.btnAddFirstTeam.Name = "btnAddFirstTeam";
+            this.btnAddFirstTeam.UseVisualStyleBackColor = true;
+            this.btnAddFirstTeam.Click += new System.EventHandler(this.btnAddFirstTeam_Click);
+            // 
+            // SelectFirstTeam
+            // 
+            this.AcceptButton = this.btnAddFirstTeam;
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.panel1);
-            this.Name = "ShowFirstTeamForm";
-            this.panel1.ResumeLayout(false);
+            this.Name = "SelectFirstTeam";
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
@@ -171,26 +174,27 @@ namespace PLFootballSystem.Forms.FirstTeamForm
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbGoalkeeper2)).EndInit();
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.Panel pDefense;
+        private System.Windows.Forms.PictureBox pbGoalkeeper;
         private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.Label lblGoalkeeper;
         private System.Windows.Forms.Panel pAttack;
         private System.Windows.Forms.Panel pMidfield;
-        private System.Windows.Forms.PictureBox pbGoalkeeper;
-        private System.Windows.Forms.Panel pDefense;
+        private System.Windows.Forms.Label lblGoalkeeper;
         private System.Windows.Forms.Label lblGoalkeeper2;
         private System.Windows.Forms.Panel pAttack2;
         private System.Windows.Forms.Panel pMidfield2;
         private System.Windows.Forms.PictureBox pbGoalkeeper2;
         private System.Windows.Forms.Panel pDefense2;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button btnAddFirstTeam;
     }
 }

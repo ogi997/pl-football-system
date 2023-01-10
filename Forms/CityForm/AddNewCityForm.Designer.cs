@@ -29,47 +29,50 @@ namespace PLFootballSystem.Forms.CityForm
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddNewCityForm));
             this.lblCityName = new System.Windows.Forms.Label();
             this.tbCityName = new System.Windows.Forms.TextBox();
             this.btnAddCity = new System.Windows.Forms.Button();
+            this.btnClose = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblCityName
             // 
-            this.lblCityName.AutoSize = true;
-            this.lblCityName.Location = new System.Drawing.Point(30, 27);
+            resources.ApplyResources(this.lblCityName, "lblCityName");
             this.lblCityName.Name = "lblCityName";
-            this.lblCityName.Size = new System.Drawing.Size(53, 13);
-            this.lblCityName.TabIndex = 0;
-            this.lblCityName.Text = "City name";
             // 
             // tbCityName
             // 
-            this.tbCityName.Location = new System.Drawing.Point(33, 54);
+            resources.ApplyResources(this.tbCityName, "tbCityName");
             this.tbCityName.Name = "tbCityName";
-            this.tbCityName.Size = new System.Drawing.Size(100, 20);
-            this.tbCityName.TabIndex = 1;
             // 
             // btnAddCity
             // 
-            this.btnAddCity.Location = new System.Drawing.Point(169, 50);
+            this.btnAddCity.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.btnAddCity, "btnAddCity");
             this.btnAddCity.Name = "btnAddCity";
-            this.btnAddCity.Size = new System.Drawing.Size(75, 23);
-            this.btnAddCity.TabIndex = 2;
-            this.btnAddCity.Text = "Add city";
             this.btnAddCity.UseVisualStyleBackColor = true;
             this.btnAddCity.Click += new System.EventHandler(this.btnAddCity_Click);
             // 
+            // btnClose
+            // 
+            this.btnClose.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.btnClose, "btnClose");
+            this.btnClose.Name = "btnClose";
+            this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            // 
             // AddNewCityForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AcceptButton = this.btnAddCity;
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(351, 214);
+            this.Controls.Add(this.btnClose);
             this.Controls.Add(this.btnAddCity);
             this.Controls.Add(this.tbCityName);
             this.Controls.Add(this.lblCityName);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "AddNewCityForm";
-            this.Text = "CityForm";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -80,5 +83,6 @@ namespace PLFootballSystem.Forms.CityForm
         private System.Windows.Forms.Label lblCityName;
         private System.Windows.Forms.TextBox tbCityName;
         private System.Windows.Forms.Button btnAddCity;
+        private System.Windows.Forms.Button btnClose;
     }
 }
