@@ -90,17 +90,18 @@
     <Compile Include="Controller\ControllerFCHasSeason.cs" />
     <Compile Include="Controller\ControllerFirstTeam.cs" />
     <Compile Include="Controller\ControllerFootballClub.cs" />
+    <Compile Include="Controller\ControllerFormation.cs" />
     <Compile Include="Controller\ControllerMatch.cs" />
     <Compile Include="Controller\ControllerPlayer.cs" />
     <Compile Include="Controller\ControllerPlayerPosition.cs" />
     <Compile Include="Controller\ControllerRole.cs" />
     <Compile Include="Controller\ControllerSeason.cs" />
     <Compile Include="Controller\ControllerTheme.cs" />
-    <Compile Include="Forms\AccountForm\AddNewAccountForm.cs">
+    <Compile Include="Forms\AccountForm\AddUpdateAccountForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\AccountForm\AddNewAccountForm.Designer.cs">
-      <DependentUpon>AddNewAccountForm.cs</DependentUpon>
+    <Compile Include="Forms\AccountForm\AddUpdateAccountForm.Designer.cs">
+      <DependentUpon>AddUpdateAccountForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\AccountForm\AllAccountForm.cs">
       <SubType>Form</SubType>
@@ -132,23 +133,23 @@
     <Compile Include="Forms\FCToSeason\AddFcToSeason.Designer.cs">
       <DependentUpon>AddFcToSeason.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\FirstTeamForm\AddNewFirstTeamForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\FirstTeamForm\AddNewFirstTeamForm.Designer.cs">
-      <DependentUpon>AddNewFirstTeamForm.cs</DependentUpon>
-    </Compile>
     <Compile Include="Forms\FirstTeamForm\ShowFirstTeamForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\FirstTeamForm\ShowFirstTeamForm.Designer.cs">
       <DependentUpon>ShowFirstTeamForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\FootballClubForm\AddNewFootballClubForm.cs">
+    <Compile Include="Forms\FirstTeamForm\SelectFirstTeam.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\FootballClubForm\AddNewFootballClubForm.Designer.cs">
-      <DependentUpon>AddNewFootballClubForm.cs</DependentUpon>
+    <Compile Include="Forms\FirstTeamForm\SelectFirstTeam.Designer.cs">
+      <DependentUpon>SelectFirstTeam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FootballClubForm\AddUpdateFootballClubForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FootballClubForm\AddUpdateFootballClubForm.Designer.cs">
+      <DependentUpon>AddUpdateFootballClubForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\FootballClubForm\AllFootballClubForm.cs">
       <SubType>Form</SubType>
@@ -168,12 +169,6 @@
     <Compile Include="Forms\FootballClubForm\ShowFootballClubForm.Designer.cs">
       <DependentUpon>ShowFootballClubForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\FootballClubForm\ViewFootballClubForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\FootballClubForm\ViewFootballClubForm.Designer.cs">
-      <DependentUpon>ViewFootballClubForm.cs</DependentUpon>
-    </Compile>
     <Compile Include="Forms\LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -192,17 +187,23 @@
     <Compile Include="Forms\MatchForm\ShowAllMatchForm.Designer.cs">
       <DependentUpon>ShowAllMatchForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\PlayerForm\AddNewPlayer.cs">
+    <Compile Include="Forms\PlayerForm\AddUpdatePlayer.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\PlayerForm\AddNewPlayer.Designer.cs">
-      <DependentUpon>AddNewPlayer.cs</DependentUpon>
+    <Compile Include="Forms\PlayerForm\AddUpdatePlayer.Designer.cs">
+      <DependentUpon>AddUpdatePlayer.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\PlayerForm\AllPlayerForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\PlayerForm\AllPlayerForm.Designer.cs">
       <DependentUpon>AllPlayerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PlayerForm\SelectPlayerForFirstTeam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PlayerForm\SelectPlayerForFirstTeam.Designer.cs">
+      <DependentUpon>SelectPlayerForFirstTeam.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\PlayerForm\ShowAllPlayerUserForm.cs">
       <SubType>Form</SubType>
@@ -215,12 +216,6 @@
     </Compile>
     <Compile Include="Forms\PlayerForm\ShowPlayerForm.Designer.cs">
       <DependentUpon>ShowPlayerForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\PlayerForm\ViewPlayerForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\PlayerForm\ViewPlayerForm.Designer.cs">
-      <DependentUpon>ViewPlayerForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\PlayerPosition\AddNewPlayerPosition.cs">
       <SubType>Form</SubType>
@@ -275,6 +270,7 @@
     <Compile Include="Model\FCSeasonsModel.cs" />
     <Compile Include="Model\FirstTeamModel.cs" />
     <Compile Include="Model\FootballClubModel.cs" />
+    <Compile Include="Model\FormationModel.cs" />
     <Compile Include="Model\MatchModel.cs" />
     <Compile Include="Model\PlayerModel.cs" />
     <Compile Include="Model\PositionModel.cs" />
@@ -283,58 +279,96 @@
     <Compile Include="Model\ThemeModel.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Util\ChangeLanguage.cs" />
+    <Compile Include="Util\ChangeTheme.cs" />
     <Compile Include="Util\DBUtil.cs" />
     <Compile Include="Util\Params.cs" />
+    <Compile Include="Util\Theme\Theme.cs" />
+    <Compile Include="Util\Theme\ThemeColor.cs" />
     <Compile Include="Wrapper\WrapperAccount.cs" />
     <Compile Include="Wrapper\WrapperCity.cs" />
     <Compile Include="Wrapper\WrapperCountry.cs" />
     <Compile Include="Wrapper\WrapperFCHasSeason.cs" />
     <Compile Include="Wrapper\WrapperFirstTeam.cs" />
     <Compile Include="Wrapper\WrapperFootballClub.cs" />
+    <Compile Include="Wrapper\WrapperFormation.cs" />
     <Compile Include="Wrapper\WrapperMatch.cs" />
     <Compile Include="Wrapper\WrapperPlayer.cs" />
     <Compile Include="Wrapper\WrapperPlayerPosition.cs" />
     <Compile Include="Wrapper\WrapperRole.cs" />
     <Compile Include="Wrapper\WrapperSeason.cs" />
     <Compile Include="Wrapper\WrapperTheme.cs" />
-    <EmbeddedResource Include="Forms\AccountForm\AddNewAccountForm.resx">
-      <DependentUpon>AddNewAccountForm.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\AccountForm\AddUpdateAccountForm.resx">
+      <DependentUpon>AddUpdateAccountForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AccountForm\AddUpdateAccountForm.sr-Cyrl.resx">
+      <DependentUpon>AddUpdateAccountForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\AccountForm\AllAccountForm.resx">
+      <DependentUpon>AllAccountForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AccountForm\AllAccountForm.sr-Cyrl.resx">
       <DependentUpon>AllAccountForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\AdminForm.resx">
       <DependentUpon>AdminForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AdminForm.sr-Cyrl.resx">
+      <DependentUpon>AdminForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\CityForm\AddNewCityForm.resx">
+      <DependentUpon>AddNewCityForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CityForm\AddNewCityForm.sr-Cyrl.resx">
       <DependentUpon>AddNewCityForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\CountryForm\AddNewCountry.resx">
       <DependentUpon>AddNewCountry.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CountryForm\AddNewCountry.sr-Cyrl.resx">
+      <DependentUpon>AddNewCountry.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\FCToSeason\AddFcToSeason.resx">
       <DependentUpon>AddFcToSeason.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FirstTeamForm\AddNewFirstTeamForm.resx">
-      <DependentUpon>AddNewFirstTeamForm.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\FCToSeason\AddFcToSeason.sr-Cyrl.resx">
+      <DependentUpon>AddFcToSeason.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FirstTeamForm\SelectFirstTeam.sr-Cyrl.resx">
+      <DependentUpon>SelectFirstTeam.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FirstTeamForm\ShowFirstTeamForm.resx">
       <DependentUpon>ShowFirstTeamForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FootballClubForm\AddNewFootballClubForm.resx">
-      <DependentUpon>AddNewFootballClubForm.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\FirstTeamForm\ShowFirstTeamForm.sr-Cyrl.resx">
+      <DependentUpon>ShowFirstTeamForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FirstTeamForm\SelectFirstTeam.resx">
+      <DependentUpon>SelectFirstTeam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FootballClubForm\AddUpdateFootballClubForm.resx">
+      <DependentUpon>AddUpdateFootballClubForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FootballClubForm\AddUpdateFootballClubForm.sr-Cyrl.resx">
+      <DependentUpon>AddUpdateFootballClubForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FootballClubForm\AllFootballClubForm.resx">
+      <DependentUpon>AllFootballClubForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FootballClubForm\AllFootballClubForm.sr-Cyrl.resx">
       <DependentUpon>AllFootballClubForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FootballClubForm\ChooseFootballClubForm.resx">
       <DependentUpon>ChooseFootballClubForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FootballClubForm\ChooseFootballClubForm.sr-Cyrl.resx">
+      <DependentUpon>ChooseFootballClubForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\FootballClubForm\ShowFootballClubForm.resx">
       <DependentUpon>ShowFootballClubForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FootballClubForm\ViewFootballClubForm.resx">
-      <DependentUpon>ViewFootballClubForm.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\FootballClubForm\ShowFootballClubForm.sr-Cyrl.resx">
+      <DependentUpon>ShowFootballClubForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
@@ -342,25 +376,49 @@
     <EmbeddedResource Include="Forms\MatchForm\AddNewMatch.resx">
       <DependentUpon>AddNewMatch.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MatchForm\AddNewMatch.sr-Cyrl.resx">
+      <DependentUpon>AddNewMatch.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\MatchForm\ShowAllMatchForm.resx">
       <DependentUpon>ShowAllMatchForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\PlayerForm\AddNewPlayer.resx">
-      <DependentUpon>AddNewPlayer.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\MatchForm\ShowAllMatchForm.sr-Cyrl.resx">
+      <DependentUpon>ShowAllMatchForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PlayerForm\AddUpdatePlayer.resx">
+      <DependentUpon>AddUpdatePlayer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PlayerForm\AddUpdatePlayer.sr-Cyrl.resx">
+      <DependentUpon>AddUpdatePlayer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\PlayerForm\AllPlayerForm.resx">
       <DependentUpon>AllPlayerForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PlayerForm\AllPlayerForm.sr-Cyrl.resx">
+      <DependentUpon>AllPlayerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PlayerForm\SelectPlayerForFirstTeam.resx">
+      <DependentUpon>SelectPlayerForFirstTeam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PlayerForm\SelectPlayerForFirstTeam.sr-Cyrl.resx">
+      <DependentUpon>SelectPlayerForFirstTeam.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\PlayerForm\ShowAllPlayerUserForm.resx">
+      <DependentUpon>ShowAllPlayerUserForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PlayerForm\ShowAllPlayerUserForm.sr-Cyrl.resx">
       <DependentUpon>ShowAllPlayerUserForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\PlayerForm\ShowPlayerForm.resx">
       <DependentUpon>ShowPlayerForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\PlayerForm\ViewPlayerForm.resx">
-      <DependentUpon>ViewPlayerForm.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\PlayerForm\ShowPlayerForm.sr-Cyrl.resx">
+      <DependentUpon>ShowPlayerForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\PlayerPosition\AddNewPlayerPosition.resx">
+      <DependentUpon>AddNewPlayerPosition.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PlayerPosition\AddNewPlayerPosition.sr-Cyrl.resx">
       <DependentUpon>AddNewPlayerPosition.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Resource1.resx">
@@ -370,19 +428,37 @@
     <EmbeddedResource Include="Forms\SeasonForm\AddNewSeasonForm.resx">
       <DependentUpon>AddNewSeasonForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SeasonForm\AddNewSeasonForm.sr-Cyrl.resx">
+      <DependentUpon>AddNewSeasonForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\SeasonForm\ChooseSeasonMatchForm.resx">
+      <DependentUpon>ChooseSeasonMatchForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SeasonForm\ChooseSeasonMatchForm.sr-Cyrl.resx">
       <DependentUpon>ChooseSeasonMatchForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\SeasonForm\ChooseSeasonTableForm.resx">
       <DependentUpon>ChooseSeasonTableForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SeasonForm\ChooseSeasonTableForm.sr-Cyrl.resx">
+      <DependentUpon>ChooseSeasonTableForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\SettingsForm.resx">
+      <DependentUpon>SettingsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SettingsForm.sr-Cyrl.resx">
       <DependentUpon>SettingsForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\TableForm\ShowTableForm.resx">
       <DependentUpon>ShowTableForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\TableForm\ShowTableForm.sr-Cyrl.resx">
+      <DependentUpon>ShowTableForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\UserForm.resx">
+      <DependentUpon>UserForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UserForm.sr-Cyrl.resx">
       <DependentUpon>UserForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -429,6 +505,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\teren.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\32207-5-premier-league-file_32x32.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-double-tap-gesture.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clickMe.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clickMe.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clickMe1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

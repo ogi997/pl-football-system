@@ -1,4 +1,5 @@
 ﻿using PLFootballSystem.Controller;
+using PLFootballSystem.Forms.FirstTeamForm;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,8 +18,8 @@ namespace PLFootballSystem
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new LoginForm());
-
+             Application.Run(new LoginForm());
+            //Application.Run(new Test());
         }
     }
 }
