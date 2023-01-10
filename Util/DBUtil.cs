@@ -55,12 +55,12 @@ namespace PLFootballSystem.Util
                 cmd.ExecuteNonQuery();
                 cmd.CommandText = query2;
                 Int32 id = Convert.ToInt32(cmd.ExecuteScalar());
-                MessageBox.Show("Successfully added.");
+                //MessageBox.Show("Successfully added.");
                 return id;
             }
             catch (MySqlException e)
             {
-                Console.WriteLine(e);
+               // Console.WriteLine(e);
                 MessageBox.Show(e.Number == 1062 ? "Username exists." : "Database error aaaa1.");
                 return -1;
             }
@@ -78,7 +78,7 @@ namespace PLFootballSystem.Util
                 }
                 cmd.ExecuteNonQuery();
 
-                MessageBox.Show("Successfully deleted.");
+                //MessageBox.Show("Successfully deleted.");
             }
             catch (MySqlException e)
             {
@@ -98,7 +98,7 @@ namespace PLFootballSystem.Util
                 }
                 cmd.ExecuteNonQuery();
                 
-                MessageBox.Show("Successfully added.");
+               // MessageBox.Show("Successfully added.");
             } catch(MySqlException e)
             {
                 MessageBox.Show(e.Number == 1062 ? "Username exists." : "Database error.");
@@ -118,9 +118,10 @@ namespace PLFootballSystem.Util
 
                 cmd.ExecuteNonQuery();
 
-                MessageBox.Show("Successfully updated");
+                //MessageBox.Show("Successfully updated");
             } catch (MySqlException e)
             {
+                Console.WriteLine(e);
                 MessageBox.Show("DATABASE ERROR.");
             }
             
@@ -142,7 +143,7 @@ namespace PLFootballSystem.Util
             }
             catch (MySqlException e)
             {
-                Console.WriteLine("Error: " + e);
+                //Console.WriteLine("Error: " + e);
                 MessageBox.Show("DATABASE ERROR aaa.");
             }
             return reader;
