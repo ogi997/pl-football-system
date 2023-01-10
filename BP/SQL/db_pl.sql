@@ -215,6 +215,16 @@ ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
+-- Table `db_pl`.`formation`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `db_pl`.`formation` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `description` VARCHAR(255) NOT NULL,
+  PRIMARY KEY (`id`))
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
 -- Table `db_pl`.`first_team`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `db_pl`.`first_team` (
@@ -222,10 +232,13 @@ CREATE TABLE IF NOT EXISTS `db_pl`.`first_team` (
   `fk_match_id` INT NOT NULL,
   `fk_fc_id` INT NOT NULL,
   `fk_player_id` INT NOT NULL,
+  `fk_formation_id` INT NOT NULL,
+  `player_position` INT NOT NULL,
   PRIMARY KEY (`id`),
   INDEX `fk_match_id_idx` (`fk_match_id` ASC) VISIBLE,
   INDEX `fk_football_club_id_idx` (`fk_fc_id` ASC) VISIBLE,
   INDEX `fk_player_id_idx` (`fk_player_id` ASC) VISIBLE,
+  INDEX `fk_formation_id_idx` (`fk_formation_id` ASC) VISIBLE,
   CONSTRAINT `fk_match_id`
     FOREIGN KEY (`fk_match_id`)
     REFERENCES `db_pl`.`match` (`id`)
@@ -239,6 +252,11 @@ CREATE TABLE IF NOT EXISTS `db_pl`.`first_team` (
   CONSTRAINT `fk_player_id`
     FOREIGN KEY (`fk_player_id`)
     REFERENCES `db_pl`.`player` (`id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `fk_formation_id`
+    FOREIGN KEY (`fk_formation_id`)
+    REFERENCES `db_pl`.`formation` (`id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
