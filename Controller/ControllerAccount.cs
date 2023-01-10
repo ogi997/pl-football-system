@@ -10,6 +10,18 @@ namespace PLFootballSystem.Controller
 {
     public class ControllerAccount
     {
+        public string SelectTheme(int userId)
+        {
+            return WrapperAccount.GetTheme(userId);
+        }
+        public void UpdateTheme(int userId, int themeId)
+        {
+            WrapperAccount.UpdateTheme(userId, themeId);
+        }
+        public void UpdateById(AccountModel ac)
+        {
+            WrapperAccount.UpdateAccountById(ac);
+        }
         public AccountModel FindByUsername(string username)
         {
             return WrapperAccount.SelectByUsername(username);

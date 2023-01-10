@@ -10,6 +10,10 @@ namespace PLFootballSystem.Controller
 {
     class ControllerPlayer
     {
+        public void UpdatePlayerById(PlayerModel player)
+        {
+            WrapperPlayer.UpdateByPlayerId(player);
+        }
         public int? FindStatusById(int id)
         {
             return WrapperPlayer.SelectStatus(id);

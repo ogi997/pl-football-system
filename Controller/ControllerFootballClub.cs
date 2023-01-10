@@ -10,6 +10,10 @@ namespace PLFootballSystem.Controller
 {
     class ControllerFootballClub
     {
+        public void UpdateByClubId(FootballClubModel fc)
+        {
+            WrapperFootballClub.UpdateByClubId(fc);
+        }
         public FootballClubModel FindByClubId(int clubId)
         {
             return WrapperFootballClub.SelectClubById(clubId);
