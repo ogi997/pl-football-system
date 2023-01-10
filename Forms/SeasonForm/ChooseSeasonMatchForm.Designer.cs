@@ -29,6 +29,7 @@ namespace PLFootballSystem.Forms.SeasonForm
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ChooseSeasonMatchForm));
             this.lblChooseSeason = new System.Windows.Forms.Label();
             this.cbChooseSeason = new System.Windows.Forms.ComboBox();
             this.btnShowMatch = new System.Windows.Forms.Button();
@@ -36,41 +37,36 @@ namespace PLFootballSystem.Forms.SeasonForm
             // 
             // lblChooseSeason
             // 
-            this.lblChooseSeason.AutoSize = true;
-            this.lblChooseSeason.Location = new System.Drawing.Point(62, 32);
+            resources.ApplyResources(this.lblChooseSeason, "lblChooseSeason");
             this.lblChooseSeason.Name = "lblChooseSeason";
-            this.lblChooseSeason.Size = new System.Drawing.Size(80, 13);
-            this.lblChooseSeason.TabIndex = 0;
-            this.lblChooseSeason.Text = "Choose season";
             // 
             // cbChooseSeason
             // 
+            this.cbChooseSeason.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbChooseSeason.FormattingEnabled = true;
-            this.cbChooseSeason.Location = new System.Drawing.Point(65, 49);
+            resources.ApplyResources(this.cbChooseSeason, "cbChooseSeason");
             this.cbChooseSeason.Name = "cbChooseSeason";
-            this.cbChooseSeason.Size = new System.Drawing.Size(121, 21);
-            this.cbChooseSeason.TabIndex = 1;
             // 
             // btnShowMatch
             // 
-            this.btnShowMatch.Location = new System.Drawing.Point(65, 77);
+            this.btnShowMatch.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.btnShowMatch, "btnShowMatch");
             this.btnShowMatch.Name = "btnShowMatch";
-            this.btnShowMatch.Size = new System.Drawing.Size(75, 23);
-            this.btnShowMatch.TabIndex = 2;
-            this.btnShowMatch.Text = "Show match";
             this.btnShowMatch.UseVisualStyleBackColor = true;
             this.btnShowMatch.Click += new System.EventHandler(this.btnShowMatch_Click);
             // 
             // ChooseSeasonMatchForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AcceptButton = this.btnShowMatch;
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(355, 167);
             this.Controls.Add(this.btnShowMatch);
             this.Controls.Add(this.cbChooseSeason);
             this.Controls.Add(this.lblChooseSeason);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "ChooseSeasonMatchForm";
-            this.Text = "ChooseSeasonMatchForm";
             this.ResumeLayout(false);
             this.PerformLayout();
 

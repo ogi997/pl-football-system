@@ -29,6 +29,7 @@ namespace PLFootballSystem.Forms.SeasonForm
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddNewSeasonForm));
             this.lblSeason = new System.Windows.Forms.Label();
             this.tbSeason = new System.Windows.Forms.TextBox();
             this.btnAddNewSeason = new System.Windows.Forms.Button();
@@ -36,40 +37,34 @@ namespace PLFootballSystem.Forms.SeasonForm
             // 
             // lblSeason
             // 
-            this.lblSeason.AutoSize = true;
-            this.lblSeason.Location = new System.Drawing.Point(13, 13);
+            resources.ApplyResources(this.lblSeason, "lblSeason");
             this.lblSeason.Name = "lblSeason";
-            this.lblSeason.Size = new System.Drawing.Size(43, 13);
-            this.lblSeason.TabIndex = 0;
-            this.lblSeason.Text = "Season";
             // 
             // tbSeason
             // 
-            this.tbSeason.Location = new System.Drawing.Point(16, 30);
+            resources.ApplyResources(this.tbSeason, "tbSeason");
             this.tbSeason.Name = "tbSeason";
-            this.tbSeason.Size = new System.Drawing.Size(100, 20);
-            this.tbSeason.TabIndex = 1;
             // 
             // btnAddNewSeason
             // 
-            this.btnAddNewSeason.Location = new System.Drawing.Point(136, 26);
+            this.btnAddNewSeason.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.btnAddNewSeason, "btnAddNewSeason");
             this.btnAddNewSeason.Name = "btnAddNewSeason";
-            this.btnAddNewSeason.Size = new System.Drawing.Size(102, 23);
-            this.btnAddNewSeason.TabIndex = 2;
-            this.btnAddNewSeason.Text = "Add new season";
             this.btnAddNewSeason.UseVisualStyleBackColor = true;
             this.btnAddNewSeason.Click += new System.EventHandler(this.btnAddNewSeason_Click);
             // 
             // AddNewSeasonForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AcceptButton = this.btnAddNewSeason;
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(397, 143);
             this.Controls.Add(this.btnAddNewSeason);
             this.Controls.Add(this.tbSeason);
             this.Controls.Add(this.lblSeason);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "AddNewSeasonForm";
-            this.Text = "AddNewSeasonForm";
             this.ResumeLayout(false);
             this.PerformLayout();
 

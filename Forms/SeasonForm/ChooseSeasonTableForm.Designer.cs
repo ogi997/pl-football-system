@@ -29,6 +29,7 @@ namespace PLFootballSystem.Forms.SeasonForm
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ChooseSeasonTableForm));
             this.cbChooseSeason = new System.Windows.Forms.ComboBox();
             this.lblChooseSeason = new System.Windows.Forms.Label();
             this.btnShow = new System.Windows.Forms.Button();
@@ -36,41 +37,36 @@ namespace PLFootballSystem.Forms.SeasonForm
             // 
             // cbChooseSeason
             // 
+            this.cbChooseSeason.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbChooseSeason.FormattingEnabled = true;
-            this.cbChooseSeason.Location = new System.Drawing.Point(76, 52);
+            resources.ApplyResources(this.cbChooseSeason, "cbChooseSeason");
             this.cbChooseSeason.Name = "cbChooseSeason";
-            this.cbChooseSeason.Size = new System.Drawing.Size(121, 21);
-            this.cbChooseSeason.TabIndex = 0;
             // 
             // lblChooseSeason
             // 
-            this.lblChooseSeason.AutoSize = true;
-            this.lblChooseSeason.Location = new System.Drawing.Point(76, 33);
+            resources.ApplyResources(this.lblChooseSeason, "lblChooseSeason");
             this.lblChooseSeason.Name = "lblChooseSeason";
-            this.lblChooseSeason.Size = new System.Drawing.Size(80, 13);
-            this.lblChooseSeason.TabIndex = 1;
-            this.lblChooseSeason.Text = "Choose season";
             // 
             // btnShow
             // 
-            this.btnShow.Location = new System.Drawing.Point(121, 80);
+            this.btnShow.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.btnShow, "btnShow");
             this.btnShow.Name = "btnShow";
-            this.btnShow.Size = new System.Drawing.Size(75, 23);
-            this.btnShow.TabIndex = 2;
-            this.btnShow.Text = "Show table";
             this.btnShow.UseVisualStyleBackColor = true;
             this.btnShow.Click += new System.EventHandler(this.btnShow_Click);
             // 
-            // ChooseSeasonForm
+            // ChooseSeasonTableForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AcceptButton = this.btnShow;
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(276, 130);
             this.Controls.Add(this.btnShow);
             this.Controls.Add(this.lblChooseSeason);
             this.Controls.Add(this.cbChooseSeason);
-            this.Name = "ChooseSeasonForm";
-            this.Text = "ChooseSeasonForm";
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
+            this.Name = "ChooseSeasonTableForm";
             this.ResumeLayout(false);
             this.PerformLayout();
 

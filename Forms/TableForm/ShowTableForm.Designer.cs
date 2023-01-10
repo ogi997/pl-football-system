@@ -29,27 +29,38 @@ namespace PLFootballSystem.Forms.TableForm
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ShowTableForm));
             this.lvTable = new System.Windows.Forms.ListView();
+            this.btnClose = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lvTable
             // 
             this.lvTable.HideSelection = false;
-            this.lvTable.Location = new System.Drawing.Point(12, 13);
+            resources.ApplyResources(this.lvTable, "lvTable");
             this.lvTable.Name = "lvTable";
-            this.lvTable.Size = new System.Drawing.Size(252, 425);
-            this.lvTable.TabIndex = 0;
             this.lvTable.UseCompatibleStateImageBehavior = false;
             this.lvTable.View = System.Windows.Forms.View.List;
             // 
+            // btnClose
+            // 
+            this.btnClose.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.btnClose, "btnClose");
+            this.btnClose.Name = "btnClose";
+            this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            // 
             // ShowTableForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AcceptButton = this.btnClose;
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(276, 450);
+            this.Controls.Add(this.btnClose);
             this.Controls.Add(this.lvTable);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "ShowTableForm";
-            this.Text = "ShowTableForm";
             this.ResumeLayout(false);
 
         }
@@ -57,5 +68,6 @@ namespace PLFootballSystem.Forms.TableForm
         #endregion
 
         private System.Windows.Forms.ListView lvTable;
+        private System.Windows.Forms.Button btnClose;
     }
 }

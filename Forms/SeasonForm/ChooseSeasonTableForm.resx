@@ -117,4 +117,185 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="cbChooseSeason.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 27</value>
+  </data>
+  <data name="cbChooseSeason.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 21</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="cbChooseSeason.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;cbChooseSeason.Name" xml:space="preserve">
+    <value>cbChooseSeason</value>
+  </data>
+  <data name="&gt;&gt;cbChooseSeason.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cbChooseSeason.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;cbChooseSeason.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="lblChooseSeason.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblChooseSeason.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 11.25pt</value>
+  </data>
+  <data name="lblChooseSeason.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 9</value>
+  </data>
+  <data name="lblChooseSeason.Size" type="System.Drawing.Size, System.Drawing">
+    <value>114, 18</value>
+  </data>
+  <data name="lblChooseSeason.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="lblChooseSeason.Text" xml:space="preserve">
+    <value>Choose season</value>
+  </data>
+  <data name="&gt;&gt;lblChooseSeason.Name" xml:space="preserve">
+    <value>lblChooseSeason</value>
+  </data>
+  <data name="&gt;&gt;lblChooseSeason.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblChooseSeason.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblChooseSeason.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="btnShow.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="btnShow.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 11.25pt</value>
+  </data>
+  <data name="btnShow.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 60</value>
+  </data>
+  <data name="btnShow.Size" type="System.Drawing.Size, System.Drawing">
+    <value>124, 23</value>
+  </data>
+  <data name="btnShow.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="btnShow.Text" xml:space="preserve">
+    <value>Show table</value>
+  </data>
+  <data name="&gt;&gt;btnShow.Name" xml:space="preserve">
+    <value>btnShow</value>
+  </data>
+  <data name="&gt;&gt;btnShow.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnShow.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnShow.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>263, 95</value>
+  </data>
+  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAEAICAAAAEAIACoEAAAFgAAACgAAAAgAAAAQAAAAAEAIAAAAAAAABAAABMLAAATCwAAAAAAAAAA
+        AAD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8AWCI//00WMf////8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wBaFz7/Whc8/1oXPP9aFzz/Whc8/1oXPP9aFzz/XBY+/////wD///8AWhg7/////wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AFoXPP9aFzz/Whc8/1oXPP9aFzz/Whc8/1oXPP9aFzz/Whc8/1oXPv9aFzz/Whc8////
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8AWhc8/1oXPP9aFzz/Whc8/1oXPP9aFzz/Whc8/1oXPP9aFzz/Whc8/1oX
+        PP9aFzz/Whc+/////wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AFsaOv////8A////AP///wDUvcxLWhc8/1oXPP9aFzz/Whc8/1oXPP9aFzz/Whc8/1oX
+        PP9aFzz/Whc8/1oXPP9aFzz/XRQ8/////wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8AWhc8/2IZQf////8A////AP///wBaFzz/Whc8/1oXPP9aFzz/Whc8/1oX
+        PP9aFzz/Whc8/1oXPP9aFzz/Whc8/1oXPP9aFzz/////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wBaFzz/Whc8/2EVP/////8AVBw5/1oXPP9aFzz/Whc8/1oX
+        PP9aFzz/Whc8/1oXPP9aFzz/Whc8/1oXPP9aFzz/Whc8/1oXPP////8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AFoXPP9aFzz/Whc8/////wBaFzz/Whc8/1oX
+        PP9aFzz/Whc8/1oXPP9aFzz/Whc8/1oXPP9aFzz/Whc8/1oXPP9aFzz/Whc8/1oVOv9YFz7/////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wDds8pcWhc8/1oXPP9aFzz/Whc+/1oX
+        PP9aFzz/Whc8/1oXPP9aFzz/Whc8/1oXPP9aFzz/Whc8/1oXPP9aFzz/b0Jc/1oXPP9aFzz/Whc8/1oX
+        PP////8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AFoXPP9aFzz/Whc8/1oX
+        PP9aFzz/Whc8/1oXPP9aFzz/Whc8/1oXPP9aFzz/Whc8/1oXPP9aFzz/////AGI4T/////8A////AFoX
+        PP9aFzz/Whc8/////wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A26XDdFoX
+        PP9aFzz/Whc8/1oXPP9aFzz/Whc8/1oXPP9aFzz/Whc8/1oXPP9aFzz/Whc8/08ONf////8A////AP//
+        /wD///8AWhc8/1oXPP9aFzz/////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8AWhc8/1oXPP9aFzz/Whc8/1oXPP9aFzz/Whc8/1oXPP9aFzz/Whc8/1oXPP9aFzz/Whc8/1oX
+        PP////8A////AP///wBaFzz/Whc8/1oXPP////8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8AWhc8/1oXPP9aFzz/Whc8/1oXPP9aFzz/Whc8/1oXPP9aFzz/Whc8/1oXPP9aFzz/Whc8/1kj
+        QP////8A////AFoXPP9hFzv/Whc8/////wBaFzz/Whc8/////wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wBaFzz/Whc8/1oXPP9aFzz/Whc8/1oXPP9aFzz/Whc8/1oXPP9aFzz/Whc8/1oX
+        PP9aFzz/////AP///wD///8A////AFoXPP9dGjr/////AFoXPP9aFzz/////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AFoXPP9aFzz/Whc8/1oXPP9aFzz/Whc8/1oXPP9aFzz/Whc8/1oX
+        PP9aFzz/Whc8/4NQa/////8A////AP///wD///8AspWlgf///wD///8AWhc8/1wWPv////8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AFoXPP9aFzz/Whc8/1oXPP9aFzz/Whc8/1oX
+        PP9aFzz/Whc8/1oXPP9aFzz/Whc8/1YaOf////8A////AP///wBJFS3/Wxg9/////wBaFzz/////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8AWhc8/1oXPP9aFzz/Whc8/1oX
+        PP9aFzz/Whc8/1oXPP9aFzz/Whc8/1oXPP9aFzz/Whc8/1oXPP9dGTj/Whc8/1oXPP9aFzz/XBg7/1oX
+        PP////8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8AWhc8/1oX
+        PP9aFzz/Whc8/1oXPP9aFzz/Whc8/1oXPP////8A////AP///wD///8A////AFYXPv////8AWhc8/1Ub
+        Pv9aFzz/////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AFoX
+        PP9aFzz/Whc8/1oXPP9aFzz/Whc8/1oXPP9aFzz/////AP///wD///8A////AP///wBaFzz/////AP//
+        /wD///8AVhc//////wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AFoXPP9aFzz/Whc8/10TPf9aFzz/Whc8/4NWZ/j///8AXRY+/1oXPP9aFzz/Whc8////
+        /wD///8A////AFwXPP9aFzz/////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A/+j/A1oXPP+BQ1v/Whc8/1oXPP9aFzz/XhZE/////wD///8AWhc8////
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8AayhN/////wBaFzz/Whc8/1oXPP9aFzz/////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8AWxY7/////wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wBaFzz/////AFoX
+        PP9aFzz/XRVD/////wD///8A////AFYXP/9aFzz/XRk8/1oXPP////8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AEsd
+        NP9aFzz/Whc8/1oXPP9aFzz/Whc8/1oXPP9aFzz/XBk5/1oXPP9aFzz/////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wBFI0H/WhQ8/////wD///8AWhc8/1oXPP9aFzz/Whc8/1oUPP////8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AFoXPP9aFzz/Whc8/2EYOP9iFEP/////AP///wD///8A////AGETPP+geY++////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wDn3+kR////AFoXPP9aFzz/Whc8/1oXPP9aFzz/Whc8/1oXPP9aFzz/Whc8/2Ud
+        Qf////8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8AWhc8//jb6hj///8AWhc8/1oXPP////8AWhc8/1oX
+        PP////8AWBk5/////wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8AXx9D////
+        /wD///8AWhc8/////wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A///////8////4Bv//+AB///gAP/+4AB//nAAf/4gAH/+IAAf/AAAH/wA
+        Cx/8AA8f/gAHH/gAGJ/4ADyf+AA9n/wAHL/8AAA//gH0f/wD7v/+Ahz//gN///9D/v//6OH//+AD///M
+        H///wef//6AH///kl////t////////////8=
+</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Choose season</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>ChooseSeasonTableForm</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>
