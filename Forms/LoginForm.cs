@@ -1,6 +1,7 @@
 ﻿using PLFootballSystem.Controller;
 using PLFootballSystem.Forms;
 using PLFootballSystem.Model;
+using PLFootballSystem.Util;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -18,19 +19,21 @@ namespace PLFootballSystem
         public LoginForm()
         {
             InitializeComponent();
+            //postavi default-ni jezik
+            ChangeLanguage.UpdateConfig("language", "en");
         }
 
-        private bool isClicked = true;
+        private bool isClicked = false;
         private void btnShowPassword_Click(object sender, EventArgs e)
         {
             if(isClicked)
             {
-                btnShowPassword.BackgroundImage = Properties.Resources.hidden;
+                btnShowPassword.BackgroundImage = Properties.Resources.eye;
                 txtPassword.PasswordChar = '*';
                 isClicked = !isClicked;
             } else
             {
-                btnShowPassword.BackgroundImage = Properties.Resources.eye;
+                btnShowPassword.BackgroundImage = Properties.Resources.hidden;
                 txtPassword.PasswordChar = '\0';
                 isClicked = !isClicked;
             }
@@ -58,12 +61,16 @@ namespace PLFootballSystem
                     if ("Admin".Equals(am.Role.Name))
                     {
                         this.Hide();
+                        string theme = ca.SelectTheme(am.ID);
+                        ChangeTheme.UpdateConfig("theme", theme);
                         new AdminForm(am).Show();
                     }
                     if ("Korisnik".Equals(am.Role.Name))
                     {
                         this.Hide();
-                        new UserForm().Show();
+                        string theme = ca.SelectTheme(am.ID);
+                        ChangeTheme.UpdateConfig("theme", theme);
+                        new UserForm(am).Show();
                     }
                 } else
                 {

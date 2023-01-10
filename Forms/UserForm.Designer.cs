@@ -29,74 +29,102 @@ namespace PLFootballSystem.Forms
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserForm));
             this.btnTable = new System.Windows.Forms.Button();
             this.btnLogout = new System.Windows.Forms.Button();
             this.btnSettings = new System.Windows.Forms.Button();
             this.btnFootballClub = new System.Windows.Forms.Button();
             this.btnMatch = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.lblWelcome = new System.Windows.Forms.Label();
+            this.lblUser = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnTable
             // 
-            this.btnTable.Location = new System.Drawing.Point(25, 78);
+            resources.ApplyResources(this.btnTable, "btnTable");
+            this.btnTable.FlatAppearance.BorderSize = 0;
             this.btnTable.Name = "btnTable";
-            this.btnTable.Size = new System.Drawing.Size(75, 23);
-            this.btnTable.TabIndex = 0;
-            this.btnTable.Text = "Table";
             this.btnTable.UseVisualStyleBackColor = true;
             this.btnTable.Click += new System.EventHandler(this.btnTable_Click);
             // 
             // btnLogout
             // 
-            this.btnLogout.Location = new System.Drawing.Point(502, 342);
+            resources.ApplyResources(this.btnLogout, "btnLogout");
+            this.btnLogout.FlatAppearance.BorderSize = 0;
             this.btnLogout.Name = "btnLogout";
-            this.btnLogout.Size = new System.Drawing.Size(75, 23);
-            this.btnLogout.TabIndex = 1;
-            this.btnLogout.Text = "Logout";
             this.btnLogout.UseVisualStyleBackColor = true;
+            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
             // 
             // btnSettings
             // 
-            this.btnSettings.Location = new System.Drawing.Point(421, 342);
+            resources.ApplyResources(this.btnSettings, "btnSettings");
+            this.btnSettings.FlatAppearance.BorderSize = 0;
             this.btnSettings.Name = "btnSettings";
-            this.btnSettings.Size = new System.Drawing.Size(75, 23);
-            this.btnSettings.TabIndex = 2;
-            this.btnSettings.Text = "Settings";
             this.btnSettings.UseVisualStyleBackColor = true;
+            this.btnSettings.Click += new System.EventHandler(this.btnSettings_Click);
             // 
             // btnFootballClub
             // 
-            this.btnFootballClub.Location = new System.Drawing.Point(107, 78);
+            resources.ApplyResources(this.btnFootballClub, "btnFootballClub");
+            this.btnFootballClub.FlatAppearance.BorderSize = 0;
             this.btnFootballClub.Name = "btnFootballClub";
-            this.btnFootballClub.Size = new System.Drawing.Size(83, 23);
-            this.btnFootballClub.TabIndex = 3;
-            this.btnFootballClub.Text = "Football club";
             this.btnFootballClub.UseVisualStyleBackColor = true;
             this.btnFootballClub.Click += new System.EventHandler(this.btnFootballClub_Click);
             // 
             // btnMatch
             // 
-            this.btnMatch.Location = new System.Drawing.Point(197, 78);
+            resources.ApplyResources(this.btnMatch, "btnMatch");
+            this.btnMatch.FlatAppearance.BorderSize = 0;
             this.btnMatch.Name = "btnMatch";
-            this.btnMatch.Size = new System.Drawing.Size(75, 23);
-            this.btnMatch.TabIndex = 4;
-            this.btnMatch.Text = "Match";
             this.btnMatch.UseVisualStyleBackColor = true;
             this.btnMatch.Click += new System.EventHandler(this.btnMatch_Click);
             // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.btnFootballClub);
+            this.panel1.Controls.Add(this.btnLogout);
+            this.panel1.Controls.Add(this.btnSettings);
+            this.panel1.Controls.Add(this.btnMatch);
+            this.panel1.Controls.Add(this.btnTable);
+            resources.ApplyResources(this.panel1, "panel1");
+            this.panel1.Name = "panel1";
+            // 
+            // lblWelcome
+            // 
+            resources.ApplyResources(this.lblWelcome, "lblWelcome");
+            this.lblWelcome.Name = "lblWelcome";
+            // 
+            // lblUser
+            // 
+            resources.ApplyResources(this.lblUser, "lblUser");
+            this.lblUser.Name = "lblUser";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::PLFootballSystem.Properties.Resources.logo;
+            resources.ApplyResources(this.pictureBox1, "pictureBox1");
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.TabStop = false;
+            // 
             // UserForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(589, 377);
-            this.Controls.Add(this.btnMatch);
-            this.Controls.Add(this.btnFootballClub);
-            this.Controls.Add(this.btnSettings);
-            this.Controls.Add(this.btnLogout);
-            this.Controls.Add(this.btnTable);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.lblUser);
+            this.Controls.Add(this.lblWelcome);
+            this.Controls.Add(this.panel1);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "UserForm";
-            this.Text = "UserForm";
+            this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -107,5 +135,9 @@ namespace PLFootballSystem.Forms
         private System.Windows.Forms.Button btnSettings;
         private System.Windows.Forms.Button btnFootballClub;
         private System.Windows.Forms.Button btnMatch;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label lblWelcome;
+        private System.Windows.Forms.Label lblUser;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

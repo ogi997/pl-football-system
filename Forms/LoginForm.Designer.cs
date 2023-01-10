@@ -48,18 +48,19 @@ namespace PLFootballSystem
             // 
             // label1
             // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(81, 165);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(96, 151);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(106, 33);
+            this.label1.Size = new System.Drawing.Size(111, 33);
             this.label1.TabIndex = 1;
             this.label1.Text = "LOGIN";
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.panel1.Location = new System.Drawing.Point(80, 257);
+            this.panel1.Location = new System.Drawing.Point(69, 257);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(185, 1);
             this.panel1.TabIndex = 3;
@@ -69,16 +70,15 @@ namespace PLFootballSystem
             this.txtUsername.BackColor = System.Drawing.SystemColors.Control;
             this.txtUsername.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUsername.Location = new System.Drawing.Point(80, 231);
-            this.txtUsername.Multiline = true;
+            this.txtUsername.Location = new System.Drawing.Point(68, 231);
             this.txtUsername.Name = "txtUsername";
-            this.txtUsername.Size = new System.Drawing.Size(185, 25);
+            this.txtUsername.Size = new System.Drawing.Size(185, 24);
             this.txtUsername.TabIndex = 4;
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.panel2.Location = new System.Drawing.Point(80, 305);
+            this.panel2.Location = new System.Drawing.Point(69, 305);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(185, 1);
             this.panel2.TabIndex = 6;
@@ -88,17 +88,19 @@ namespace PLFootballSystem
             this.txtPassword.BackColor = System.Drawing.SystemColors.Control;
             this.txtPassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPassword.Location = new System.Drawing.Point(80, 279);
-            this.txtPassword.Multiline = true;
+            this.txtPassword.Location = new System.Drawing.Point(68, 279);
             this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(185, 25);
+            this.txtPassword.PasswordChar = '*';
+            this.txtPassword.Size = new System.Drawing.Size(185, 24);
             this.txtPassword.TabIndex = 7;
             // 
             // btnLogin
             // 
-            this.btnLogin.Location = new System.Drawing.Point(51, 376);
+            this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogin.Location = new System.Drawing.Point(39, 363);
             this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(214, 25);
+            this.btnLogin.Size = new System.Drawing.Size(226, 38);
             this.btnLogin.TabIndex = 9;
             this.btnLogin.Text = "LOGIN";
             this.btnLogin.UseVisualStyleBackColor = true;
@@ -108,7 +110,7 @@ namespace PLFootballSystem
             // 
             this.lblClearFields.AutoSize = true;
             this.lblClearFields.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lblClearFields.Location = new System.Drawing.Point(211, 313);
+            this.lblClearFields.Location = new System.Drawing.Point(199, 313);
             this.lblClearFields.Name = "lblClearFields";
             this.lblClearFields.Size = new System.Drawing.Size(61, 13);
             this.lblClearFields.TabIndex = 10;
@@ -123,7 +125,7 @@ namespace PLFootballSystem
             this.btnShowPassword.FlatAppearance.BorderSize = 0;
             this.btnShowPassword.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnShowPassword.ForeColor = System.Drawing.Color.Transparent;
-            this.btnShowPassword.Location = new System.Drawing.Point(272, 279);
+            this.btnShowPassword.Location = new System.Drawing.Point(271, 279);
             this.btnShowPassword.Name = "btnShowPassword";
             this.btnShowPassword.Size = new System.Drawing.Size(20, 25);
             this.btnShowPassword.TabIndex = 8;
@@ -133,7 +135,7 @@ namespace PLFootballSystem
             // pictureBox3
             // 
             this.pictureBox3.Image = global::PLFootballSystem.Properties.Resources._lock;
-            this.pictureBox3.Location = new System.Drawing.Point(51, 281);
+            this.pictureBox3.Location = new System.Drawing.Point(39, 281);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(25, 25);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -143,7 +145,7 @@ namespace PLFootballSystem
             // pictureBox2
             // 
             this.pictureBox2.Image = global::PLFootballSystem.Properties.Resources.user;
-            this.pictureBox2.Location = new System.Drawing.Point(51, 233);
+            this.pictureBox2.Location = new System.Drawing.Point(39, 233);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(25, 25);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -152,19 +154,23 @@ namespace PLFootballSystem
             // 
             // pictureBox1
             // 
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Top;
             this.pictureBox1.Image = global::PLFootballSystem.Properties.Resources.logo;
-            this.pictureBox1.Location = new System.Drawing.Point(33, -4);
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(223, 166);
+            this.pictureBox1.Size = new System.Drawing.Size(302, 200);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
             // LoginForm
             // 
+            this.AcceptButton = this.btnLogin;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(302, 447);
+            this.ClientSize = new System.Drawing.Size(302, 418);
             this.Controls.Add(this.lblClearFields);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.btnShowPassword);

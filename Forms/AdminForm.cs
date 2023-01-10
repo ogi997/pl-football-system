@@ -17,15 +17,21 @@ using PLFootballSystem.Forms.PlayerForm;
 using PLFootballSystem.Forms.FootballClubForm;
 using PLFootballSystem.Forms.FCToSeason;
 using PLFootballSystem.Forms.MatchForm;
+using PLFootballSystem.Util;
+using PLFootballSystem.Util.Theme;
+using PLFootballSystem.Controller;
 
 namespace PLFootballSystem.Forms
 {
     public partial class AdminForm : Form
     {
+        ControllerAccount ca = new ControllerAccount();
+        public AccountModel acc = new AccountModel();
         public AdminForm()
         {
             InitializeComponent();
             CustomizeDesign();
+            SetTheme();
         }
 
         public AdminForm(AccountModel am)
@@ -33,14 +39,90 @@ namespace PLFootballSystem.Forms
             InitializeComponent();
             CustomizeDesign();
             lblUser.Text = am.Username;
+            lblPath.Text = "en".Equals(ChangeLanguage.GetLanguage()) ? "Home" : "Почетна";
+            acc = am;
+
+            SetTheme();
+
         }
+
+        private void SetTheme()
+        {
+            if ("light".Equals(ca.SelectTheme(acc.ID)))
+            {
+                ChangeThemee(Theme.GetLight()[ThemeColor.Primary], Theme.GetLight()[ThemeColor.Secondary], Theme.GetLight()[ThemeColor.Tertiary]);
+                ChangeTextColor(Theme.GetLight()[ThemeColor.Text]);
+            }
+            else if ("dark".Equals(ca.SelectTheme(acc.ID)))
+            {
+                ChangeThemee(Theme.GetDark()[ThemeColor.Primary], Theme.GetDark()[ThemeColor.Secondary], Theme.GetDark()[ThemeColor.Tertiary]);
+                ChangeTextColor(Theme.GetDark()[ThemeColor.Text]);
+            } else if ("nature".Equals(ca.SelectTheme(acc.ID)))
+            {
+                ChangeThemee(Theme.GetNature()[ThemeColor.Primary], Theme.GetNature()[ThemeColor.Secondary], Theme.GetNature()[ThemeColor.Tertiary]);
+                ChangeTextColor(Theme.GetNature()[ThemeColor.Text]);
+            }
+        }
+
+
+        private void ChangeThemee(Color primaryColor, Color secondaryColor, Color tertiaryColor)
+        {
+            btnAccount.BackColor = primaryColor;
+            
+            btnPL.BackColor = primaryColor;
+            btnNewFC.BackColor = secondaryColor;
+            btnPlayer.BackColor = secondaryColor;
+            btnNewMatch.BackColor = secondaryColor;
+            btnClubToSeason.BackColor = secondaryColor;
+
+            btnOther.BackColor = primaryColor;
+            btnCountry.BackColor = secondaryColor;
+            btnPosition.BackColor = secondaryColor;
+            btnCity.BackColor = secondaryColor;
+            btnSeason.BackColor = secondaryColor;
+
+            btnSettings.BackColor = secondaryColor;
+            btnLogout.BackColor = secondaryColor;
+
+            panelSideMenu.BackColor = tertiaryColor;
+            panelTopBar.BackColor = tertiaryColor;
+            panelMain.BackColor = secondaryColor;
+
+            panelSubMenuUser.BackColor = secondaryColor;
+
+        }
+
+        private void ChangeTextColor(Color textColor)
+        {
+            btnAccount.ForeColor = textColor;
+
+            btnPL.ForeColor = textColor;
+            btnNewFC.ForeColor = textColor;
+            btnPlayer.ForeColor = textColor;
+            btnNewMatch.ForeColor = textColor;
+            btnClubToSeason.ForeColor = textColor;
+
+            btnOther.ForeColor = textColor;
+            btnCountry.ForeColor = textColor;
+            btnPosition.ForeColor = textColor;
+            btnCity.ForeColor = textColor;
+            btnSeason.ForeColor = textColor;
+
+            btnSettings.ForeColor = textColor;
+            btnLogout.ForeColor = textColor;
+
+            lblPath.ForeColor = textColor;
+            lblUser.ForeColor = textColor;
+
+        }
+
+
         public void SetLblPath(string path)
         {
             lblPath.Text = path;
         }
         private void CustomizeDesign()
         {
-            panelSubMenuAccount.Visible = false;
             panelSubMenuUser.Visible = false;
             panelSubMenuPL.Visible = false;
             panelSubMenuOther.Visible = false;
@@ -48,8 +130,6 @@ namespace PLFootballSystem.Forms
 
         private void HideSubMenu()
         {
-            if (panelSubMenuAccount.Visible == true)
-                panelSubMenuAccount.Visible = false;
 
             if (panelSubMenuUser.Visible == true)
                 panelSubMenuUser.Visible = false;
@@ -66,7 +146,6 @@ namespace PLFootballSystem.Forms
         {
             if (SubMenu.Visible == false)
             {
-                //prvo zatvori sve ostale submenus pa otvori odgovarajuci
                 HideSubMenu();
                 SubMenu.Visible = true;
             } else
@@ -77,23 +156,9 @@ namespace PLFootballSystem.Forms
 
         private void btnAccount_Click(object sender, EventArgs e)
         {
-            ShowSubMenu(panelSubMenuAccount);
-        }
-
-        private void btnAllAccount_Click(object sender, EventArgs e)
-        {
             OpenNewFormInPanelMain(new AllAccountForm());
-            HideSubMenu();
-            lblPath.Text = "Account / All accounts";
+            lblPath.Text = "en".Equals(ChangeLanguage.GetLanguage()) ? "Account / All accounts" : "Налози / Сви налози";
         }
-
-        private void btnAddNewAccount_Click(object sender, EventArgs e)
-        {
-            OpenNewFormInPanelMain(new AddNewAccountForm());
-            HideSubMenu();
-            lblPath.Text = "Account / Add new account";
-        }
-
 
         private void btnPL_Click(object sender, EventArgs e)
         {
@@ -126,18 +191,27 @@ namespace PLFootballSystem.Forms
         private void btnLogout_Click(object sender, EventArgs e)
         {
             HideSubMenu();
-            DialogResult result = MessageBox.Show("Do you want to logout?", "Logout", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            
+            DialogResult result = MessageBox.Show("en".Equals(ChangeLanguage.GetLanguage()) ? "Do you want to logout?" : "Да ли желите да се одјавите?", "en".Equals(ChangeLanguage.GetLanguage()) ? "Logout" : "Одјава", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (result.Equals(DialogResult.Yes))
             {
                 this.Close();
                 new LoginForm().Show();
+                
             }
         }
 
         private void btnSettings_Click(object sender, EventArgs e)
         {
             HideSubMenu();
-            new SettingsForm().ShowDialog();
+            new SettingsForm(acc).ShowDialog();
+
+            this.Controls.Clear();
+            this.InitializeComponent();
+            CustomizeDesign();
+            lblUser.Text = acc.Username;
+            lblPath.Text = "en".Equals(ChangeLanguage.GetLanguage()) ? "Home" : "Почетна";
+            SetTheme();
         }
 
         private void btnOther_Click(object sender, EventArgs e)
@@ -149,57 +223,56 @@ namespace PLFootballSystem.Forms
         {
             OpenNewFormInPanelMain(new AddNewCountry());
             HideSubMenu();
-            lblPath.Text = "Premier League / Add new country";
+            lblPath.Text = "en".Equals(ChangeLanguage.GetLanguage()) ? "Premier League / Add new country" : "Премијер лига / Додај нову државу";
         }
 
         private void btnCity_Click(object sender, EventArgs e)
         {
-            //OpenNewFormInPanelMain(new CityForm());
             OpenNewFormInPanelMain(new AddNewCityForm());
             HideSubMenu();
-            lblPath.Text = "Premier League / Add new city";
+            lblPath.Text = "en".Equals(ChangeLanguage.GetLanguage()) ? "Premier League / Add new city" : "Премијер лига / Додај нови град"; ;
         }
 
         private void btnPosition_Click(object sender, EventArgs e)
         {
             OpenNewFormInPanelMain(new AddNewPlayerPosition());
             HideSubMenu();
-            lblPath.Text = "Premier League / Add new player position";
+            lblPath.Text = "en".Equals(ChangeLanguage.GetLanguage()) ? "Premier League / Add new player position" : "Премијер лига / Додај нову позицију играча";
         }
 
         private void btnSeason_Click(object sender, EventArgs e)
         {
             OpenNewFormInPanelMain(new AddNewSeasonForm());
             HideSubMenu();
-            lblPath.Text = "Premier League / Add new season";
+            lblPath.Text = "en".Equals(ChangeLanguage.GetLanguage()) ? "Premier League / Add new season" : "Премијер лига / Додај нову сезону";
         }
 
         private void btnPlayer_Click(object sender, EventArgs e)
         {
-            OpenNewFormInPanelMain(new ViewPlayerForm());
+            OpenNewFormInPanelMain(new AllPlayerForm());
             HideSubMenu();
-            lblPath.Text = "Premier League / Player";
+            lblPath.Text = "en".Equals(ChangeLanguage.GetLanguage()) ? "Premier League / Player" : "Премијер лига / Играчи" ;
         }
 
         private void btnNewFC_Click(object sender, EventArgs e)
         {
-            OpenNewFormInPanelMain(new ViewFootballClubForm());
+            OpenNewFormInPanelMain(new AllFootballClubForm());
             HideSubMenu();
-            lblPath.Text = "Premier League / Football club";
+            lblPath.Text = "en".Equals(ChangeLanguage.GetLanguage()) ? "Premier League / Football club" : "Премијер лига / Фудбалски клубови";
         }
 
         private void btnClubToSeason_Click(object sender, EventArgs e)
         {
             OpenNewFormInPanelMain(new AddFcToSeason());
             HideSubMenu();
-            lblPath.Text = "Premier League / Add football club to season";
+            lblPath.Text = "en".Equals(ChangeLanguage.GetLanguage()) ? "Premier League / Add football club to season" : "Премијер лига / Додај клуб на табелу" ;
         }
 
         private void btnNewMatch_Click(object sender, EventArgs e)
         {
             OpenNewFormInPanelMain(new AddNewMatch());
             HideSubMenu();
-            lblPath.Text = "Premier League / Add new match";
+            lblPath.Text = "en".Equals(ChangeLanguage.GetLanguage()) ? "Premier League / Add new match" : "Премијер лига / Додај нову утакмицу";
         }
     }
 }
