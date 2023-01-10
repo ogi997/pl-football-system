@@ -1,5 +1,7 @@
 ﻿using PLFootballSystem.Controller;
 using PLFootballSystem.Model;
+using PLFootballSystem.Util;
+using PLFootballSystem.Util.Theme;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -20,6 +22,48 @@ namespace PLFootballSystem.Forms.PlayerForm
         {
             InitializeComponent();
             GetData();
+            SetTheme();
+        }
+
+        private void SetTheme()
+        {
+            if ("light".Equals(ChangeTheme.GetTheme()))
+            {
+                ChangeThemee(Theme.GetLight()[ThemeColor.Primary], Theme.GetLight()[ThemeColor.Secondary], Theme.GetLight()[ThemeColor.Tertiary]);
+                ChangeTextColor(Theme.GetLight()[ThemeColor.Text]);
+            }
+            else if ("dark".Equals(ChangeTheme.GetTheme()))
+            {
+                ChangeThemee(Theme.GetDark()[ThemeColor.Primary], Theme.GetDark()[ThemeColor.Secondary], Theme.GetDark()[ThemeColor.Tertiary]);
+                ChangeTextColor(Theme.GetDark()[ThemeColor.Text]);
+            }
+            else if ("nature".Equals(ChangeTheme.GetTheme()))
+            {
+                ChangeThemee(Theme.GetNature()[ThemeColor.Primary], Theme.GetNature()[ThemeColor.Secondary], Theme.GetNature()[ThemeColor.Tertiary]);
+                ChangeTextColor(Theme.GetNature()[ThemeColor.Text]);
+            }
+        }
+
+        private void ChangeThemee(Color primaryColor, Color secondaryColor, Color tertiaryColor)
+        {
+            btnActive.BackColor = primaryColor;
+            btnAddPlayer.BackColor = primaryColor;
+            btnClose.BackColor = primaryColor;
+            btnDelete.BackColor = primaryColor;
+            btnUpdate.BackColor = primaryColor;
+
+            this.BackColor = secondaryColor;
+        }
+
+        private void ChangeTextColor(Color textColor)
+        {
+            btnClose.ForeColor = textColor;
+            btnActive.ForeColor = textColor;
+            btnAddPlayer.ForeColor = textColor;
+            btnDelete.ForeColor = textColor;
+            btnUpdate.ForeColor = textColor;
+
+            lblSearch.ForeColor = textColor;
         }
 
         private void GetData()
@@ -33,7 +77,7 @@ namespace PLFootballSystem.Forms.PlayerForm
                 lvi.Tag = pl.ID;
                 lvi.Text = pl.Name;
                 lvi.SubItems.Add(pl.Position.Description);
-                lvi.SubItems.Add(pl.Status == 1 ? "Active" : "Suspended");
+                lvi.SubItems.Add(pl.Status == 1 ? "en".Equals(ChangeLanguage.GetLanguage()) ? "Active" : "Активан" : "en".Equals(ChangeLanguage.GetLanguage()) ? "Suspended" : "Блокиран");
                 array.Add(lvi);
             }
 
@@ -52,7 +96,7 @@ namespace PLFootballSystem.Forms.PlayerForm
                     lvi.Tag = listPL.ElementAt(i).ID;
                     lvi.Text = listPL.ElementAt(i).Name;
                     lvi.SubItems.Add(listPL.ElementAt(i).Position.Description);
-                    lvi.SubItems.Add(listPL.ElementAt(i).Status == 1 ? "Active" : "Suspended");
+                    lvi.SubItems.Add(listPL.ElementAt(i).Status == 1 ? "en".Equals(ChangeLanguage.GetLanguage()) ? "Active" : "Активан" : "en".Equals(ChangeLanguage.GetLanguage()) ? "Suspended" : "Блокиран");
                     a.Add(lvi);
                 }
             }
@@ -63,18 +107,19 @@ namespace PLFootballSystem.Forms.PlayerForm
         {
             if (lvAllPlayers.SelectedItems.Count <= 0 || lvAllPlayers.SelectedItems.Count > 1)
             {
-                MessageBox.Show("Please select one player.");
+                MessageBox.Show("en".Equals(ChangeLanguage.GetLanguage()) ? "Please select one player." : "Изаберите једног играча.");
                 return;
             }
             var ID = lvAllPlayers.SelectedItems[0].Tag;
             var result = cp.FindStatusById((int)ID);
             if (result == (delete ? 0 : 1))
             {
-                MessageBox.Show($"User already {(delete ? "deleted." : "active.")}");
+                MessageBox.Show("en".Equals(ChangeLanguage.GetLanguage()) ? $"User already {(delete ? "blocked." : "active.")}" : $"Корисник је већ {(delete ? "блокиран." : "активан.")}");
                 return;
             }
 
             cp.UpdateStatusByID(delete ? 0 : 1, (int)lvAllPlayers.SelectedItems[0].Tag);
+            MessageBox.Show("en".Equals(ChangeLanguage.GetLanguage()) ? "Successfully updated." : "Успјешно ажурирано.");
             RefreshListView();
         }
         private void RefreshListView()
@@ -105,6 +150,32 @@ namespace PLFootballSystem.Forms.PlayerForm
         {
             DeleteOrActivate(true);
             searchBox_TextChanged(sender, e);
+        }
+
+        private void btnAddPlayer_Click(object sender, EventArgs e)
+        {
+            new AddUpdatePlayer().ShowDialog();
+        }
+
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+
+            if (lvAllPlayers.SelectedItems.Count <= 0 || lvAllPlayers.SelectedItems.Count > 1)
+            {
+                MessageBox.Show("en".Equals(ChangeLanguage.GetLanguage()) ? "Please select only one player." : "Изаберите једног играча.");
+                return;
+            }
+
+            PlayerModel player = cp.FindByPlayerId((int)lvAllPlayers.SelectedItems[0].Tag);
+
+            if (player != null)
+            {
+                new AddUpdatePlayer(player).ShowDialog();
+
+                RefreshListView();
+            }
+
+
         }
     }
 }

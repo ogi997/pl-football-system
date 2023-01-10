@@ -29,6 +29,7 @@ namespace PLFootballSystem.Forms.MatchForm
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddNewMatch));
             this.lblHomeFC = new System.Windows.Forms.Label();
             this.cbHomeFC = new System.Windows.Forms.ComboBox();
             this.lblAwayFC = new System.Windows.Forms.Label();
@@ -42,124 +43,118 @@ namespace PLFootballSystem.Forms.MatchForm
             this.lblGoalsAway = new System.Windows.Forms.Label();
             this.numGoalsAway = new System.Windows.Forms.NumericUpDown();
             this.btnAddFirstTeam = new System.Windows.Forms.Button();
+            this.lblFormationHome = new System.Windows.Forms.Label();
+            this.cbHomeFormation = new System.Windows.Forms.ComboBox();
+            this.lblAwayFormation = new System.Windows.Forms.Label();
+            this.cbAwayFormation = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.numGoalsHome)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numGoalsAway)).BeginInit();
             this.SuspendLayout();
             // 
             // lblHomeFC
             // 
-            this.lblHomeFC.AutoSize = true;
-            this.lblHomeFC.Location = new System.Drawing.Point(13, 13);
+            resources.ApplyResources(this.lblHomeFC, "lblHomeFC");
             this.lblHomeFC.Name = "lblHomeFC";
-            this.lblHomeFC.Size = new System.Drawing.Size(98, 13);
-            this.lblHomeFC.TabIndex = 0;
-            this.lblHomeFC.Text = "Home Football club";
             // 
             // cbHomeFC
             // 
+            resources.ApplyResources(this.cbHomeFC, "cbHomeFC");
             this.cbHomeFC.FormattingEnabled = true;
-            this.cbHomeFC.Location = new System.Drawing.Point(16, 30);
             this.cbHomeFC.Name = "cbHomeFC";
-            this.cbHomeFC.Size = new System.Drawing.Size(121, 21);
-            this.cbHomeFC.TabIndex = 1;
             // 
             // lblAwayFC
             // 
-            this.lblAwayFC.AutoSize = true;
-            this.lblAwayFC.Location = new System.Drawing.Point(13, 54);
+            resources.ApplyResources(this.lblAwayFC, "lblAwayFC");
             this.lblAwayFC.Name = "lblAwayFC";
-            this.lblAwayFC.Size = new System.Drawing.Size(96, 13);
-            this.lblAwayFC.TabIndex = 2;
-            this.lblAwayFC.Text = "Away Football club";
             // 
             // cbAwayFC
             // 
+            resources.ApplyResources(this.cbAwayFC, "cbAwayFC");
             this.cbAwayFC.FormattingEnabled = true;
-            this.cbAwayFC.Location = new System.Drawing.Point(16, 70);
             this.cbAwayFC.Name = "cbAwayFC";
-            this.cbAwayFC.Size = new System.Drawing.Size(121, 21);
-            this.cbAwayFC.TabIndex = 3;
             // 
             // lblSeason
             // 
-            this.lblSeason.AutoSize = true;
-            this.lblSeason.Location = new System.Drawing.Point(13, 94);
+            resources.ApplyResources(this.lblSeason, "lblSeason");
             this.lblSeason.Name = "lblSeason";
-            this.lblSeason.Size = new System.Drawing.Size(43, 13);
-            this.lblSeason.TabIndex = 4;
-            this.lblSeason.Text = "Season";
             // 
             // cbSeason
             // 
+            resources.ApplyResources(this.cbSeason, "cbSeason");
             this.cbSeason.FormattingEnabled = true;
-            this.cbSeason.Location = new System.Drawing.Point(16, 110);
             this.cbSeason.Name = "cbSeason";
-            this.cbSeason.Size = new System.Drawing.Size(121, 21);
-            this.cbSeason.TabIndex = 5;
             // 
             // lblDate
             // 
-            this.lblDate.AutoSize = true;
-            this.lblDate.Location = new System.Drawing.Point(13, 134);
+            resources.ApplyResources(this.lblDate, "lblDate");
             this.lblDate.Name = "lblDate";
-            this.lblDate.Size = new System.Drawing.Size(30, 13);
-            this.lblDate.TabIndex = 6;
-            this.lblDate.Text = "Date";
             // 
             // dtDate
             // 
-            this.dtDate.Location = new System.Drawing.Point(16, 151);
+            resources.ApplyResources(this.dtDate, "dtDate");
             this.dtDate.Name = "dtDate";
-            this.dtDate.Size = new System.Drawing.Size(200, 20);
-            this.dtDate.TabIndex = 7;
             // 
             // lblGoalsHome
             // 
-            this.lblGoalsHome.AutoSize = true;
-            this.lblGoalsHome.Location = new System.Drawing.Point(13, 174);
+            resources.ApplyResources(this.lblGoalsHome, "lblGoalsHome");
             this.lblGoalsHome.Name = "lblGoalsHome";
-            this.lblGoalsHome.Size = new System.Drawing.Size(96, 13);
-            this.lblGoalsHome.TabIndex = 8;
-            this.lblGoalsHome.Text = "Goals for Home FC";
             // 
             // numGoalsHome
             // 
-            this.numGoalsHome.Location = new System.Drawing.Point(17, 190);
+            resources.ApplyResources(this.numGoalsHome, "numGoalsHome");
             this.numGoalsHome.Name = "numGoalsHome";
-            this.numGoalsHome.Size = new System.Drawing.Size(120, 20);
-            this.numGoalsHome.TabIndex = 9;
             // 
             // lblGoalsAway
             // 
-            this.lblGoalsAway.AutoSize = true;
-            this.lblGoalsAway.Location = new System.Drawing.Point(15, 213);
+            resources.ApplyResources(this.lblGoalsAway, "lblGoalsAway");
             this.lblGoalsAway.Name = "lblGoalsAway";
-            this.lblGoalsAway.Size = new System.Drawing.Size(94, 13);
-            this.lblGoalsAway.TabIndex = 10;
-            this.lblGoalsAway.Text = "Goals for Away FC";
             // 
             // numGoalsAway
             // 
-            this.numGoalsAway.Location = new System.Drawing.Point(18, 229);
+            resources.ApplyResources(this.numGoalsAway, "numGoalsAway");
             this.numGoalsAway.Name = "numGoalsAway";
-            this.numGoalsAway.Size = new System.Drawing.Size(120, 20);
-            this.numGoalsAway.TabIndex = 11;
             // 
             // btnAddFirstTeam
             // 
-            this.btnAddFirstTeam.Location = new System.Drawing.Point(186, 229);
+            resources.ApplyResources(this.btnAddFirstTeam, "btnAddFirstTeam");
+            this.btnAddFirstTeam.FlatAppearance.BorderSize = 0;
             this.btnAddFirstTeam.Name = "btnAddFirstTeam";
-            this.btnAddFirstTeam.Size = new System.Drawing.Size(100, 23);
-            this.btnAddFirstTeam.TabIndex = 12;
-            this.btnAddFirstTeam.Text = "Add first team";
             this.btnAddFirstTeam.UseVisualStyleBackColor = true;
             this.btnAddFirstTeam.Click += new System.EventHandler(this.btnAddFirstTeam_Click);
             // 
+            // lblFormationHome
+            // 
+            resources.ApplyResources(this.lblFormationHome, "lblFormationHome");
+            this.lblFormationHome.Name = "lblFormationHome";
+            // 
+            // cbHomeFormation
+            // 
+            resources.ApplyResources(this.cbHomeFormation, "cbHomeFormation");
+            this.cbHomeFormation.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbHomeFormation.FormattingEnabled = true;
+            this.cbHomeFormation.Name = "cbHomeFormation";
+            // 
+            // lblAwayFormation
+            // 
+            resources.ApplyResources(this.lblAwayFormation, "lblAwayFormation");
+            this.lblAwayFormation.Name = "lblAwayFormation";
+            // 
+            // cbAwayFormation
+            // 
+            resources.ApplyResources(this.cbAwayFormation, "cbAwayFormation");
+            this.cbAwayFormation.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbAwayFormation.FormattingEnabled = true;
+            this.cbAwayFormation.Name = "cbAwayFormation";
+            // 
             // AddNewMatch
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AcceptButton = this.btnAddFirstTeam;
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(369, 285);
+            this.Controls.Add(this.cbAwayFormation);
+            this.Controls.Add(this.lblAwayFormation);
+            this.Controls.Add(this.cbHomeFormation);
+            this.Controls.Add(this.lblFormationHome);
             this.Controls.Add(this.btnAddFirstTeam);
             this.Controls.Add(this.numGoalsAway);
             this.Controls.Add(this.lblGoalsAway);
@@ -173,8 +168,10 @@ namespace PLFootballSystem.Forms.MatchForm
             this.Controls.Add(this.lblAwayFC);
             this.Controls.Add(this.cbHomeFC);
             this.Controls.Add(this.lblHomeFC);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "AddNewMatch";
-            this.Text = "AddNewMatch";
             ((System.ComponentModel.ISupportInitialize)(this.numGoalsHome)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numGoalsAway)).EndInit();
             this.ResumeLayout(false);
@@ -197,5 +194,9 @@ namespace PLFootballSystem.Forms.MatchForm
         private System.Windows.Forms.Label lblGoalsAway;
         private System.Windows.Forms.NumericUpDown numGoalsAway;
         private System.Windows.Forms.Button btnAddFirstTeam;
+        private System.Windows.Forms.Label lblFormationHome;
+        private System.Windows.Forms.ComboBox cbHomeFormation;
+        private System.Windows.Forms.Label lblAwayFormation;
+        private System.Windows.Forms.ComboBox cbAwayFormation;
     }
 }

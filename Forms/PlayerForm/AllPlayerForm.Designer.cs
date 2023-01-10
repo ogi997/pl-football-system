@@ -29,99 +29,102 @@ namespace PLFootballSystem.Forms.PlayerForm
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AllPlayerForm));
             this.lblSearch = new System.Windows.Forms.Label();
             this.tbSearchBox = new System.Windows.Forms.TextBox();
             this.lvAllPlayers = new System.Windows.Forms.ListView();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
-            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.btnActive = new System.Windows.Forms.Button();
+            this.btnAddPlayer = new System.Windows.Forms.Button();
+            this.btnUpdate = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblSearch
             // 
-            this.lblSearch.AutoSize = true;
-            this.lblSearch.Location = new System.Drawing.Point(13, 13);
+            resources.ApplyResources(this.lblSearch, "lblSearch");
             this.lblSearch.Name = "lblSearch";
-            this.lblSearch.Size = new System.Drawing.Size(115, 13);
-            this.lblSearch.TabIndex = 0;
-            this.lblSearch.Text = "Search player by name";
             // 
             // tbSearchBox
             // 
-            this.tbSearchBox.Location = new System.Drawing.Point(16, 30);
+            resources.ApplyResources(this.tbSearchBox, "tbSearchBox");
             this.tbSearchBox.Name = "tbSearchBox";
-            this.tbSearchBox.Size = new System.Drawing.Size(308, 20);
-            this.tbSearchBox.TabIndex = 1;
             this.tbSearchBox.TextChanged += new System.EventHandler(this.searchBox_TextChanged);
             // 
             // lvAllPlayers
             // 
+            resources.ApplyResources(this.lvAllPlayers, "lvAllPlayers");
             this.lvAllPlayers.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader1,
             this.columnHeader2,
             this.columnHeader3});
             this.lvAllPlayers.FullRowSelect = true;
             this.lvAllPlayers.HideSelection = false;
-            this.lvAllPlayers.Location = new System.Drawing.Point(16, 57);
             this.lvAllPlayers.Name = "lvAllPlayers";
-            this.lvAllPlayers.Size = new System.Drawing.Size(308, 203);
-            this.lvAllPlayers.TabIndex = 2;
             this.lvAllPlayers.UseCompatibleStateImageBehavior = false;
             this.lvAllPlayers.View = System.Windows.Forms.View.Details;
             // 
             // columnHeader1
             // 
-            this.columnHeader1.Text = "Name";
-            this.columnHeader1.Width = 113;
+            resources.ApplyResources(this.columnHeader1, "columnHeader1");
             // 
             // columnHeader2
             // 
-            this.columnHeader2.Text = "Position";
-            this.columnHeader2.Width = 115;
+            resources.ApplyResources(this.columnHeader2, "columnHeader2");
+            // 
+            // columnHeader3
+            // 
+            resources.ApplyResources(this.columnHeader3, "columnHeader3");
             // 
             // btnDelete
             // 
-            this.btnDelete.Location = new System.Drawing.Point(330, 93);
+            resources.ApplyResources(this.btnDelete, "btnDelete");
+            this.btnDelete.FlatAppearance.BorderSize = 0;
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(75, 23);
-            this.btnDelete.TabIndex = 3;
-            this.btnDelete.Text = "Delete";
             this.btnDelete.UseVisualStyleBackColor = true;
             this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click_1);
             // 
             // btnClose
             // 
-            this.btnClose.Location = new System.Drawing.Point(374, 237);
+            resources.ApplyResources(this.btnClose, "btnClose");
+            this.btnClose.FlatAppearance.BorderSize = 0;
             this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(75, 23);
-            this.btnClose.TabIndex = 4;
-            this.btnClose.Text = "Close";
             this.btnClose.UseVisualStyleBackColor = true;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
-            // columnHeader3
-            // 
-            this.columnHeader3.Text = "Status";
-            this.columnHeader3.Width = 76;
-            // 
             // btnActive
             // 
-            this.btnActive.Location = new System.Drawing.Point(331, 57);
+            resources.ApplyResources(this.btnActive, "btnActive");
+            this.btnActive.FlatAppearance.BorderSize = 0;
             this.btnActive.Name = "btnActive";
-            this.btnActive.Size = new System.Drawing.Size(75, 23);
-            this.btnActive.TabIndex = 5;
-            this.btnActive.Text = "Active";
             this.btnActive.UseVisualStyleBackColor = true;
             this.btnActive.Click += new System.EventHandler(this.btnActive_Click);
             // 
+            // btnAddPlayer
+            // 
+            resources.ApplyResources(this.btnAddPlayer, "btnAddPlayer");
+            this.btnAddPlayer.FlatAppearance.BorderSize = 0;
+            this.btnAddPlayer.Name = "btnAddPlayer";
+            this.btnAddPlayer.UseVisualStyleBackColor = true;
+            this.btnAddPlayer.Click += new System.EventHandler(this.btnAddPlayer_Click);
+            // 
+            // btnUpdate
+            // 
+            resources.ApplyResources(this.btnUpdate, "btnUpdate");
+            this.btnUpdate.FlatAppearance.BorderSize = 0;
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
+            // 
             // AllPlayerForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(461, 272);
+            this.Controls.Add(this.btnUpdate);
+            this.Controls.Add(this.btnAddPlayer);
             this.Controls.Add(this.btnActive);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.btnDelete);
@@ -130,7 +133,6 @@ namespace PLFootballSystem.Forms.PlayerForm
             this.Controls.Add(this.lblSearch);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "AllPlayerForm";
-            this.Text = "AllPlayerForm";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -147,5 +149,7 @@ namespace PLFootballSystem.Forms.PlayerForm
         private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.ColumnHeader columnHeader3;
         private System.Windows.Forms.Button btnActive;
+        private System.Windows.Forms.Button btnAddPlayer;
+        private System.Windows.Forms.Button btnUpdate;
     }
 }

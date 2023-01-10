@@ -29,6 +29,7 @@ namespace PLFootballSystem.Forms.MatchForm
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ShowAllMatchForm));
             this.btnClose = new System.Windows.Forms.Button();
             this.lvAllMatch = new System.Windows.Forms.ListView();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -40,11 +41,9 @@ namespace PLFootballSystem.Forms.MatchForm
             // 
             // btnClose
             // 
-            this.btnClose.Location = new System.Drawing.Point(423, 230);
+            this.btnClose.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.btnClose, "btnClose");
             this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(75, 23);
-            this.btnClose.TabIndex = 0;
-            this.btnClose.Text = "Close";
             this.btnClose.UseVisualStyleBackColor = true;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
@@ -57,53 +56,43 @@ namespace PLFootballSystem.Forms.MatchForm
             this.columnHeader4});
             this.lvAllMatch.FullRowSelect = true;
             this.lvAllMatch.HideSelection = false;
-            this.lvAllMatch.Location = new System.Drawing.Point(13, 13);
+            resources.ApplyResources(this.lvAllMatch, "lvAllMatch");
             this.lvAllMatch.Name = "lvAllMatch";
-            this.lvAllMatch.Size = new System.Drawing.Size(404, 240);
-            this.lvAllMatch.TabIndex = 1;
             this.lvAllMatch.UseCompatibleStateImageBehavior = false;
             this.lvAllMatch.View = System.Windows.Forms.View.Details;
             // 
             // columnHeader1
             // 
-            this.columnHeader1.Text = "Home";
-            this.columnHeader1.Width = 125;
+            resources.ApplyResources(this.columnHeader1, "columnHeader1");
             // 
             // columnHeader2
             // 
-            this.columnHeader2.Text = "Home goals";
-            this.columnHeader2.Width = 76;
+            resources.ApplyResources(this.columnHeader2, "columnHeader2");
             // 
             // columnHeader3
             // 
-            this.columnHeader3.Text = "Away goals";
-            this.columnHeader3.Width = 80;
+            resources.ApplyResources(this.columnHeader3, "columnHeader3");
             // 
             // columnHeader4
             // 
-            this.columnHeader4.Text = "Away";
-            this.columnHeader4.Width = 117;
+            resources.ApplyResources(this.columnHeader4, "columnHeader4");
             // 
             // btnOpenFirstTeam
             // 
-            this.btnOpenFirstTeam.Location = new System.Drawing.Point(424, 13);
+            this.btnOpenFirstTeam.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.btnOpenFirstTeam, "btnOpenFirstTeam");
             this.btnOpenFirstTeam.Name = "btnOpenFirstTeam";
-            this.btnOpenFirstTeam.Size = new System.Drawing.Size(75, 45);
-            this.btnOpenFirstTeam.TabIndex = 2;
-            this.btnOpenFirstTeam.Text = "Open First team";
             this.btnOpenFirstTeam.UseVisualStyleBackColor = true;
             this.btnOpenFirstTeam.Click += new System.EventHandler(this.btnOpenFirstTeam_Click);
             // 
             // ShowAllMatchForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(510, 265);
             this.Controls.Add(this.btnOpenFirstTeam);
             this.Controls.Add(this.lvAllMatch);
             this.Controls.Add(this.btnClose);
             this.Name = "ShowAllMatchForm";
-            this.Text = "ShowAllMatchForm";
             this.ResumeLayout(false);
 
         }

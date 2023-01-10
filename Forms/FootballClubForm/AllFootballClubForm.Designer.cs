@@ -29,6 +29,7 @@ namespace PLFootballSystem.Forms.FootballClubForm
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AllFootballClubForm));
             this.lvAllFootballClub = new System.Windows.Forms.ListView();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -36,74 +37,79 @@ namespace PLFootballSystem.Forms.FootballClubForm
             this.btnClose = new System.Windows.Forms.Button();
             this.lblSearch = new System.Windows.Forms.Label();
             this.tbSearchBox = new System.Windows.Forms.TextBox();
+            this.btnAdd = new System.Windows.Forms.Button();
+            this.btnUpdate = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lvAllFootballClub
             // 
+            resources.ApplyResources(this.lvAllFootballClub, "lvAllFootballClub");
             this.lvAllFootballClub.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader1,
             this.columnHeader2});
             this.lvAllFootballClub.FullRowSelect = true;
             this.lvAllFootballClub.HideSelection = false;
-            this.lvAllFootballClub.Location = new System.Drawing.Point(12, 55);
             this.lvAllFootballClub.Name = "lvAllFootballClub";
-            this.lvAllFootballClub.Size = new System.Drawing.Size(236, 191);
-            this.lvAllFootballClub.TabIndex = 0;
             this.lvAllFootballClub.UseCompatibleStateImageBehavior = false;
             this.lvAllFootballClub.View = System.Windows.Forms.View.Details;
             // 
             // columnHeader1
             // 
-            this.columnHeader1.Text = "Name";
-            this.columnHeader1.Width = 110;
+            resources.ApplyResources(this.columnHeader1, "columnHeader1");
             // 
             // columnHeader2
             // 
-            this.columnHeader2.Text = "City";
-            this.columnHeader2.Width = 122;
+            resources.ApplyResources(this.columnHeader2, "columnHeader2");
             // 
             // btnDelete
             // 
-            this.btnDelete.Location = new System.Drawing.Point(254, 55);
+            resources.ApplyResources(this.btnDelete, "btnDelete");
+            this.btnDelete.FlatAppearance.BorderSize = 0;
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(75, 23);
-            this.btnDelete.TabIndex = 1;
-            this.btnDelete.Text = "Delete";
             this.btnDelete.UseVisualStyleBackColor = true;
             this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnClose
             // 
-            this.btnClose.Location = new System.Drawing.Point(370, 223);
+            resources.ApplyResources(this.btnClose, "btnClose");
+            this.btnClose.FlatAppearance.BorderSize = 0;
             this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(75, 23);
-            this.btnClose.TabIndex = 2;
-            this.btnClose.Text = "Close";
             this.btnClose.UseVisualStyleBackColor = true;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // lblSearch
             // 
-            this.lblSearch.AutoSize = true;
-            this.lblSearch.Location = new System.Drawing.Point(13, 13);
+            resources.ApplyResources(this.lblSearch, "lblSearch");
             this.lblSearch.Name = "lblSearch";
-            this.lblSearch.Size = new System.Drawing.Size(144, 13);
-            this.lblSearch.TabIndex = 3;
-            this.lblSearch.Text = "Search football club by name";
             // 
             // tbSearchBox
             // 
-            this.tbSearchBox.Location = new System.Drawing.Point(12, 29);
+            resources.ApplyResources(this.tbSearchBox, "tbSearchBox");
             this.tbSearchBox.Name = "tbSearchBox";
-            this.tbSearchBox.Size = new System.Drawing.Size(236, 20);
-            this.tbSearchBox.TabIndex = 4;
             this.tbSearchBox.TextChanged += new System.EventHandler(this.searchBox_TextChanged);
+            // 
+            // btnAdd
+            // 
+            resources.ApplyResources(this.btnAdd, "btnAdd");
+            this.btnAdd.FlatAppearance.BorderSize = 0;
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
+            // 
+            // btnUpdate
+            // 
+            resources.ApplyResources(this.btnUpdate, "btnUpdate");
+            this.btnUpdate.FlatAppearance.BorderSize = 0;
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // AllFootballClubForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(457, 258);
+            this.Controls.Add(this.btnUpdate);
+            this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.tbSearchBox);
             this.Controls.Add(this.lblSearch);
             this.Controls.Add(this.btnClose);
@@ -111,8 +117,6 @@ namespace PLFootballSystem.Forms.FootballClubForm
             this.Controls.Add(this.lvAllFootballClub);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "AllFootballClubForm";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "AllFootballClubForm";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -127,5 +131,7 @@ namespace PLFootballSystem.Forms.FootballClubForm
         private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.Label lblSearch;
         private System.Windows.Forms.TextBox tbSearchBox;
+        private System.Windows.Forms.Button btnAdd;
+        private System.Windows.Forms.Button btnUpdate;
     }
 }

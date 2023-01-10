@@ -1,6 +1,8 @@
 ﻿using PLFootballSystem.Controller;
 using PLFootballSystem.Forms.FirstTeamForm;
 using PLFootballSystem.Model;
+using PLFootballSystem.Util;
+using PLFootballSystem.Util.Theme;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -25,12 +27,55 @@ namespace PLFootballSystem.Forms.MatchForm
         public ShowAllMatchForm()
         {
             InitializeComponent();
+            SetTheme();
         }
 
         public ShowAllMatchForm(int seasonId)
         {
             InitializeComponent();
             GetData(seasonId);
+            SetTheme();
+        }
+
+        private void SetTheme()
+        {
+            if ("light".Equals(ChangeTheme.GetTheme()))
+            {
+                ChangeThemee(Theme.GetLight()[ThemeColor.Primary], Theme.GetLight()[ThemeColor.Secondary], Theme.GetLight()[ThemeColor.Tertiary]);
+                ChangeTextColor(Theme.GetLight()[ThemeColor.Text]);
+            }
+            else if ("dark".Equals(ChangeTheme.GetTheme()))
+            {
+                ChangeThemee(Theme.GetDark()[ThemeColor.Primary], Theme.GetDark()[ThemeColor.Secondary], Theme.GetDark()[ThemeColor.Tertiary]);
+                ChangeTextColor(Theme.GetDark()[ThemeColor.Text]);
+            }
+            else if ("nature".Equals(ChangeTheme.GetTheme()))
+            {
+                ChangeThemee(Theme.GetNature()[ThemeColor.Primary], Theme.GetNature()[ThemeColor.Secondary], Theme.GetNature()[ThemeColor.Tertiary]);
+                ChangeTextColor(Theme.GetNature()[ThemeColor.Text]);
+            }
+        }
+
+        private void ChangeThemee(Color primaryColor, Color secondaryColor, Color tertiaryColor)
+        {
+            // Change background color of buttons
+            btnClose.BackColor = primaryColor;
+            btnOpenFirstTeam.BackColor = primaryColor;
+
+            this.BackColor = secondaryColor;
+        }
+
+        private void ChangeTextColor(Color textColor)
+        {
+            btnClose.ForeColor = textColor;
+            btnOpenFirstTeam.ForeColor = textColor;
+
+            
+            // Change color of text
+            //lblSearch.ForeColor = textColor;
+            //.ForeColor = textColor;
+            //lblRepeatPassword.ForeColor = textColor;
+            //lblPassword.ForeColor = textColor;
         }
 
         private void GetData(int seasonId)
@@ -61,7 +106,7 @@ namespace PLFootballSystem.Forms.MatchForm
         {
             if (lvAllMatch.SelectedItems.Count > 1 || lvAllMatch.SelectedItems.Count < 1)
             {
-                MessageBox.Show("Select only one match");
+                MessageBox.Show("en".Equals(ChangeLanguage.GetLanguage()) ? "Select only one match." : "Изаберите једну утакмицу.");
                 return;
             }
 
@@ -70,9 +115,12 @@ namespace PLFootballSystem.Forms.MatchForm
 
             MatchModel match = cm.FindMatchById(matchId);
             List<PlayerModel> playerHome = cft.FindMatchByIdAndClub(matchId, match.FCHome.ID);
-            List<PlayerModel> playerAway = cft.FindMatchByIdAndClub(matchId, match.FCAway.ID);
+            FormationModel formationHome = cft.FindFormation(matchId, match.FCHome.ID);
 
-            new ShowFirstTeamForm(playerHome, playerAway).ShowDialog();
+            List<PlayerModel> playerAway = cft.FindMatchByIdAndClub(matchId, match.FCAway.ID);
+            FormationModel formationAway = cft.FindFormation(matchId, match.FCAway.ID);
+
+            new ShowFirstTeamForm(playerHome, playerAway, formationHome, formationAway).ShowDialog();
         }
     }
 }

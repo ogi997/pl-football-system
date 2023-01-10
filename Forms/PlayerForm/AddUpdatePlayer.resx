@@ -117,80 +117,25 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="pbPlayerFace.Location" type="System.Drawing.Point, System.Drawing">
-    <value>13, 13</value>
-  </data>
-  <data name="pbPlayerFace.Size" type="System.Drawing.Size, System.Drawing">
-    <value>119, 107</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="pbPlayerFace.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>Zoom</value>
-  </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="pbPlayerFace.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="pbPlayerFace.WaitOnLoad" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;pbPlayerFace.Name" xml:space="preserve">
-    <value>pbPlayerFace</value>
-  </data>
-  <data name="&gt;&gt;pbPlayerFace.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pbPlayerFace.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;pbPlayerFace.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="pbCountryFlag.Location" type="System.Drawing.Point, System.Drawing">
-    <value>346, 13</value>
-  </data>
-  <data name="pbCountryFlag.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 50</value>
-  </data>
-  <data name="pbCountryFlag.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>Zoom</value>
-  </data>
-  <data name="pbCountryFlag.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="pbCountryFlag.WaitOnLoad" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;pbCountryFlag.Name" xml:space="preserve">
-    <value>pbCountryFlag</value>
-  </data>
-  <data name="&gt;&gt;pbCountryFlag.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pbCountryFlag.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;pbCountryFlag.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
   <data name="lblPlayerName.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="lblPlayerName.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 11.25pt</value>
   </data>
   <data name="lblPlayerName.Location" type="System.Drawing.Point, System.Drawing">
-    <value>45, 123</value>
+    <value>26, 13</value>
   </data>
   <data name="lblPlayerName.Size" type="System.Drawing.Size, System.Drawing">
-    <value>46, 18</value>
+    <value>90, 18</value>
   </data>
   <data name="lblPlayerName.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
+    <value>0</value>
   </data>
   <data name="lblPlayerName.Text" xml:space="preserve">
-    <value>label1</value>
+    <value>Player name</value>
   </data>
   <data name="&gt;&gt;lblPlayerName.Name" xml:space="preserve">
     <value>lblPlayerName</value>
@@ -202,67 +147,28 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;lblPlayerName.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>15</value>
   </data>
-  <data name="lblCountryName.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="tbPlayerName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>29, 34</value>
   </data>
-  <data name="lblCountryName.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 11.25pt</value>
+  <data name="tbPlayerName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 20</value>
   </data>
-  <data name="lblCountryName.Location" type="System.Drawing.Point, System.Drawing">
-    <value>374, 66</value>
+  <data name="tbPlayerName.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
   </data>
-  <data name="lblCountryName.Size" type="System.Drawing.Size, System.Drawing">
-    <value>46, 18</value>
+  <data name="&gt;&gt;tbPlayerName.Name" xml:space="preserve">
+    <value>tbPlayerName</value>
   </data>
-  <data name="lblCountryName.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
+  <data name="&gt;&gt;tbPlayerName.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="lblCountryName.Text" xml:space="preserve">
-    <value>label1</value>
-  </data>
-  <data name="&gt;&gt;lblCountryName.Name" xml:space="preserve">
-    <value>lblCountryName</value>
-  </data>
-  <data name="&gt;&gt;lblCountryName.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblCountryName.Parent" xml:space="preserve">
+  <data name="&gt;&gt;tbPlayerName.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;lblCountryName.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="lblNumber.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lblNumber.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 11.25pt</value>
-  </data>
-  <data name="lblNumber.Location" type="System.Drawing.Point, System.Drawing">
-    <value>13, 158</value>
-  </data>
-  <data name="lblNumber.Size" type="System.Drawing.Size, System.Drawing">
-    <value>107, 18</value>
-  </data>
-  <data name="lblNumber.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="lblNumber.Text" xml:space="preserve">
-    <value>Player number:</value>
-  </data>
-  <data name="&gt;&gt;lblNumber.Name" xml:space="preserve">
-    <value>lblNumber</value>
-  </data>
-  <data name="&gt;&gt;lblNumber.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblNumber.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;lblNumber.ZOrder" xml:space="preserve">
-    <value>5</value>
+  <data name="&gt;&gt;tbPlayerName.ZOrder" xml:space="preserve">
+    <value>14</value>
   </data>
   <data name="lblPlayerNumber.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -271,16 +177,16 @@
     <value>Microsoft Sans Serif, 11.25pt</value>
   </data>
   <data name="lblPlayerNumber.Location" type="System.Drawing.Point, System.Drawing">
-    <value>126, 157</value>
+    <value>26, 54</value>
   </data>
   <data name="lblPlayerNumber.Size" type="System.Drawing.Size, System.Drawing">
-    <value>46, 18</value>
+    <value>103, 18</value>
   </data>
   <data name="lblPlayerNumber.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
+    <value>2</value>
   </data>
   <data name="lblPlayerNumber.Text" xml:space="preserve">
-    <value>label1</value>
+    <value>Player number</value>
   </data>
   <data name="&gt;&gt;lblPlayerNumber.Name" xml:space="preserve">
     <value>lblPlayerNumber</value>
@@ -292,67 +198,28 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;lblPlayerNumber.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>13</value>
   </data>
-  <data name="lblPosition.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="numPlayerNumber.Location" type="System.Drawing.Point, System.Drawing">
+    <value>29, 76</value>
   </data>
-  <data name="lblPosition.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 11.25pt</value>
+  <data name="numPlayerNumber.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 20</value>
   </data>
-  <data name="lblPosition.Location" type="System.Drawing.Point, System.Drawing">
-    <value>13, 175</value>
-  </data>
-  <data name="lblPosition.Size" type="System.Drawing.Size, System.Drawing">
-    <value>66, 18</value>
-  </data>
-  <data name="lblPosition.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="lblPosition.Text" xml:space="preserve">
-    <value>Position:</value>
-  </data>
-  <data name="&gt;&gt;lblPosition.Name" xml:space="preserve">
-    <value>lblPosition</value>
-  </data>
-  <data name="&gt;&gt;lblPosition.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblPosition.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;lblPosition.ZOrder" xml:space="preserve">
+  <data name="numPlayerNumber.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
   </data>
-  <data name="lblPlayerPosition.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="&gt;&gt;numPlayerNumber.Name" xml:space="preserve">
+    <value>numPlayerNumber</value>
   </data>
-  <data name="lblPlayerPosition.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 11.25pt</value>
+  <data name="&gt;&gt;numPlayerNumber.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="lblPlayerPosition.Location" type="System.Drawing.Point, System.Drawing">
-    <value>126, 175</value>
-  </data>
-  <data name="lblPlayerPosition.Size" type="System.Drawing.Size, System.Drawing">
-    <value>46, 18</value>
-  </data>
-  <data name="lblPlayerPosition.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="lblPlayerPosition.Text" xml:space="preserve">
-    <value>label1</value>
-  </data>
-  <data name="&gt;&gt;lblPlayerPosition.Name" xml:space="preserve">
-    <value>lblPlayerPosition</value>
-  </data>
-  <data name="&gt;&gt;lblPlayerPosition.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblPlayerPosition.Parent" xml:space="preserve">
+  <data name="&gt;&gt;numPlayerNumber.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;lblPlayerPosition.ZOrder" xml:space="preserve">
-    <value>2</value>
+  <data name="&gt;&gt;numPlayerNumber.ZOrder" xml:space="preserve">
+    <value>12</value>
   </data>
   <data name="lblDate.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -361,16 +228,16 @@
     <value>Microsoft Sans Serif, 11.25pt</value>
   </data>
   <data name="lblDate.Location" type="System.Drawing.Point, System.Drawing">
-    <value>16, 192</value>
+    <value>26, 97</value>
   </data>
   <data name="lblDate.Size" type="System.Drawing.Size, System.Drawing">
-    <value>43, 18</value>
+    <value>39, 18</value>
   </data>
   <data name="lblDate.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
+    <value>4</value>
   </data>
   <data name="lblDate.Text" xml:space="preserve">
-    <value>Date:</value>
+    <value>Date</value>
   </data>
   <data name="&gt;&gt;lblDate.Name" xml:space="preserve">
     <value>lblDate</value>
@@ -382,36 +249,298 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;lblDate.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>11</value>
   </data>
-  <data name="lblPlayerDate.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="datePlayerDate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>29, 118</value>
   </data>
-  <data name="lblPlayerDate.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 11.25pt</value>
+  <data name="datePlayerDate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 20</value>
   </data>
-  <data name="lblPlayerDate.Location" type="System.Drawing.Point, System.Drawing">
-    <value>126, 192</value>
+  <data name="datePlayerDate.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
   </data>
-  <data name="lblPlayerDate.Size" type="System.Drawing.Size, System.Drawing">
-    <value>46, 18</value>
+  <data name="&gt;&gt;datePlayerDate.Name" xml:space="preserve">
+    <value>datePlayerDate</value>
   </data>
-  <data name="lblPlayerDate.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
+  <data name="&gt;&gt;datePlayerDate.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DateTimePicker, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="lblPlayerDate.Text" xml:space="preserve">
-    <value>label1</value>
-  </data>
-  <data name="&gt;&gt;lblPlayerDate.Name" xml:space="preserve">
-    <value>lblPlayerDate</value>
-  </data>
-  <data name="&gt;&gt;lblPlayerDate.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblPlayerDate.Parent" xml:space="preserve">
+  <data name="&gt;&gt;datePlayerDate.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;lblPlayerDate.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;datePlayerDate.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="lblPlayerImage.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblPlayerImage.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 11.25pt</value>
+  </data>
+  <data name="lblPlayerImage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>26, 141</value>
+  </data>
+  <data name="lblPlayerImage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>91, 18</value>
+  </data>
+  <data name="lblPlayerImage.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="lblPlayerImage.Text" xml:space="preserve">
+    <value>Image player</value>
+  </data>
+  <data name="&gt;&gt;lblPlayerImage.Name" xml:space="preserve">
+    <value>lblPlayerImage</value>
+  </data>
+  <data name="&gt;&gt;lblPlayerImage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblPlayerImage.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblPlayerImage.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="btnSelectImage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>29, 162</value>
+  </data>
+  <data name="btnSelectImage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>97, 23</value>
+  </data>
+  <data name="btnSelectImage.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="btnSelectImage.Text" xml:space="preserve">
+    <value>Select image</value>
+  </data>
+  <data name="&gt;&gt;btnSelectImage.Name" xml:space="preserve">
+    <value>btnSelectImage</value>
+  </data>
+  <data name="&gt;&gt;btnSelectImage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnSelectImage.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnSelectImage.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="lblCountry.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblCountry.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 11.25pt</value>
+  </data>
+  <data name="lblCountry.Location" type="System.Drawing.Point, System.Drawing">
+    <value>26, 188</value>
+  </data>
+  <data name="lblCountry.Size" type="System.Drawing.Size, System.Drawing">
+    <value>102, 18</value>
+  </data>
+  <data name="lblCountry.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="lblCountry.Text" xml:space="preserve">
+    <value>Player country</value>
+  </data>
+  <data name="&gt;&gt;lblCountry.Name" xml:space="preserve">
+    <value>lblCountry</value>
+  </data>
+  <data name="&gt;&gt;lblCountry.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblCountry.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblCountry.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="cbPlayerCountry.Location" type="System.Drawing.Point, System.Drawing">
+    <value>29, 208</value>
+  </data>
+  <data name="cbPlayerCountry.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 21</value>
+  </data>
+  <data name="cbPlayerCountry.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;cbPlayerCountry.Name" xml:space="preserve">
+    <value>cbPlayerCountry</value>
+  </data>
+  <data name="&gt;&gt;cbPlayerCountry.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cbPlayerCountry.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;cbPlayerCountry.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="lblPlayerPosition.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblPlayerPosition.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 11.25pt</value>
+  </data>
+  <data name="lblPlayerPosition.Location" type="System.Drawing.Point, System.Drawing">
+    <value>26, 232</value>
+  </data>
+  <data name="lblPlayerPosition.Size" type="System.Drawing.Size, System.Drawing">
+    <value>105, 18</value>
+  </data>
+  <data name="lblPlayerPosition.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="lblPlayerPosition.Text" xml:space="preserve">
+    <value>Player position</value>
+  </data>
+  <data name="&gt;&gt;lblPlayerPosition.Name" xml:space="preserve">
+    <value>lblPlayerPosition</value>
+  </data>
+  <data name="&gt;&gt;lblPlayerPosition.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblPlayerPosition.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblPlayerPosition.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="cbPlayerPosition.Location" type="System.Drawing.Point, System.Drawing">
+    <value>28, 253</value>
+  </data>
+  <data name="cbPlayerPosition.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 21</value>
+  </data>
+  <data name="cbPlayerPosition.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;cbPlayerPosition.Name" xml:space="preserve">
+    <value>cbPlayerPosition</value>
+  </data>
+  <data name="&gt;&gt;cbPlayerPosition.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cbPlayerPosition.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;cbPlayerPosition.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="lblPlayerClub.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblPlayerClub.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 11.25pt</value>
+  </data>
+  <data name="lblPlayerClub.Location" type="System.Drawing.Point, System.Drawing">
+    <value>26, 277</value>
+  </data>
+  <data name="lblPlayerClub.Size" type="System.Drawing.Size, System.Drawing">
+    <value>92, 18</value>
+  </data>
+  <data name="lblPlayerClub.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="lblPlayerClub.Text" xml:space="preserve">
+    <value>Football club</value>
+  </data>
+  <data name="&gt;&gt;lblPlayerClub.Name" xml:space="preserve">
+    <value>lblPlayerClub</value>
+  </data>
+  <data name="&gt;&gt;lblPlayerClub.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblPlayerClub.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblPlayerClub.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="cbPlayerFC.Location" type="System.Drawing.Point, System.Drawing">
+    <value>28, 298</value>
+  </data>
+  <data name="cbPlayerFC.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 21</value>
+  </data>
+  <data name="cbPlayerFC.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;cbPlayerFC.Name" xml:space="preserve">
+    <value>cbPlayerFC</value>
+  </data>
+  <data name="&gt;&gt;cbPlayerFC.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cbPlayerFC.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;cbPlayerFC.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="btnSave.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="btnSave.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 11.25pt</value>
+  </data>
+  <data name="btnSave.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 338</value>
+  </data>
+  <data name="btnSave.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 32</value>
+  </data>
+  <data name="btnSave.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="btnSave.Text" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="&gt;&gt;btnSave.Name" xml:space="preserve">
+    <value>btnSave</value>
+  </data>
+  <data name="&gt;&gt;btnSave.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnSave.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnSave.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <metadata name="fdPlayerImage.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <data name="btnClose.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="btnClose.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 11.25pt</value>
+  </data>
+  <data name="btnClose.Location" type="System.Drawing.Point, System.Drawing">
+    <value>244, 338</value>
+  </data>
+  <data name="btnClose.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 32</value>
+  </data>
+  <data name="btnClose.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="btnClose.Text" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="&gt;&gt;btnClose.Name" xml:space="preserve">
+    <value>btnClose</value>
+  </data>
+  <data name="&gt;&gt;btnClose.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnClose.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnClose.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
@@ -421,7 +550,7 @@
     <value>6, 13</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>458, 237</value>
+    <value>331, 373</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -503,10 +632,16 @@
     <value>CenterScreen</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>Show player</value>
+    <value>Player</value>
+  </data>
+  <data name="&gt;&gt;fdPlayerImage.Name" xml:space="preserve">
+    <value>fdPlayerImage</value>
+  </data>
+  <data name="&gt;&gt;fdPlayerImage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.OpenFileDialog, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>ShowPlayerForm</value>
+    <value>AddUpdatePlayer</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
     <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>

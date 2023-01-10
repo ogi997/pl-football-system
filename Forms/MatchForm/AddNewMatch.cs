@@ -1,6 +1,8 @@
 ﻿using PLFootballSystem.Controller;
 using PLFootballSystem.Forms.FirstTeamForm;
 using PLFootballSystem.Model;
+using PLFootballSystem.Util;
+using PLFootballSystem.Util.Theme;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -19,11 +21,57 @@ namespace PLFootballSystem.Forms.MatchForm
 
         ControllerFootballClub cfc = new ControllerFootballClub();
         ControllerSeason cs = new ControllerSeason();
+        ControllerFormation cf = new ControllerFormation();
 
         public AddNewMatch()
         {
             InitializeComponent();
             GetData();
+            SetTheme();
+        }
+
+        private void SetTheme()
+        {
+            if ("light".Equals(ChangeTheme.GetTheme()))
+            {
+                ChangeThemee(Theme.GetLight()[ThemeColor.Primary], Theme.GetLight()[ThemeColor.Secondary], Theme.GetLight()[ThemeColor.Tertiary]);
+                ChangeTextColor(Theme.GetLight()[ThemeColor.Text]);
+            }
+            else if ("dark".Equals(ChangeTheme.GetTheme()))
+            {
+                ChangeThemee(Theme.GetDark()[ThemeColor.Primary], Theme.GetDark()[ThemeColor.Secondary], Theme.GetDark()[ThemeColor.Tertiary]);
+                ChangeTextColor(Theme.GetDark()[ThemeColor.Text]);
+            }
+            else if ("nature".Equals(ChangeTheme.GetTheme()))
+            {
+                ChangeThemee(Theme.GetNature()[ThemeColor.Primary], Theme.GetNature()[ThemeColor.Secondary], Theme.GetNature()[ThemeColor.Tertiary]);
+                ChangeTextColor(Theme.GetNature()[ThemeColor.Text]);
+            }
+        }
+
+        private void ChangeThemee(Color primaryColor, Color secondaryColor, Color tertiaryColor)
+        {
+            // Change background color of buttons
+            btnAddFirstTeam.BackColor = primaryColor;
+
+            this.BackColor = secondaryColor;
+        }
+
+        private void ChangeTextColor(Color textColor)
+        {
+            btnAddFirstTeam.ForeColor = textColor;
+
+            lblAwayFC.ForeColor = textColor;
+            lblDate.ForeColor = textColor;
+            lblGoalsAway.ForeColor = textColor;
+            lblGoalsHome.ForeColor = textColor;
+            lblHomeFC.ForeColor = textColor;
+            lblSeason.ForeColor = textColor;
+            // Change color of text
+            //lblSearch.ForeColor = textColor;
+            //.ForeColor = textColor;
+            //lblRepeatPassword.ForeColor = textColor;
+            //lblPassword.ForeColor = textColor;
         }
 
         private void GetData()
@@ -58,6 +106,18 @@ namespace PLFootballSystem.Forms.MatchForm
 
             cbSeason.SelectedIndex = 0;
 
+            List<FormationModel> formations = cf.FindAll();
+            cbHomeFormation.DisplayMember = "Name";
+            cbHomeFormation.ValueMember = "ID";
+
+            cbAwayFormation.DisplayMember = "Name";
+            cbAwayFormation.ValueMember = "ID";
+            foreach(var c in formations)
+            {
+                cbHomeFormation.Items.Add(new { ID = c.ID, Name = c.Description });
+                cbAwayFormation.Items.Add(new { ID = c.ID, Name = c.Description });
+            }
+
 
         }
 
@@ -72,6 +132,12 @@ namespace PLFootballSystem.Forms.MatchForm
             decimal goalsHome = numGoalsHome.Value;
             decimal goalsAway = numGoalsAway.Value;
 
+            if (cbHomeFormation.SelectedIndex < 0 || cbAwayFormation.SelectedIndex < 0)
+            {
+                MessageBox.Show("en".Equals(ChangeLanguage.GetLanguage()) ? "Please select all formation." : "Изаберите формације.");
+                return;
+            }
+
             MatchModel match = new MatchModel
             {
                 GoalsScoredHome = (int)goalsHome,
@@ -81,11 +147,20 @@ namespace PLFootballSystem.Forms.MatchForm
                 FCHome = new FootballClubModel { ID = (cbHomeFC.SelectedItem as dynamic).ID },
                 FCAway = new FootballClubModel { ID = (cbAwayFC.SelectedItem as dynamic).ID }
             };
+            FormationModel homeFormation = new FormationModel
+            {
+                ID = (cbHomeFormation.SelectedItem as dynamic).ID,
+                Description = (cbHomeFormation.SelectedItem as dynamic).Name
+            };
 
-            new AddNewFirstTeamForm(match).ShowDialog();
+            FormationModel awayFormation = new FormationModel
+            {
+                ID = (cbAwayFormation.SelectedItem as dynamic).ID,
+                Description = (cbAwayFormation.SelectedItem as dynamic).Name
+            };
 
-           // int? id = cm.InsertMatch(match);
-           // Console.WriteLine("ID:" + id);
+            new SelectFirstTeam(match, homeFormation, awayFormation).ShowDialog();
+
         }
     }
 }

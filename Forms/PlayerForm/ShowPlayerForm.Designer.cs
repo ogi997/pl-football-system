@@ -29,6 +29,7 @@ namespace PLFootballSystem.Forms.PlayerForm
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ShowPlayerForm));
             this.pbPlayerFace = new System.Windows.Forms.PictureBox();
             this.pbCountryFlag = new System.Windows.Forms.PictureBox();
             this.lblPlayerName = new System.Windows.Forms.Label();
@@ -45,101 +46,60 @@ namespace PLFootballSystem.Forms.PlayerForm
             // 
             // pbPlayerFace
             // 
-            this.pbPlayerFace.Location = new System.Drawing.Point(13, 13);
+            resources.ApplyResources(this.pbPlayerFace, "pbPlayerFace");
             this.pbPlayerFace.Name = "pbPlayerFace";
-            this.pbPlayerFace.Size = new System.Drawing.Size(119, 107);
-            this.pbPlayerFace.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbPlayerFace.TabIndex = 0;
             this.pbPlayerFace.TabStop = false;
-            this.pbPlayerFace.WaitOnLoad = true;
             // 
             // pbCountryFlag
             // 
-            this.pbCountryFlag.Location = new System.Drawing.Point(346, 13);
+            resources.ApplyResources(this.pbCountryFlag, "pbCountryFlag");
             this.pbCountryFlag.Name = "pbCountryFlag";
-            this.pbCountryFlag.Size = new System.Drawing.Size(100, 50);
-            this.pbCountryFlag.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbCountryFlag.TabIndex = 1;
             this.pbCountryFlag.TabStop = false;
-            this.pbCountryFlag.WaitOnLoad = true;
             // 
             // lblPlayerName
             // 
-            this.lblPlayerName.AutoSize = true;
-            this.lblPlayerName.Location = new System.Drawing.Point(57, 127);
+            resources.ApplyResources(this.lblPlayerName, "lblPlayerName");
             this.lblPlayerName.Name = "lblPlayerName";
-            this.lblPlayerName.Size = new System.Drawing.Size(35, 13);
-            this.lblPlayerName.TabIndex = 2;
-            this.lblPlayerName.Text = "label1";
             // 
             // lblCountryName
             // 
-            this.lblCountryName.AutoSize = true;
-            this.lblCountryName.Location = new System.Drawing.Point(385, 70);
+            resources.ApplyResources(this.lblCountryName, "lblCountryName");
             this.lblCountryName.Name = "lblCountryName";
-            this.lblCountryName.Size = new System.Drawing.Size(35, 13);
-            this.lblCountryName.TabIndex = 3;
-            this.lblCountryName.Text = "label1";
             // 
             // lblNumber
             // 
-            this.lblNumber.AutoSize = true;
-            this.lblNumber.Location = new System.Drawing.Point(13, 158);
+            resources.ApplyResources(this.lblNumber, "lblNumber");
             this.lblNumber.Name = "lblNumber";
-            this.lblNumber.Size = new System.Drawing.Size(77, 13);
-            this.lblNumber.TabIndex = 4;
-            this.lblNumber.Text = "Player number:";
             // 
             // lblPlayerNumber
             // 
-            this.lblPlayerNumber.AutoSize = true;
-            this.lblPlayerNumber.Location = new System.Drawing.Point(97, 157);
+            resources.ApplyResources(this.lblPlayerNumber, "lblPlayerNumber");
             this.lblPlayerNumber.Name = "lblPlayerNumber";
-            this.lblPlayerNumber.Size = new System.Drawing.Size(35, 13);
-            this.lblPlayerNumber.TabIndex = 5;
-            this.lblPlayerNumber.Text = "label1";
             // 
             // lblPosition
             // 
-            this.lblPosition.AutoSize = true;
-            this.lblPosition.Location = new System.Drawing.Point(13, 175);
+            resources.ApplyResources(this.lblPosition, "lblPosition");
             this.lblPosition.Name = "lblPosition";
-            this.lblPosition.Size = new System.Drawing.Size(47, 13);
-            this.lblPosition.TabIndex = 6;
-            this.lblPosition.Text = "Position:";
             // 
             // lblPlayerPosition
             // 
-            this.lblPlayerPosition.AutoSize = true;
-            this.lblPlayerPosition.Location = new System.Drawing.Point(100, 175);
+            resources.ApplyResources(this.lblPlayerPosition, "lblPlayerPosition");
             this.lblPlayerPosition.Name = "lblPlayerPosition";
-            this.lblPlayerPosition.Size = new System.Drawing.Size(35, 13);
-            this.lblPlayerPosition.TabIndex = 7;
-            this.lblPlayerPosition.Text = "label1";
             // 
             // lblDate
             // 
-            this.lblDate.AutoSize = true;
-            this.lblDate.Location = new System.Drawing.Point(16, 192);
+            resources.ApplyResources(this.lblDate, "lblDate");
             this.lblDate.Name = "lblDate";
-            this.lblDate.Size = new System.Drawing.Size(33, 13);
-            this.lblDate.TabIndex = 8;
-            this.lblDate.Text = "Date:";
             // 
             // lblPlayerDate
             // 
-            this.lblPlayerDate.AutoSize = true;
-            this.lblPlayerDate.Location = new System.Drawing.Point(100, 192);
+            resources.ApplyResources(this.lblPlayerDate, "lblPlayerDate");
             this.lblPlayerDate.Name = "lblPlayerDate";
-            this.lblPlayerDate.Size = new System.Drawing.Size(35, 13);
-            this.lblPlayerDate.TabIndex = 9;
-            this.lblPlayerDate.Text = "label1";
             // 
             // ShowPlayerForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(458, 237);
             this.Controls.Add(this.lblPlayerDate);
             this.Controls.Add(this.lblDate);
             this.Controls.Add(this.lblPlayerPosition);
@@ -150,8 +110,10 @@ namespace PLFootballSystem.Forms.PlayerForm
             this.Controls.Add(this.lblPlayerName);
             this.Controls.Add(this.pbCountryFlag);
             this.Controls.Add(this.pbPlayerFace);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "ShowPlayerForm";
-            this.Text = "ShowPlayerForm";
             ((System.ComponentModel.ISupportInitialize)(this.pbPlayerFace)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbCountryFlag)).EndInit();
             this.ResumeLayout(false);

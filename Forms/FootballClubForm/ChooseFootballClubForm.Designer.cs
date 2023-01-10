@@ -29,6 +29,7 @@ namespace PLFootballSystem.Forms.FootballClubForm
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ChooseFootballClubForm));
             this.lblChooseFC = new System.Windows.Forms.Label();
             this.cbFootballClub = new System.Windows.Forms.ComboBox();
             this.btnShowFC = new System.Windows.Forms.Button();
@@ -36,41 +37,36 @@ namespace PLFootballSystem.Forms.FootballClubForm
             // 
             // lblChooseFC
             // 
-            this.lblChooseFC.AutoSize = true;
-            this.lblChooseFC.Location = new System.Drawing.Point(82, 37);
+            resources.ApplyResources(this.lblChooseFC, "lblChooseFC");
             this.lblChooseFC.Name = "lblChooseFC";
-            this.lblChooseFC.Size = new System.Drawing.Size(103, 13);
-            this.lblChooseFC.TabIndex = 0;
-            this.lblChooseFC.Text = "Choose football club";
             // 
             // cbFootballClub
             // 
+            this.cbFootballClub.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbFootballClub.FormattingEnabled = true;
-            this.cbFootballClub.Location = new System.Drawing.Point(85, 54);
+            resources.ApplyResources(this.cbFootballClub, "cbFootballClub");
             this.cbFootballClub.Name = "cbFootballClub";
-            this.cbFootballClub.Size = new System.Drawing.Size(121, 21);
-            this.cbFootballClub.TabIndex = 1;
             // 
             // btnShowFC
             // 
-            this.btnShowFC.Location = new System.Drawing.Point(85, 82);
+            this.btnShowFC.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.btnShowFC, "btnShowFC");
             this.btnShowFC.Name = "btnShowFC";
-            this.btnShowFC.Size = new System.Drawing.Size(75, 23);
-            this.btnShowFC.TabIndex = 2;
-            this.btnShowFC.Text = "Show football club";
             this.btnShowFC.UseVisualStyleBackColor = true;
             this.btnShowFC.Click += new System.EventHandler(this.btnShowFC_Click);
             // 
             // ChooseFootballClubForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AcceptButton = this.btnShowFC;
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(312, 152);
             this.Controls.Add(this.btnShowFC);
             this.Controls.Add(this.cbFootballClub);
             this.Controls.Add(this.lblChooseFC);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "ChooseFootballClubForm";
-            this.Text = "ChooseFootballClubForm";
             this.ResumeLayout(false);
             this.PerformLayout();
 

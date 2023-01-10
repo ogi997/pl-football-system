@@ -1,0 +1,667 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="lblFootballClubNickname.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 11.25pt</value>
+  </data>
+  <data name="tbFootballClubNickname.Size" type="System.Drawing.Size, System.Drawing">
+    <value>130, 20</value>
+  </data>
+  <data name="tbFootballClubName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 30</value>
+  </data>
+  <data name="&gt;&gt;tbFootballClubName.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="lblFootballClubImage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 188</value>
+  </data>
+  <data name="&gt;&gt;cbCity.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;btnSave.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="btnSave.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="btnClose.Text" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="&gt;&gt;btnSave.Name" xml:space="preserve">
+    <value>btnSave</value>
+  </data>
+  <data name="&gt;&gt;lblFootballClubTshirt.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;tbFootballClubNickname.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="lblFootballClubImage.Text" xml:space="preserve">
+    <value>Football club image</value>
+  </data>
+  <data name="&gt;&gt;lblCity.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lblFootballClubTshirt.Text" xml:space="preserve">
+    <value>Football club tshirt image</value>
+  </data>
+  <data name="&gt;&gt;dtFounded.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="btnClose.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 11.25pt</value>
+  </data>
+  <data name="lblFootballClubName.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 11.25pt</value>
+  </data>
+  <data name="&gt;&gt;lblFootballClubOwner.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="dtFounded.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;btnAddImage.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblFootballClubName.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lblFootballClubImage.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;lblFounded.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="btnClose.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 33</value>
+  </data>
+  <data name="lblFootballClubTshirt.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 11.25pt</value>
+  </data>
+  <data name="&gt;&gt;fdTshirtImage.Name" xml:space="preserve">
+    <value>fdTshirtImage</value>
+  </data>
+  <data name="&gt;&gt;btnClose.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;lblFootballClubImage.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="lblCity.Text" xml:space="preserve">
+    <value>City</value>
+  </data>
+  <data name="&gt;&gt;lblFootballClubNickname.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="btnClose.Location" type="System.Drawing.Point, System.Drawing">
+    <value>273, 347</value>
+  </data>
+  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAEAICAAAAEAIACoEAAAFgAAACgAAAAgAAAAQAAAAAEAIAAAAAAAABAAABMLAAATCwAAAAAAAAAA
+        AAD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8AWCI//00WMf////8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wBaFz7/Whc8/1oXPP9aFzz/Whc8/1oXPP9aFzz/XBY+/////wD///8AWhg7/////wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AFoXPP9aFzz/Whc8/1oXPP9aFzz/Whc8/1oXPP9aFzz/Whc8/1oXPv9aFzz/Whc8////
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8AWhc8/1oXPP9aFzz/Whc8/1oXPP9aFzz/Whc8/1oXPP9aFzz/Whc8/1oX
+        PP9aFzz/Whc+/////wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AFsaOv////8A////AP///wDUvcxLWhc8/1oXPP9aFzz/Whc8/1oXPP9aFzz/Whc8/1oX
+        PP9aFzz/Whc8/1oXPP9aFzz/XRQ8/////wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8AWhc8/2IZQf////8A////AP///wBaFzz/Whc8/1oXPP9aFzz/Whc8/1oX
+        PP9aFzz/Whc8/1oXPP9aFzz/Whc8/1oXPP9aFzz/////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wBaFzz/Whc8/2EVP/////8AVBw5/1oXPP9aFzz/Whc8/1oX
+        PP9aFzz/Whc8/1oXPP9aFzz/Whc8/1oXPP9aFzz/Whc8/1oXPP////8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AFoXPP9aFzz/Whc8/////wBaFzz/Whc8/1oX
+        PP9aFzz/Whc8/1oXPP9aFzz/Whc8/1oXPP9aFzz/Whc8/1oXPP9aFzz/Whc8/1oVOv9YFz7/////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wDds8pcWhc8/1oXPP9aFzz/Whc+/1oX
+        PP9aFzz/Whc8/1oXPP9aFzz/Whc8/1oXPP9aFzz/Whc8/1oXPP9aFzz/b0Jc/1oXPP9aFzz/Whc8/1oX
+        PP////8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AFoXPP9aFzz/Whc8/1oX
+        PP9aFzz/Whc8/1oXPP9aFzz/Whc8/1oXPP9aFzz/Whc8/1oXPP9aFzz/////AGI4T/////8A////AFoX
+        PP9aFzz/Whc8/////wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A26XDdFoX
+        PP9aFzz/Whc8/1oXPP9aFzz/Whc8/1oXPP9aFzz/Whc8/1oXPP9aFzz/Whc8/08ONf////8A////AP//
+        /wD///8AWhc8/1oXPP9aFzz/////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8AWhc8/1oXPP9aFzz/Whc8/1oXPP9aFzz/Whc8/1oXPP9aFzz/Whc8/1oXPP9aFzz/Whc8/1oX
+        PP////8A////AP///wBaFzz/Whc8/1oXPP////8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8AWhc8/1oXPP9aFzz/Whc8/1oXPP9aFzz/Whc8/1oXPP9aFzz/Whc8/1oXPP9aFzz/Whc8/1kj
+        QP////8A////AFoXPP9hFzv/Whc8/////wBaFzz/Whc8/////wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wBaFzz/Whc8/1oXPP9aFzz/Whc8/1oXPP9aFzz/Whc8/1oXPP9aFzz/Whc8/1oX
+        PP9aFzz/////AP///wD///8A////AFoXPP9dGjr/////AFoXPP9aFzz/////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AFoXPP9aFzz/Whc8/1oXPP9aFzz/Whc8/1oXPP9aFzz/Whc8/1oX
+        PP9aFzz/Whc8/4NQa/////8A////AP///wD///8AspWlgf///wD///8AWhc8/1wWPv////8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AFoXPP9aFzz/Whc8/1oXPP9aFzz/Whc8/1oX
+        PP9aFzz/Whc8/1oXPP9aFzz/Whc8/1YaOf////8A////AP///wBJFS3/Wxg9/////wBaFzz/////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8AWhc8/1oXPP9aFzz/Whc8/1oX
+        PP9aFzz/Whc8/1oXPP9aFzz/Whc8/1oXPP9aFzz/Whc8/1oXPP9dGTj/Whc8/1oXPP9aFzz/XBg7/1oX
+        PP////8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8AWhc8/1oX
+        PP9aFzz/Whc8/1oXPP9aFzz/Whc8/1oXPP////8A////AP///wD///8A////AFYXPv////8AWhc8/1Ub
+        Pv9aFzz/////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AFoX
+        PP9aFzz/Whc8/1oXPP9aFzz/Whc8/1oXPP9aFzz/////AP///wD///8A////AP///wBaFzz/////AP//
+        /wD///8AVhc//////wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AFoXPP9aFzz/Whc8/10TPf9aFzz/Whc8/4NWZ/j///8AXRY+/1oXPP9aFzz/Whc8////
+        /wD///8A////AFwXPP9aFzz/////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A/+j/A1oXPP+BQ1v/Whc8/1oXPP9aFzz/XhZE/////wD///8AWhc8////
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8AayhN/////wBaFzz/Whc8/1oXPP9aFzz/////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8AWxY7/////wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wBaFzz/////AFoX
+        PP9aFzz/XRVD/////wD///8A////AFYXP/9aFzz/XRk8/1oXPP////8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AEsd
+        NP9aFzz/Whc8/1oXPP9aFzz/Whc8/1oXPP9aFzz/XBk5/1oXPP9aFzz/////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wBFI0H/WhQ8/////wD///8AWhc8/1oXPP9aFzz/Whc8/1oUPP////8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AFoXPP9aFzz/Whc8/2EYOP9iFEP/////AP///wD///8A////AGETPP+geY++////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wDn3+kR////AFoXPP9aFzz/Whc8/1oXPP9aFzz/Whc8/1oXPP9aFzz/Whc8/2Ud
+        Qf////8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8AWhc8//jb6hj///8AWhc8/1oXPP////8AWhc8/1oX
+        PP////8AWBk5/////wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8AXx9D////
+        /wD///8AWhc8/////wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A///////8////4Bv//+AB///gAP/+4AB//nAAf/4gAH/+IAAf/AAAH/wA
+        Cx/8AA8f/gAHH/gAGJ/4ADyf+AA9n/wAHL/8AAA//gH0f/wD7v/+Ahz//gN///9D/v//6OH//+AD///M
+        H///wef//6AH///kl////t////////////8=
+</value>
+  </data>
+  <data name="btnAddTshirtImage.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="lblFootballClubImage.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;lblFounded.Name" xml:space="preserve">
+    <value>lblFounded</value>
+  </data>
+  <data name="lblFootballClubName.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;lblCity.Name" xml:space="preserve">
+    <value>lblCity</value>
+  </data>
+  <data name="&gt;&gt;cbCity.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tbFootballClubOwner.Name" xml:space="preserve">
+    <value>tbFootballClubOwner</value>
+  </data>
+  <data name="&gt;&gt;btnAddTshirtImage.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="lblFootballClubTshirt.Size" type="System.Drawing.Size, System.Drawing">
+    <value>172, 18</value>
+  </data>
+  <data name="lblFounded.Text" xml:space="preserve">
+    <value>Founded</value>
+  </data>
+  <data name="lblFootballClubOwner.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;lblFootballClubTshirt.Name" xml:space="preserve">
+    <value>lblFootballClubTshirt</value>
+  </data>
+  <data name="lblFootballClubTshirt.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;lblFootballClubNickname.Name" xml:space="preserve">
+    <value>lblFootballClubNickname</value>
+  </data>
+  <data name="btnAddTshirtImage.Text" xml:space="preserve">
+    <value>Upload image</value>
+  </data>
+  <data name="&gt;&gt;lblFootballClubName.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="lblFootballClubNickname.Text" xml:space="preserve">
+    <value>Football club nick name</value>
+  </data>
+  <data name="lblCity.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 282</value>
+  </data>
+  <data name="&gt;&gt;lblCity.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;tbFootballClubOwner.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblFootballClubTshirt.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblFootballClubImage.Name" xml:space="preserve">
+    <value>lblFootballClubImage</value>
+  </data>
+  <data name="cbCity.Size" type="System.Drawing.Size, System.Drawing">
+    <value>130, 21</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>AddNewFootballClubForm</value>
+  </data>
+  <data name="lblFootballClubNickname.Size" type="System.Drawing.Size, System.Drawing">
+    <value>164, 18</value>
+  </data>
+  <data name="&gt;&gt;lblCity.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnAddTshirtImage.Name" xml:space="preserve">
+    <value>btnAddTshirtImage</value>
+  </data>
+  <data name="&gt;&gt;lblFootballClubImage.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;tbFootballClubNickname.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="lblFootballClubNickname.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="btnAddTshirtImage.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="lblFootballClubImage.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 11.25pt</value>
+  </data>
+  <data name="btnSave.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="lblCity.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="lblCity.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 11.25pt</value>
+  </data>
+  <data name="&gt;&gt;lblFootballClubNickname.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="btnAddImage.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="tbFootballClubName.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
+  </data>
+  <data name="&gt;&gt;fdTshirtImage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.OpenFileDialog, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tbFootballClubName.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnSave.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;fdFCImage.Name" xml:space="preserve">
+    <value>fdFCImage</value>
+  </data>
+  <data name="lblFootballClubTshirt.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 235</value>
+  </data>
+  <data name="&gt;&gt;lblFootballClubNickname.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dtFounded.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;lblFootballClubImage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lblCity.Size" type="System.Drawing.Size, System.Drawing">
+    <value>33, 18</value>
+  </data>
+  <data name="btnAddImage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 209</value>
+  </data>
+  <data name="lblFootballClubImage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>136, 18</value>
+  </data>
+  <data name="btnClose.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Football club</value>
+  </data>
+  <data name="tbFootballClubOwner.Size" type="System.Drawing.Size, System.Drawing">
+    <value>130, 20</value>
+  </data>
+  <data name="lblFootballClubName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 9</value>
+  </data>
+  <data name="&gt;&gt;lblFootballClubTshirt.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnClose.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;tbFootballClubNickname.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="btnAddTshirtImage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>96, 23</value>
+  </data>
+  <data name="btnSave.Text" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="tbFootballClubOwner.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 121</value>
+  </data>
+  <data name="&gt;&gt;lblFootballClubName.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="btnAddImage.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="&gt;&gt;lblFootballClubOwner.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lblFounded.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 11.25pt</value>
+  </data>
+  <data name="dtFounded.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 165</value>
+  </data>
+  <data name="btnAddTshirtImage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 256</value>
+  </data>
+  <data name="&gt;&gt;dtFounded.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DateTimePicker, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lblFounded.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 144</value>
+  </data>
+  <data name="&gt;&gt;btnAddImage.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;fdFCImage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.OpenFileDialog, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tbFootballClubName.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;btnClose.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lblFootballClubName.Text" xml:space="preserve">
+    <value>Football club name</value>
+  </data>
+  <data name="lblFootballClubOwner.Size" type="System.Drawing.Size, System.Drawing">
+    <value>137, 18</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnAddImage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tbFootballClubName.Name" xml:space="preserve">
+    <value>tbFootballClubName</value>
+  </data>
+  <data name="cbCity.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;tbFootballClubOwner.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lblFootballClubName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>133, 18</value>
+  </data>
+  <data name="&gt;&gt;btnClose.Name" xml:space="preserve">
+    <value>btnClose</value>
+  </data>
+  <data name="&gt;&gt;tbFootballClubNickname.Name" xml:space="preserve">
+    <value>tbFootballClubNickname</value>
+  </data>
+  <data name="&gt;&gt;btnAddTshirtImage.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="btnSave.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 352</value>
+  </data>
+  <data name="tbFootballClubOwner.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="dtFounded.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 20</value>
+  </data>
+  <data name="lblFootballClubNickname.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblFounded.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="tbFootballClubNickname.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 77</value>
+  </data>
+  <data name="&gt;&gt;lblFounded.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cbCity.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="lblCity.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="btnSave.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 11.25pt</value>
+  </data>
+  <data name="&gt;&gt;lblFootballClubOwner.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="lblFootballClubOwner.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="btnClose.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>360, 392</value>
+  </data>
+  <data name="lblFootballClubTshirt.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblFootballClubOwner.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 11.25pt</value>
+  </data>
+  <data name="lblFounded.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblFounded.Size" type="System.Drawing.Size, System.Drawing">
+    <value>66, 18</value>
+  </data>
+  <data name="lblFootballClubOwner.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 100</value>
+  </data>
+  <data name="&gt;&gt;btnAddImage.Name" xml:space="preserve">
+    <value>btnAddImage</value>
+  </data>
+  <data name="tbFootballClubNickname.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;tbFootballClubOwner.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="tbFootballClubName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>130, 20</value>
+  </data>
+  <data name="&gt;&gt;lblFounded.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;dtFounded.Name" xml:space="preserve">
+    <value>dtFounded</value>
+  </data>
+  <data name="&gt;&gt;lblFootballClubName.Name" xml:space="preserve">
+    <value>lblFootballClubName</value>
+  </data>
+  <data name="&gt;&gt;btnAddTshirtImage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lblFootballClubNickname.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 53</value>
+  </data>
+  <data name="lblFootballClubName.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lblFootballClubOwner.Text" xml:space="preserve">
+    <value>Football club owner</value>
+  </data>
+  <data name="btnAddImage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>96, 23</value>
+  </data>
+  <data name="btnSave.Size" type="System.Drawing.Size, System.Drawing">
+    <value>96, 28</value>
+  </data>
+  <data name="cbCity.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 303</value>
+  </data>
+  <data name="&gt;&gt;lblFootballClubOwner.Name" xml:space="preserve">
+    <value>lblFootballClubOwner</value>
+  </data>
+  <data name="btnAddImage.Text" xml:space="preserve">
+    <value>Upload image</value>
+  </data>
+  <data name="&gt;&gt;cbCity.Name" xml:space="preserve">
+    <value>cbCity</value>
+  </data>
+  <data name="&gt;&gt;btnSave.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="fdFCImage.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="fdTshirtImage.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>127, 17</value>
+  </metadata>
+</root>

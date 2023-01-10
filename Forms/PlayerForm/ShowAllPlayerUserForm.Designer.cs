@@ -29,6 +29,7 @@ namespace PLFootballSystem.Forms.PlayerForm
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ShowAllPlayerUserForm));
             this.lblAllClubPlayer = new System.Windows.Forms.Label();
             this.lvAllClubPlayer = new System.Windows.Forms.ListView();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -40,12 +41,8 @@ namespace PLFootballSystem.Forms.PlayerForm
             // 
             // lblAllClubPlayer
             // 
-            this.lblAllClubPlayer.AutoSize = true;
-            this.lblAllClubPlayer.Location = new System.Drawing.Point(13, 13);
+            resources.ApplyResources(this.lblAllClubPlayer, "lblAllClubPlayer");
             this.lblAllClubPlayer.Name = "lblAllClubPlayer";
-            this.lblAllClubPlayer.Size = new System.Drawing.Size(72, 13);
-            this.lblAllClubPlayer.TabIndex = 0;
-            this.lblAllClubPlayer.Text = "All club player";
             // 
             // lvAllClubPlayer
             // 
@@ -55,59 +52,51 @@ namespace PLFootballSystem.Forms.PlayerForm
             this.columnHeader3});
             this.lvAllClubPlayer.FullRowSelect = true;
             this.lvAllClubPlayer.HideSelection = false;
-            this.lvAllClubPlayer.Location = new System.Drawing.Point(13, 30);
+            resources.ApplyResources(this.lvAllClubPlayer, "lvAllClubPlayer");
             this.lvAllClubPlayer.Name = "lvAllClubPlayer";
-            this.lvAllClubPlayer.Size = new System.Drawing.Size(280, 241);
-            this.lvAllClubPlayer.TabIndex = 1;
             this.lvAllClubPlayer.UseCompatibleStateImageBehavior = false;
             this.lvAllClubPlayer.View = System.Windows.Forms.View.Details;
             // 
             // columnHeader1
             // 
-            this.columnHeader1.Text = "Name";
-            this.columnHeader1.Width = 98;
+            resources.ApplyResources(this.columnHeader1, "columnHeader1");
             // 
             // columnHeader2
             // 
-            this.columnHeader2.Text = "Position";
-            this.columnHeader2.Width = 74;
+            resources.ApplyResources(this.columnHeader2, "columnHeader2");
             // 
             // columnHeader3
             // 
-            this.columnHeader3.Text = "Status";
-            this.columnHeader3.Width = 103;
+            resources.ApplyResources(this.columnHeader3, "columnHeader3");
             // 
             // btnOpenPlayer
             // 
-            this.btnOpenPlayer.Location = new System.Drawing.Point(300, 30);
+            this.btnOpenPlayer.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.btnOpenPlayer, "btnOpenPlayer");
             this.btnOpenPlayer.Name = "btnOpenPlayer";
-            this.btnOpenPlayer.Size = new System.Drawing.Size(75, 23);
-            this.btnOpenPlayer.TabIndex = 2;
-            this.btnOpenPlayer.Text = "Open player";
             this.btnOpenPlayer.UseVisualStyleBackColor = true;
             this.btnOpenPlayer.Click += new System.EventHandler(this.btnOpenPlayer_Click);
             // 
             // btnClose
             // 
-            this.btnClose.Location = new System.Drawing.Point(385, 248);
+            this.btnClose.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.btnClose, "btnClose");
             this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(75, 23);
-            this.btnClose.TabIndex = 3;
-            this.btnClose.Text = "Close";
             this.btnClose.UseVisualStyleBackColor = true;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // ShowAllPlayerUserForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(472, 283);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.btnOpenPlayer);
             this.Controls.Add(this.lvAllClubPlayer);
             this.Controls.Add(this.lblAllClubPlayer);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "ShowAllPlayerUserForm";
-            this.Text = "ShowAllPlayerUserForm";
             this.ResumeLayout(false);
             this.PerformLayout();
 

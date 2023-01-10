@@ -29,6 +29,7 @@ namespace PLFootballSystem.Forms.FootballClubForm
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ShowFootballClubForm));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -48,131 +49,79 @@ namespace PLFootballSystem.Forms.FootballClubForm
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(13, 13);
+            resources.ApplyResources(this.label1, "label1");
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Name";
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(13, 48);
+            resources.ApplyResources(this.label2, "label2");
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(49, 13);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Founded";
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(13, 91);
+            resources.ApplyResources(this.label3, "label3");
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(38, 13);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Owner";
             // 
             // label4
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(13, 125);
+            resources.ApplyResources(this.label4, "label4");
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(55, 13);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "Nickname";
             // 
             // label5
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(13, 162);
+            resources.ApplyResources(this.label5, "label5");
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(24, 13);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "City";
             // 
             // pbGrb
             // 
-            this.pbGrb.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pbGrb.Location = new System.Drawing.Point(384, 13);
+            resources.ApplyResources(this.pbGrb, "pbGrb");
             this.pbGrb.Name = "pbGrb";
-            this.pbGrb.Size = new System.Drawing.Size(121, 91);
-            this.pbGrb.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbGrb.TabIndex = 5;
             this.pbGrb.TabStop = false;
-            this.pbGrb.WaitOnLoad = true;
             // 
             // pbDres
             // 
-            this.pbDres.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pbDres.Location = new System.Drawing.Point(384, 111);
+            resources.ApplyResources(this.pbDres, "pbDres");
             this.pbDres.Name = "pbDres";
-            this.pbDres.Size = new System.Drawing.Size(121, 99);
-            this.pbDres.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pbDres.TabIndex = 6;
             this.pbDres.TabStop = false;
-            this.pbDres.WaitOnLoad = true;
             // 
             // lblName
             // 
-            this.lblName.AutoSize = true;
-            this.lblName.Location = new System.Drawing.Point(80, 12);
+            resources.ApplyResources(this.lblName, "lblName");
             this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(35, 13);
-            this.lblName.TabIndex = 7;
-            this.lblName.Text = "label6";
             // 
             // lblFounded
             // 
-            this.lblFounded.AutoSize = true;
-            this.lblFounded.Location = new System.Drawing.Point(80, 48);
+            resources.ApplyResources(this.lblFounded, "lblFounded");
             this.lblFounded.Name = "lblFounded";
-            this.lblFounded.Size = new System.Drawing.Size(35, 13);
-            this.lblFounded.TabIndex = 8;
-            this.lblFounded.Text = "label6";
             // 
             // lblOwner
             // 
-            this.lblOwner.AutoSize = true;
-            this.lblOwner.Location = new System.Drawing.Point(80, 91);
+            resources.ApplyResources(this.lblOwner, "lblOwner");
             this.lblOwner.Name = "lblOwner";
-            this.lblOwner.Size = new System.Drawing.Size(35, 13);
-            this.lblOwner.TabIndex = 9;
-            this.lblOwner.Text = "label6";
             // 
             // lblNickname
             // 
-            this.lblNickname.AutoSize = true;
-            this.lblNickname.Location = new System.Drawing.Point(80, 125);
+            resources.ApplyResources(this.lblNickname, "lblNickname");
             this.lblNickname.Name = "lblNickname";
-            this.lblNickname.Size = new System.Drawing.Size(35, 13);
-            this.lblNickname.TabIndex = 10;
-            this.lblNickname.Text = "label6";
             // 
             // lblCity
             // 
-            this.lblCity.AutoSize = true;
-            this.lblCity.Location = new System.Drawing.Point(80, 162);
+            resources.ApplyResources(this.lblCity, "lblCity");
             this.lblCity.Name = "lblCity";
-            this.lblCity.Size = new System.Drawing.Size(35, 13);
-            this.lblCity.TabIndex = 11;
-            this.lblCity.Text = "label6";
             // 
             // btnShowPlayers
             // 
-            this.btnShowPlayers.Location = new System.Drawing.Point(13, 208);
+            this.btnShowPlayers.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.btnShowPlayers, "btnShowPlayers");
             this.btnShowPlayers.Name = "btnShowPlayers";
-            this.btnShowPlayers.Size = new System.Drawing.Size(102, 23);
-            this.btnShowPlayers.TabIndex = 12;
-            this.btnShowPlayers.Text = "Show players";
             this.btnShowPlayers.UseVisualStyleBackColor = true;
             this.btnShowPlayers.Click += new System.EventHandler(this.btnShowPlayers_Click);
             // 
             // ShowFootballClubForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AcceptButton = this.btnShowPlayers;
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(517, 257);
             this.Controls.Add(this.btnShowPlayers);
             this.Controls.Add(this.lblCity);
             this.Controls.Add(this.lblNickname);
@@ -186,8 +135,10 @@ namespace PLFootballSystem.Forms.FootballClubForm
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "ShowFootballClubForm";
-            this.Text = "ShowFootballClubForm";
             ((System.ComponentModel.ISupportInitialize)(this.pbGrb)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbDres)).EndInit();
             this.ResumeLayout(false);

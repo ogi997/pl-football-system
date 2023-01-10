@@ -117,95 +117,24 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="lblPlayerPosition.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="lblPlayerPosition.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 11.25pt</value>
+  <data name="lblNumber.Size" type="System.Drawing.Size, System.Drawing">
+    <value>68, 13</value>
   </data>
-  <data name="lblPlayerPosition.Location" type="System.Drawing.Point, System.Drawing">
-    <value>29, 8</value>
+  <data name="lblNumber.Text" xml:space="preserve">
+    <value>Број играча:</value>
   </data>
-  <data name="lblPlayerPosition.Size" type="System.Drawing.Size, System.Drawing">
-    <value>146, 18</value>
+  <data name="lblPosition.Size" type="System.Drawing.Size, System.Drawing">
+    <value>56, 13</value>
   </data>
-  <data name="lblPlayerPosition.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
+  <data name="lblPosition.Text" xml:space="preserve">
+    <value>Позиција:</value>
   </data>
-  <data name="lblPlayerPosition.Text" xml:space="preserve">
-    <value>Player position name</value>
+  <data name="lblDate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>43, 13</value>
   </data>
-  <data name="&gt;&gt;lblPlayerPosition.Name" xml:space="preserve">
-    <value>lblPlayerPosition</value>
-  </data>
-  <data name="&gt;&gt;lblPlayerPosition.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblPlayerPosition.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;lblPlayerPosition.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="tbPlayerPositionName.Location" type="System.Drawing.Point, System.Drawing">
-    <value>32, 30</value>
-  </data>
-  <data name="tbPlayerPositionName.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 20</value>
-  </data>
-  <data name="tbPlayerPositionName.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;tbPlayerPositionName.Name" xml:space="preserve">
-    <value>tbPlayerPositionName</value>
-  </data>
-  <data name="&gt;&gt;tbPlayerPositionName.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tbPlayerPositionName.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;tbPlayerPositionName.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="btnAddPlayerPosition.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="btnAddPlayerPosition.Location" type="System.Drawing.Point, System.Drawing">
-    <value>178, 27</value>
-  </data>
-  <data name="btnAddPlayerPosition.Size" type="System.Drawing.Size, System.Drawing">
-    <value>120, 23</value>
-  </data>
-  <data name="btnAddPlayerPosition.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="btnAddPlayerPosition.Text" xml:space="preserve">
-    <value>Save</value>
-  </data>
-  <data name="&gt;&gt;btnAddPlayerPosition.Name" xml:space="preserve">
-    <value>btnAddPlayerPosition</value>
-  </data>
-  <data name="&gt;&gt;btnAddPlayerPosition.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnAddPlayerPosition.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;btnAddPlayerPosition.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 13</value>
-  </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>361, 79</value>
+  <data name="lblDate.Text" xml:space="preserve">
+    <value>Датум:</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -283,16 +212,7 @@
         H///wef//6AH///kl////t////////////8=
 </value>
   </data>
-  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
-    <value>CenterScreen</value>
-  </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>Add player position</value>
-  </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>AddNewPlayerPosition</value>
-  </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>Прикажи играча</value>
   </data>
 </root>

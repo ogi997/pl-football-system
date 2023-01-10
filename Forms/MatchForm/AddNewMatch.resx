@@ -117,4 +117,542 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="cbSeason.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 21</value>
+  </data>
+  <data name="&gt;&gt;cbHomeFormation.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="lblAwayFC.Location" type="System.Drawing.Point, System.Drawing">
+    <value>19, 54</value>
+  </data>
+  <data name="lblAwayFC.Size" type="System.Drawing.Size, System.Drawing">
+    <value>131, 18</value>
+  </data>
+  <data name="&gt;&gt;lblHomeFC.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblDate.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="lblAwayFormation.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 11.25pt</value>
+  </data>
+  <data name="lblGoalsHome.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 11.25pt</value>
+  </data>
+  <data name="dtDate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 20</value>
+  </data>
+  <data name="&gt;&gt;cbHomeFormation.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dtDate.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="lblDate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>18, 142</value>
+  </data>
+  <data name="&gt;&gt;dtDate.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;lblFormationHome.Name" xml:space="preserve">
+    <value>lblFormationHome</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="cbHomeFC.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="lblSeason.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="cbAwayFC.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 21</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>275, 427</value>
+  </data>
+  <data name="&gt;&gt;numGoalsHome.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="lblDate.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;cbSeason.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Add Match</value>
+  </data>
+  <data name="lblAwayFormation.Size" type="System.Drawing.Size, System.Drawing">
+    <value>110, 18</value>
+  </data>
+  <data name="lblHomeFC.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;lblHomeFC.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="lblAwayFC.Text" xml:space="preserve">
+    <value>Away Football club</value>
+  </data>
+  <data name="&gt;&gt;numGoalsAway.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;numGoalsHome.Name" xml:space="preserve">
+    <value>numGoalsHome</value>
+  </data>
+  <data name="lblAwayFormation.Text" xml:space="preserve">
+    <value>Away formation</value>
+  </data>
+  <data name="&gt;&gt;lblFormationHome.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="cbHomeFC.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 21</value>
+  </data>
+  <data name="lblSeason.Location" type="System.Drawing.Point, System.Drawing">
+    <value>19, 97</value>
+  </data>
+  <data name="&gt;&gt;cbAwayFormation.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="lblGoalsHome.Text" xml:space="preserve">
+    <value>Goals for Home FC</value>
+  </data>
+  <data name="lblAwayFC.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 11.25pt</value>
+  </data>
+  <data name="lblSeason.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;numGoalsAway.Name" xml:space="preserve">
+    <value>numGoalsAway</value>
+  </data>
+  <data name="&gt;&gt;cbAwayFormation.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lblGoalsAway.Text" xml:space="preserve">
+    <value>Goals for Away FC</value>
+  </data>
+  <data name="lblAwayFC.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;lblAwayFC.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;cbSeason.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;cbHomeFormation.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="lblSeason.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 11.25pt</value>
+  </data>
+  <data name="&gt;&gt;dtDate.Name" xml:space="preserve">
+    <value>dtDate</value>
+  </data>
+  <data name="&gt;&gt;lblDate.Name" xml:space="preserve">
+    <value>lblDate</value>
+  </data>
+  <data name="&gt;&gt;cbHomeFC.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="lblFormationHome.Size" type="System.Drawing.Size, System.Drawing">
+    <value>116, 18</value>
+  </data>
+  <data name="&gt;&gt;lblGoalsAway.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAEAICAAAAEAIACoEAAAFgAAACgAAAAgAAAAQAAAAAEAIAAAAAAAABAAABMLAAATCwAAAAAAAAAA
+        AAD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8AWCI//00WMf////8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wBaFz7/Whc8/1oXPP9aFzz/Whc8/1oXPP9aFzz/XBY+/////wD///8AWhg7/////wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AFoXPP9aFzz/Whc8/1oXPP9aFzz/Whc8/1oXPP9aFzz/Whc8/1oXPv9aFzz/Whc8////
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8AWhc8/1oXPP9aFzz/Whc8/1oXPP9aFzz/Whc8/1oXPP9aFzz/Whc8/1oX
+        PP9aFzz/Whc+/////wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AFsaOv////8A////AP///wDUvcxLWhc8/1oXPP9aFzz/Whc8/1oXPP9aFzz/Whc8/1oX
+        PP9aFzz/Whc8/1oXPP9aFzz/XRQ8/////wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8AWhc8/2IZQf////8A////AP///wBaFzz/Whc8/1oXPP9aFzz/Whc8/1oX
+        PP9aFzz/Whc8/1oXPP9aFzz/Whc8/1oXPP9aFzz/////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wBaFzz/Whc8/2EVP/////8AVBw5/1oXPP9aFzz/Whc8/1oX
+        PP9aFzz/Whc8/1oXPP9aFzz/Whc8/1oXPP9aFzz/Whc8/1oXPP////8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AFoXPP9aFzz/Whc8/////wBaFzz/Whc8/1oX
+        PP9aFzz/Whc8/1oXPP9aFzz/Whc8/1oXPP9aFzz/Whc8/1oXPP9aFzz/Whc8/1oVOv9YFz7/////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wDds8pcWhc8/1oXPP9aFzz/Whc+/1oX
+        PP9aFzz/Whc8/1oXPP9aFzz/Whc8/1oXPP9aFzz/Whc8/1oXPP9aFzz/b0Jc/1oXPP9aFzz/Whc8/1oX
+        PP////8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AFoXPP9aFzz/Whc8/1oX
+        PP9aFzz/Whc8/1oXPP9aFzz/Whc8/1oXPP9aFzz/Whc8/1oXPP9aFzz/////AGI4T/////8A////AFoX
+        PP9aFzz/Whc8/////wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A26XDdFoX
+        PP9aFzz/Whc8/1oXPP9aFzz/Whc8/1oXPP9aFzz/Whc8/1oXPP9aFzz/Whc8/08ONf////8A////AP//
+        /wD///8AWhc8/1oXPP9aFzz/////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8AWhc8/1oXPP9aFzz/Whc8/1oXPP9aFzz/Whc8/1oXPP9aFzz/Whc8/1oXPP9aFzz/Whc8/1oX
+        PP////8A////AP///wBaFzz/Whc8/1oXPP////8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8AWhc8/1oXPP9aFzz/Whc8/1oXPP9aFzz/Whc8/1oXPP9aFzz/Whc8/1oXPP9aFzz/Whc8/1kj
+        QP////8A////AFoXPP9hFzv/Whc8/////wBaFzz/Whc8/////wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wBaFzz/Whc8/1oXPP9aFzz/Whc8/1oXPP9aFzz/Whc8/1oXPP9aFzz/Whc8/1oX
+        PP9aFzz/////AP///wD///8A////AFoXPP9dGjr/////AFoXPP9aFzz/////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AFoXPP9aFzz/Whc8/1oXPP9aFzz/Whc8/1oXPP9aFzz/Whc8/1oX
+        PP9aFzz/Whc8/4NQa/////8A////AP///wD///8AspWlgf///wD///8AWhc8/1wWPv////8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AFoXPP9aFzz/Whc8/1oXPP9aFzz/Whc8/1oX
+        PP9aFzz/Whc8/1oXPP9aFzz/Whc8/1YaOf////8A////AP///wBJFS3/Wxg9/////wBaFzz/////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8AWhc8/1oXPP9aFzz/Whc8/1oX
+        PP9aFzz/Whc8/1oXPP9aFzz/Whc8/1oXPP9aFzz/Whc8/1oXPP9dGTj/Whc8/1oXPP9aFzz/XBg7/1oX
+        PP////8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8AWhc8/1oX
+        PP9aFzz/Whc8/1oXPP9aFzz/Whc8/1oXPP////8A////AP///wD///8A////AFYXPv////8AWhc8/1Ub
+        Pv9aFzz/////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AFoX
+        PP9aFzz/Whc8/1oXPP9aFzz/Whc8/1oXPP9aFzz/////AP///wD///8A////AP///wBaFzz/////AP//
+        /wD///8AVhc//////wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AFoXPP9aFzz/Whc8/10TPf9aFzz/Whc8/4NWZ/j///8AXRY+/1oXPP9aFzz/Whc8////
+        /wD///8A////AFwXPP9aFzz/////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A/+j/A1oXPP+BQ1v/Whc8/1oXPP9aFzz/XhZE/////wD///8AWhc8////
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8AayhN/////wBaFzz/Whc8/1oXPP9aFzz/////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8AWxY7/////wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wBaFzz/////AFoX
+        PP9aFzz/XRVD/////wD///8A////AFYXP/9aFzz/XRk8/1oXPP////8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AEsd
+        NP9aFzz/Whc8/1oXPP9aFzz/Whc8/1oXPP9aFzz/XBk5/1oXPP9aFzz/////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wBFI0H/WhQ8/////wD///8AWhc8/1oXPP9aFzz/Whc8/1oUPP////8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AFoXPP9aFzz/Whc8/2EYOP9iFEP/////AP///wD///8A////AGETPP+geY++////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wDn3+kR////AFoXPP9aFzz/Whc8/1oXPP9aFzz/Whc8/1oXPP9aFzz/Whc8/2Ud
+        Qf////8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8AWhc8//jb6hj///8AWhc8/1oXPP////8AWhc8/1oX
+        PP////8AWBk5/////wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8AXx9D////
+        /wD///8AWhc8/////wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A///////8////4Bv//+AB///gAP/+4AB//nAAf/4gAH/+IAAf/AAAH/wA
+        Cx/8AA8f/gAHH/gAGJ/4ADyf+AA9n/wAHL/8AAA//gH0f/wD7v/+Ahz//gN///9D/v//6OH//+AD///M
+        H///wef//6AH///kl////t////////////8=
+</value>
+  </data>
+  <data name="cbAwayFC.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 75</value>
+  </data>
+  <data name="lblGoalsAway.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 11.25pt</value>
+  </data>
+  <data name="&gt;&gt;lblFormationHome.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;cbSeason.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblGoalsHome.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="numGoalsHome.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="numGoalsHome.Size" type="System.Drawing.Size, System.Drawing">
+    <value>123, 20</value>
+  </data>
+  <data name="&gt;&gt;cbAwayFormation.Name" xml:space="preserve">
+    <value>cbAwayFormation</value>
+  </data>
+  <data name="lblDate.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;numGoalsHome.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="lblHomeFC.Text" xml:space="preserve">
+    <value>Home Football club</value>
+  </data>
+  <data name="btnAddFirstTeam.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="lblAwayFormation.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="dtDate.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="lblFormationHome.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="cbSeason.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 118</value>
+  </data>
+  <data name="&gt;&gt;lblHomeFC.Name" xml:space="preserve">
+    <value>lblHomeFC</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="btnAddFirstTeam.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="&gt;&gt;lblAwayFC.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="btnAddFirstTeam.Text" xml:space="preserve">
+    <value>Add first team</value>
+  </data>
+  <data name="btnAddFirstTeam.Size" type="System.Drawing.Size, System.Drawing">
+    <value>131, 33</value>
+  </data>
+  <data name="&gt;&gt;lblAwayFormation.Name" xml:space="preserve">
+    <value>lblAwayFormation</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
+  </data>
+  <data name="lblDate.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 11.25pt</value>
+  </data>
+  <data name="cbAwayFormation.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 340</value>
+  </data>
+  <data name="&gt;&gt;lblAwayFormation.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="lblFormationHome.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;cbHomeFC.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lblDate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>39, 18</value>
+  </data>
+  <data name="cbAwayFormation.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 21</value>
+  </data>
+  <data name="&gt;&gt;lblAwayFC.Name" xml:space="preserve">
+    <value>lblAwayFC</value>
+  </data>
+  <data name="lblGoalsAway.Location" type="System.Drawing.Point, System.Drawing">
+    <value>17, 230</value>
+  </data>
+  <data name="&gt;&gt;cbHomeFormation.Name" xml:space="preserve">
+    <value>cbHomeFormation</value>
+  </data>
+  <data name="&gt;&gt;btnAddFirstTeam.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="lblFormationHome.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 11.25pt</value>
+  </data>
+  <data name="lblSeason.Size" type="System.Drawing.Size, System.Drawing">
+    <value>59, 18</value>
+  </data>
+  <data name="lblGoalsHome.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 186</value>
+  </data>
+  <data name="cbHomeFormation.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 21</value>
+  </data>
+  <data name="&gt;&gt;cbHomeFC.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="lblAwayFC.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="lblAwayFormation.Location" type="System.Drawing.Point, System.Drawing">
+    <value>18, 319</value>
+  </data>
+  <data name="&gt;&gt;lblSeason.Name" xml:space="preserve">
+    <value>lblSeason</value>
+  </data>
+  <data name="&gt;&gt;lblSeason.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lblGoalsHome.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="lblHomeFC.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;cbAwayFC.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblGoalsAway.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="numGoalsAway.Size" type="System.Drawing.Size, System.Drawing">
+    <value>123, 20</value>
+  </data>
+  <data name="&gt;&gt;numGoalsAway.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="numGoalsHome.Location" type="System.Drawing.Point, System.Drawing">
+    <value>18, 207</value>
+  </data>
+  <data name="&gt;&gt;lblGoalsHome.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="cbHomeFC.Location" type="System.Drawing.Point, System.Drawing">
+    <value>18, 30</value>
+  </data>
+  <data name="&gt;&gt;lblSeason.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="lblHomeFC.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 11.25pt</value>
+  </data>
+  <data name="lblHomeFC.Size" type="System.Drawing.Size, System.Drawing">
+    <value>137, 18</value>
+  </data>
+  <data name="&gt;&gt;cbAwayFormation.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblHomeFC.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="lblGoalsAway.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="cbAwayFC.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lblGoalsAway.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;cbAwayFC.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;lblAwayFC.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;numGoalsAway.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="dtDate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>18, 163</value>
+  </data>
+  <data name="cbAwayFormation.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="btnAddFirstTeam.Location" type="System.Drawing.Point, System.Drawing">
+    <value>18, 392</value>
+  </data>
+  <data name="cbHomeFormation.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;cbAwayFC.Name" xml:space="preserve">
+    <value>cbAwayFC</value>
+  </data>
+  <data name="&gt;&gt;lblGoalsAway.Name" xml:space="preserve">
+    <value>lblGoalsAway</value>
+  </data>
+  <data name="&gt;&gt;cbAwayFC.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;cbHomeFC.Name" xml:space="preserve">
+    <value>cbHomeFC</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="lblGoalsHome.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;lblAwayFormation.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="lblFormationHome.Location" type="System.Drawing.Point, System.Drawing">
+    <value>18, 274</value>
+  </data>
+  <data name="cbSeason.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="lblSeason.Text" xml:space="preserve">
+    <value>Season</value>
+  </data>
+  <data name="&gt;&gt;lblGoalsHome.Name" xml:space="preserve">
+    <value>lblGoalsHome</value>
+  </data>
+  <data name="lblAwayFormation.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;btnAddFirstTeam.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblDate.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="lblFormationHome.Text" xml:space="preserve">
+    <value>Home formation</value>
+  </data>
+  <data name="&gt;&gt;btnAddFirstTeam.Name" xml:space="preserve">
+    <value>btnAddFirstTeam</value>
+  </data>
+  <data name="cbHomeFormation.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 295</value>
+  </data>
+  <data name="lblGoalsHome.Size" type="System.Drawing.Size, System.Drawing">
+    <value>139, 18</value>
+  </data>
+  <data name="lblHomeFC.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 9</value>
+  </data>
+  <data name="lblDate.Text" xml:space="preserve">
+    <value>Date</value>
+  </data>
+  <data name="&gt;&gt;lblAwayFormation.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="numGoalsAway.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;lblGoalsAway.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;numGoalsHome.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblDate.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cbSeason.Name" xml:space="preserve">
+    <value>cbSeason</value>
+  </data>
+  <data name="&gt;&gt;dtDate.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DateTimePicker, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>AddNewMatch</value>
+  </data>
+  <data name="&gt;&gt;lblFormationHome.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="numGoalsAway.Location" type="System.Drawing.Point, System.Drawing">
+    <value>18, 251</value>
+  </data>
+  <data name="&gt;&gt;lblSeason.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="btnAddFirstTeam.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 11.25pt</value>
+  </data>
+  <data name="&gt;&gt;lblGoalsHome.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="lblGoalsAway.Size" type="System.Drawing.Size, System.Drawing">
+    <value>133, 18</value>
+  </data>
+  <data name="&gt;&gt;btnAddFirstTeam.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
 </root>
