@@ -24,6 +24,30 @@ namespace PLFootballSystem.Wrapper
         private static readonly string SELECT_FC_BY_ID = "SELECT fc.id, fc.founded, fc.owner, fc.name, fc.nick_name, c.name, fc.image_name, fc.tshirt_image_name FROM `football_club` fc " +
                                                          "INNER JOIN `city` c ON c.id = fc.fk_city_id_for_fc " +
                                                          "WHERE fc.id = @id";
+        private static readonly string UPDATE_FC = "UPDATE `football_club` " +
+                                                   "SET founded = @founded, owner = @owner, name = @name, nick_name = @nickName, fk_city_id_for_fc = @city, image_name = @imageName, tshirt_image_name = @tshirt " +
+                                                   "WHERE id = @id";
+
+        public static void UpdateByClubId(FootballClubModel fc)
+        {
+            List<Params> tmp = new List<Params>()
+            {
+                new Params() { ParamOne = "@founded", ParamTwo = fc.Date},
+                new Params() {ParamOne = "@owner", ParamTwo = fc.Owner},
+                new Params() {ParamOne = "@name", ParamTwo = fc.Name},
+                new Params() {ParamOne = "@nickName", ParamTwo = fc.NickName},
+                new Params() {ParamOne = "@city", ParamTwo = fc.City.ID},
+                new Params() {ParamOne = "@imageName", ParamTwo = fc.ImageName},
+                new Params() {ParamOne = "@tshirt", ParamTwo = fc.TshirtImageName},
+                new Params() {ParamOne = "@id", ParamTwo = fc.ID}
+            };
+
+            MySqlConnection conn = DBUtil.GetConnection();
+
+            DBUtil.PrepareUpdateWithParameters(conn, UPDATE_FC, tmp);
+
+            DBUtil.CloseQuietly(conn);
+        }
         public static FootballClubModel SelectClubById(int clubId)
         {
             FootballClubModel footballClubModel = null;

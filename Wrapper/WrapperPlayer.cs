@@ -31,6 +31,29 @@ namespace PLFootballSystem.Wrapper
                                                                "SET status = @status " +
                                                                "WHERE id = @id";
         private static readonly string SELECT_STATUS_ID = "SELECT status FROM `player` WHERE id = @id";
+
+        private static readonly string UPDATE_PLAYER = "UPDATE `player` " +
+                                                       "SET number = @number, fk_position_id = @pos, name = @name, date_birth = @date, fk_country_id_player = @country, fk_football_club_id = @fc " +
+                                                       "WHERE id = @id";
+        public static void UpdateByPlayerId(PlayerModel player)
+        {
+            List<Params> tmp = new List<Params>()
+            {
+                new Params() {ParamOne = "@number", ParamTwo = player.Number},
+                new Params() {ParamOne = "@pos", ParamTwo = player.Position.ID},
+                new Params() {ParamOne = "@name", ParamTwo = player.Name},
+                new Params() {ParamOne = "@date", ParamTwo = player.Date},
+                new Params() {ParamOne = "@country", ParamTwo = player.Country.ID},
+                new Params() {ParamOne = "@fc", ParamTwo = player.FootballClub.ID},
+                new Params() {ParamOne = "@id", ParamTwo = player.ID}
+            };
+
+            MySqlConnection conn = DBUtil.GetConnection();
+
+            DBUtil.PrepareUpdateWithParameters(conn, UPDATE_PLAYER, tmp);
+
+            DBUtil.CloseQuietly(conn);
+        }
         public static int? SelectStatus(int id)
         {
             int? result = null;

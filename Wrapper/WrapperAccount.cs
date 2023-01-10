@@ -38,6 +38,66 @@ namespace PLFootballSystem.Wrapper
                                                               "INNER JOIN `role` r ON r.id = u.fk_role_id " +
                                                               "INNER JOIN `theme` t ON t.id = u.fk_theme_id " +
                                                               "WHERE u.username = @username";
+        private static readonly string UPDATE_ACCOUNT = "UPDATE `account` " +
+                                                        "SET username = @username, password = @password, fk_role_id = @role " +
+                                                        "WHERE id = @id";
+        private static readonly string UPDATE_THEME = "UPDATE `account` " +
+                                                      "SET fk_theme_id = @theme " +
+                                                      "WHERE id = @id";
+        private static readonly string SELECT_THEME = "SELECT a.id, a.fk_theme_id, t.description FROM `account` a " +
+                                                      "INNER JOIN `theme` t ON t.id = a.fk_theme_id " +
+                                                      "WHERE a.id = @id";
+        public static string GetTheme(int userId)
+        {
+            List<Params> tmp = new List<Params>()
+            {
+                new Params() {ParamOne = "@id", ParamTwo = userId}
+            };
+
+            MySqlConnection conn = DBUtil.GetConnection();
+
+            MySqlDataReader reader = DBUtil.PrepareReaderWithParameters(conn, SELECT_THEME, tmp);
+            string theme = null;
+            while(reader.Read())
+            {
+                theme = reader.GetString(2);
+            }
+
+            DBUtil.CloseQuietly(reader, conn);
+
+            return theme;
+        }
+        public static void UpdateTheme(int userId, int themeId)
+        {
+            List<Params> tmp = new List<Params>()
+            {
+                new Params() { ParamOne = "@theme", ParamTwo = themeId},
+                new Params() { ParamOne = "@id", ParamTwo = userId}
+            };
+
+            MySqlConnection conn = DBUtil.GetConnection();
+
+            DBUtil.PrepareUpdateWithParameters(conn, UPDATE_THEME, tmp);
+
+            DBUtil.CloseQuietly(conn);
+        }
+        public static void UpdateAccountById(AccountModel ac)
+        {
+            List<Params> tmp = new List<Params>()
+            {
+                new Params() { ParamOne = "@username", ParamTwo = ac.Username},
+                new Params() {ParamOne = "@password", ParamTwo = ac.Password},
+                new Params() {ParamOne = "@role", ParamTwo = ac.Role.ID},
+                new Params() {ParamOne = "@id", ParamTwo = ac.ID}
+            };
+
+            MySqlConnection conn = DBUtil.GetConnection();
+
+            DBUtil.PrepareUpdateWithParameters(conn, UPDATE_ACCOUNT, tmp);
+
+            DBUtil.CloseQuietly(conn);
+
+        }
 
         public static AccountModel SelectByUsername(string username)
         {
